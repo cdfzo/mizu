@@ -4,21 +4,30 @@
     "description": "File icon theme for Visual Studio Code",
     "version": "0.1.2",
     "license": "MIT",
-    "icon": "./media/mizu.png",
     "publisher": "cdfzo",
-    "categories": [
-        "Themes"
-    ],
+    "homepage": "https://github.com/cdfzo/mizu/blob/main/README.md",
+    "icon": "media/mizu.png",
     "galleryBanner": {
         "color": "#6038b8",
         "theme": "dark"
     },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "icons",
+        "dark"
+    ],
+    "engines": {
+        "vscode": "^1.60.0"
+    },
     "repository": {
         "type": "git",
-        "url": "https://github.com/cdfzo/mizu"
+        "url": "https://github.com/cdfzo/mizu.git"
     },
-    "engines": {
-        "vscode": "^1.70.0"
+    "bugs": {
+        "url": "https://github.com/cdfzo/mizu/issues"
     },
     "contributes": {
         "iconThemes": [{
@@ -26,5 +35,12 @@
             "label": "Mizu Icons",
             "path": "./mizu-icon-theme.json"
         }]
+    },
+    "scripts": {
+        "build": "bun ./src/index.ts"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "typescript": "latest"
     }
 }
