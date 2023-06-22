@@ -15,7 +15,7 @@ interface Theme {
 }
 
 const theme: Theme = await Bun.file('./mizu-icon-theme.json').json(),
-      rows = 7
+      rows = 9
 
 let cmd =
 `rm -r dist;
@@ -64,7 +64,7 @@ icons.forEach((icon, idx) => {
     // Generate shell script and overview (icons.md)
     cmd += `rsync -a './icons/${name}.svg' ./dist/i/${idx}.svg &&`
     overview += (idx % rows === 0 ? '\n|' : ' ') +
-        `<img src="icons/${name}.svg"> | ${name} |`
+        `<img src="icons/${name}.svg"> | ${name.replace(/.*-/, '')} |`
 })
 
 export {

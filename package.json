@@ -1,14 +1,14 @@
 {
     "name": "mizu",
     "displayName": "Mizu Icons",
-    "description": "File icon theme for Visual Studio Code",
-    "version": "0.1.2",
+    "description": "Mizu Icons for Visual Studio Code",
+    "version": "0.2.2",
     "license": "MIT",
     "publisher": "cdfzo",
     "homepage": "https://github.com/cdfzo/mizu/blob/main/README.md",
     "icon": "media/mizu.png",
     "galleryBanner": {
-        "color": "#6038b8",
+        "color": "#6666ff",
         "theme": "dark"
     },
     "categories": [
