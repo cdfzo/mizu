@@ -12,6 +12,7 @@ const icons: Icon[] = [
 }, {
     name: 'ada',
     fileExtensions: [
+        'ada',
         'adb',
         'ads',
     ]
@@ -34,7 +35,7 @@ const icons: Icon[] = [
         'psd',
     ]
 }, {
-    name: 'adobe-premierepro',
+    name: 'adobe-premiere',
     fileExtensions: ['prproj']
 }, {
     name: 'adobe-xd',
@@ -52,8 +53,11 @@ const icons: Icon[] = [
         'apk',
         'apkm',
         'apks',
+        'dex',
+        'smali',
         'xapk',
-    ]
+    ],
+    fileNames: ['androidmanifest.xml']
 }, {
     name: 'apache',
     fileNames: ['.htaccess']
@@ -64,16 +68,30 @@ const icons: Icon[] = [
     name: 'apple-pages',
     fileExtensions: ['pages']
 }, {
+    name: 'arduino',
+    fileExtensions: ['ino']
+}, {
     name: 'aspnet',
     fileExtensions: [
         'asp',
         'aspx',
         'cshtml',
         'razor',
+        'vbhtml',
     ]
 }, {
     name: 'astro',
     fileExtensions: ['astro']
+}, {
+    name: 'astro-config',
+    fileNames: [
+        'astro.config.cjs',
+        'astro.config.cts',
+        'astro.config.js',
+        'astro.config.mjs',
+        'astro.config.mts',
+        'astro.config.ts',
+    ]
 }, {
     name: 'audio',
     fileExtensions: [
@@ -165,7 +183,7 @@ const icons: Icon[] = [
     name: 'c',
     fileExtensions: [
         'c',
-        'h',
+        'h', // TODO: mv h
     ]
 }, {
     name: 'carbon',
@@ -176,8 +194,18 @@ const icons: Icon[] = [
 }, {
     name: 'changelog',
     fileNames: [
+        'changelog',
         'changelog.md',
+        'changelog.rst',
+        'changelog.txt',
+        'changes',
+        'changes.md',
+        'changes.rst',
+        'changes.txt',
         'version',
+        'version.md',
+        'version.rst',
+        'version.txt',
     ]
 }, {
     name: 'clean',
@@ -195,8 +223,13 @@ const icons: Icon[] = [
         'edn',
     ]
 }, {
-    name: 'codeofconduct',
-    fileNames: ['code_of_conduct.md']
+    name: 'conduct',
+    fileNames: [
+        'code_of_conduct',
+        'code_of_conduct.md',
+        'code_of_conduct.rst',
+        'code_of_conduct.txt',
+    ]
 }, {
     name: 'coffeescript',
     fileExtensions: [
@@ -210,6 +243,7 @@ const icons: Icon[] = [
         'cnf',
         'conf',
         'config',
+        'env',
         'ini',
         'options',
         'prefs',
@@ -217,7 +251,16 @@ const icons: Icon[] = [
         'props',
         'settings',
     ],
-    fileNames: ['.env']
+    fileNames: [
+        '.env.defaults',
+        '.env.dev',
+        '.env.dist',
+        '.env.example',
+        '.env.prod',
+        '.env.sample',
+        '.env.template',
+        '.env.test',
+      ]
 }, {
     name: 'cpp',
     fileExtensions: [
@@ -242,10 +285,7 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'css',
-    fileExtensions: [
-        'css',
-        'min.css',
-    ]
+    fileExtensions: ['css']
 }, {
     name: 'css-map',
     fileExtensions: ['css.map']
@@ -260,8 +300,14 @@ const icons: Icon[] = [
     fileExtensions: ['cur']
 }, {
     name: 'cypress',
-    fileExtensions: ['cy.js'],
-    fileNames: ['cypress.json']
+    fileNames: [
+        'cypress.config.cjs',
+        'cypress.config.js',
+        'cypress.config.mjs',
+        'cypress.config.ts',
+        'cypress.env.json',
+        'cypress.json',
+    ]
 }, {
     name: 'd',
     fileExtensions: ['d']
@@ -272,6 +318,13 @@ const icons: Icon[] = [
         '.dartignore',
         '.pubignore',
         'dart',
+    ]
+}, {
+    name: 'deno',
+    fileNames: [
+        'deno.json',
+        'deno.jsonc',
+        'deno.lock',
     ]
 }, {
     name: 'dll',
@@ -325,6 +378,13 @@ const icons: Icon[] = [
     ],
     fileNames: ['.mailmap']
 }, {
+    name: 'ember',
+    fileNames: [
+        '.ember-cli',
+        '.ember-cli.js',
+        'ember-cli-builds.js',
+    ],
+}, {
     name: 'epub',
     fileExtensions: ['epub']
 }, {
@@ -336,10 +396,17 @@ const icons: Icon[] = [
 }, {
     name: 'eslint',
     fileNames: [
+        '.eslintcache',
         '.eslintignore',
+        '.eslintrc',
+        '.eslintrc.cjs',
         '.eslintrc.js',
         '.eslintrc.json',
+        '.eslintrc.yaml',
+        '.eslintrc.yml',
         'eslint',
+        'eslint.config.js',
+        'eslint.config.mjs',
     ]
 }, {
     name: 'exe',
@@ -353,12 +420,21 @@ const icons: Icon[] = [
         'favicon.ico',
         'favicon.png',
         'favicon.svg',
+        'favicon.webp',
+    ]
+}, {
+    name: 'figma',
+    fileExtensions: [
+        'fig',
+        'jam',
     ]
 }, {
     name: 'firebase',
     fileNames: [
         '.firebaserc',
         'firebase.json',
+        'firestore.indexes.json',
+        'firestore.rules',
     ]
 }, {
     name: 'flstudio',
@@ -399,7 +475,10 @@ const icons: Icon[] = [
     name: 'fortran',
     fileExtensions: [
         'f',
+        'f03',
+        'f77',
         'f90',
+        'f95',
         'for',
     ]
 }, {
@@ -414,8 +493,16 @@ const icons: Icon[] = [
 }, {
     name: 'gatsby',
     fileNames: [
-        'create-gatsby',
-        'gatsby',
+        'gatsby-browser.js',
+        'gatsby-browser.tsx',
+        'gatsby-config.js',
+        'gatsby-config.mjs',
+        'gatsby-config.ts',
+        'gatsby-node.js',
+        'gatsby-node.mjs',
+        'gatsby-node.ts',
+        'gatsby-ssr.js',
+        'gatsby-ssr.tsx',
     ]
 }, {
     name: 'gemfile',
@@ -443,11 +530,11 @@ const icons: Icon[] = [
     name: 'gitpod',
     fileNames: ['.gitpod.yml']
 }, {
-    name: 'gnu',
-    fileNames: ['makefile']
-}, {
     name: 'go',
     fileExtensions: ['go']
+}, {
+    name: 'godot',
+    fileExtensions: ['gd']
 }, {
     name: 'gradle',
     fileExtensions: ['gradle'],
@@ -469,7 +556,11 @@ const icons: Icon[] = [
     name: 'gulp',
     fileNames: [
         'gulpfile.babel.js',
+        'gulpfile.cjs',
+        'gulpfile.cts',
         'gulpfile.js',
+        'gulpfile.mjs',
+        'gulpfile.mts',
         'gulpfile.ts',
     ]
 }, {
@@ -478,6 +569,9 @@ const icons: Icon[] = [
         'hack',
         'hck',
     ]
+}, {
+    name: 'hack-config',
+    fileNames: ['.hhconfig']
 }, {
     name: 'harbour',
     fileExtensions: [
@@ -509,7 +603,11 @@ const icons: Icon[] = [
     name: 'husky',
     fileNames: [
         '.huskyrc',
+        '.huskyrc.js',
         '.huskyrc.json',
+        '.huskyrc.yaml',
+        '.huskyrc.yml',
+        'husky.config.js',
     ]
 }, {
     name: 'hy',
@@ -655,11 +753,29 @@ const icons: Icon[] = [
         'mjs',
     ]
 }, {
+    name: 'javascript-config',
+    fileNames: ['jsconfig.json']
+}, {
     name: 'javascript-map',
     fileExtensions: [
         'cjs.map',
         'js.map',
         'mjs.map',
+    ]
+}, {
+    name: 'javascript-test',
+    fileExtensions: [
+        'cy.js',
+        'e2e-spec.cjs',
+        'e2e-spec.js',
+        'e2e-spec.mjs',
+        'js.snap',
+        'spec.cjs',
+        'spec.js',
+        'spec.mjs',
+        'test.cjs',
+        'test.js',
+        'test.mjs',
     ]
 }, {
     name: 'jquery',
@@ -671,7 +787,10 @@ const icons: Icon[] = [
     name: 'json',
     fileExtensions: [
         'json',
+        'json5',
         'jsonc',
+        'jsonl',
+        'ndjson',
     ]
 }, {
     name: 'json-other',
@@ -720,6 +839,18 @@ const icons: Icon[] = [
         'patent_grant',
     ]
 }, {
+    name: 'lighthouse',
+    fileNames: [
+        '.lighthouserc.js',
+        '.lighthouserc.json',
+        '.lighthouserc.yaml',
+        '.lighthouserc.yml',
+        'lighthouserc.js',
+        'lighthouserc.json',
+        'lighthouserc.yaml',
+        'lighthouserc.yml',
+    ]
+}, {
     name: 'livescript',
     fileExtensions: ['ls']
 }, {
@@ -741,6 +872,14 @@ const icons: Icon[] = [
     fileExtensions: ['lua'],
     fileNames: ['.luacheckrc']
 }, {
+    name: 'makefile',
+    fileExtensions: ['mk'],
+    fileNames: [
+        'gnumakefile',
+        'kbuild',
+        'makefile',
+    ]
+}, {
     name: 'markdown',
     fileExtensions: [
         'markdown',
@@ -749,12 +888,14 @@ const icons: Icon[] = [
         'rst',
     ]
 }, {
+    name: 'markdown-mdx',
+    fileExtensions: ['mdx']
+}, {
     name: 'mathematica',
     fileExtensions: ['nb']
 }, {
     name: 'matlab',
     fileExtensions: [
-        'fig',
         'm',
         'mat',
         'mex',
@@ -849,8 +990,37 @@ const icons: Icon[] = [
         'wbk',
     ]
 }, {
+    name: 'minecraft',
+    fileExtensions: [
+        'mca',
+        'mcaddon',
+        'mcfunction',
+        'mcgame',
+        'mclevel',
+        'mcmeta',
+        'mcpack',
+        'mcproject',
+        'mcr',
+        'mcstructure',
+        'mctemplate',
+        'mcworld',
+        'mine',
+        'mus',
+    ],
+    fileNames: [
+        '.mcattributes',
+        '.mcdefinitions',
+        '.mcignore'
+    ],
+}, {
     name: 'mizu',
     fileExtensions: ['mizu']
+}, {
+    name: 'mojo',
+    fileExtensions: [
+        'mojo',
+        '🔥',
+    ]
 }, {
     name: 'music',
     fileExtensions: [
@@ -863,7 +1033,20 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'netlify',
-    fileNames: ['netlify.toml']
+    fileNames: [
+        'netlify.json',
+        'netlify.toml',
+        'netlify.yaml',
+        'netlify.yml',
+    ]
+}, {
+    name: 'next',
+    fileNames: [
+        'next.config.js',
+        'next.config.mjs',
+        'next.config.mts',
+        'next.config.ts',
+    ]
 }, {
     name: 'nim',
     fileExtensions: [
@@ -873,12 +1056,26 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'node',
-    fileExtensions: ['node']
+    fileExtensions: ['node'],
+    fileNames: [
+        '.esmrc',
+        '.node-version',
+    ]
 }, {
     name: 'npm',
     fileNames: [
         '.npmignore',
         '.npmrc',
+        'package-lock.json',
+    ]
+}, {
+    name: 'nuxt',
+    fileNames: ['.nuxtignore']
+}, {
+    name: 'nuxt-config',
+    fileNames: [
+        'nuxt.config.js',
+        'nuxt.config.ts',
     ]
 }, {
     name: 'nvm',
@@ -926,10 +1123,43 @@ const icons: Icon[] = [
         'puml',
     ]
 }, {
+    name: 'playwright',
+    fileNames: [
+        'playwright-ct.config.js',
+        'playwright-ct.config.mjs',
+        'playwright-ct.config.ts',
+        'playwright.config.js',
+        'playwright.config.mjs',
+        'playwright.config.ts',
+    ]
+}, {
     name: 'pnpm',
     fileNames: [
+        '.pnpmfile.cjs',
         'pnpm-lock.yaml',
         'pnpm-workspace.yaml',
+    ]
+}, {
+    name: 'post',
+    fileExtensions: [
+        'pcss',
+        'sss',
+    ]
+}, {
+    name: 'post-config',
+    fileNames: [
+        '.postcssrc',
+        '.postcssrc.cjs',
+        '.postcssrc.cts',
+        '.postcssrc.js',
+        '.postcssrc.json',
+        '.postcssrc.ts',
+        '.postcssrc.yaml',
+        '.postcssrc.yml',
+        'postcss.config.cjs',
+        'postcss.config.cts',
+        'postcss.config.js',
+        'postcss.config.ts',
     ]
 }, {
     name: 'powershell',
@@ -948,6 +1178,14 @@ const icons: Icon[] = [
     fileNames: [
         '.prettierignore',
         '.prettierrc',
+        '.prettierrc.cjs',
+        '.prettierrc.js',
+        '.prettierrc.json',
+        '.prettierrc.toml',
+        '.prettierrc.yaml',
+        '.prettierrc.yml',
+        'prettier.config.cjs',
+        'prettier.config.js',
     ]
 }, {
     name: 'processing',
@@ -969,13 +1207,13 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'r',
-    fileNames: ['.rhistory'],
     fileExtensions: [
         'r',
         'rda',
         'rdata',
         'rds',
-    ]
+    ],
+    fileNames: ['.rhistory']
 }, {
     name: 'racket',
     fileExtensions: ['rkt']
@@ -996,14 +1234,39 @@ const icons: Icon[] = [
         't6',
     ]
 }, {
-    name: 'react-js',
+    name: 'reactjs',
     fileExtensions: ['jsx']
 }, {
-    name: 'react-ts',
+    name: 'reactjs-test',
+    fileExtensions: [
+        'cy.jsx',
+        'spec-d.jsx',
+        'spec.jsx',
+        'test-d.jsx',
+        'test.jsx',
+        'jsx.snap',
+    ]
+}, {
+    name: 'reactts',
     fileExtensions: ['tsx']
 }, {
+    name: 'reactts-test',
+    fileExtensions: [
+        'cy.tsx',
+        'spec-d.tsx',
+        'spec.tsx',
+        'test-d.tsx',
+        'test.tsx',
+        'tsx.snap',
+    ]
+}, {
     name: 'readme',
-    fileNames: ['readme.md']
+    fileNames: [
+        'readme',
+        'readme.md',
+        'readme.rst',
+        'readme.txt',
+    ]
 }, {
     name: 'reason',
     fileExtensions: [
@@ -1019,6 +1282,12 @@ const icons: Icon[] = [
         'red',
         'reds',
     ]
+}, {
+    name: 'remix',
+    fileNames: [
+        'remix.config.js',
+        'remix.config.ts'
+    ],
 }, {
     name: 'rexx',
     fileExtensions: [
@@ -1082,6 +1351,9 @@ const icons: Icon[] = [
         'sh',
     ]
 }, {
+    name: 'sketch',
+    fileExtensions: ['sketch']
+}, {
     name: 'smallbasic',
     fileExtensions: [
         'sb',
@@ -1111,15 +1383,55 @@ const icons: Icon[] = [
 }, {
     name: 'stylelint',
     fileNames: [
-        '.stylelintrc',
+        '.stylelintcache',
+        '.stylelintignore',
+        '.stylelintrc.cjs',
+        '.stylelintrc.js',
         '.stylelintrc.json',
+        '.stylelintrc.yaml',
+        '.stylelintrc.yml',
+        'stylelint.config.cjs',
+        'stylelint.config.js',
+    ]
+}, {
+    name: 'svelte',
+    fileExtensions: ['svelte']
+}, {
+    name: 'svelte-config',
+    fileNames: [
+        'svelte.config.cjs',
+        'svelte.config.js',
     ]
 }, {
     name: 'svg',
-    fileExtensions: ['svg']
+    fileExtensions: [
+        'svg',
+        'svgz',
+    ]
 }, {
     name: 'swift',
     fileExtensions: ['swift']
+}, {
+    name: 'tailwind',
+    fileNames: [
+        'tailwind.config.cjs',
+        'tailwind.config.cts',
+        'tailwind.config.js',
+        'tailwind.config.ts',
+        'tailwind.js',
+        'tailwind.ts',
+    ]
+}, {
+    name: 'tauri',
+    fileNames: [
+        'tauri.conf.json',
+        'tauri.conf.json5',
+        'tauri.config.json',
+        'tauri.linux.conf.json',
+        'tauri.macos.conf.json',
+        'tauri.toml',
+        'tauri.windows.conf.json',
+    ]
 }, {
     name: 'tcl',
     fileExtensions: [
@@ -1147,6 +1459,9 @@ const icons: Icon[] = [
     ],
     fileNames: ['tsc']
 }, {
+    name: 'typescript-config',
+    fileNames: ['tsconfig.json']
+}, {
     name: 'typescript-def',
     fileExtensions: [
         'd.cts',
@@ -1157,8 +1472,22 @@ const icons: Icon[] = [
     name: 'typescript-map',
     fileExtensions: ['ts.map']
 }, {
-    name: 'typescript-spec',
-    fileExtensions: ['spec.ts']
+    name: 'typescript-test',
+    fileExtensions: [
+        'cy.ts',
+        'e2e-spec.cts',
+        'e2e-spec.mts',
+        'e2e-spec.ts',
+        'spec-d.ts',
+        'spec.cts',
+        'spec.mts',
+        'spec.ts',
+        'test-d.ts',
+        'test.cts',
+        'test.mts',
+        'test.ts',
+        'ts.snap',
+    ]
 }, {
     name: 'url',
     fileExtensions: ['url']
@@ -1214,7 +1543,15 @@ const icons: Icon[] = [
     fileExtensions: [
         'vb',
         'vbs',
-        'vbhtml', // TODO: mv razor
+    ]
+}, {
+    name: 'vim',
+    fileExtensions: ['vim'],
+    fileNames: [
+        '.exrc',
+        '.gvimrc',
+        '.viminfo',
+        '.vimrc',
     ]
 }, {
     name: 'visualstudio',
@@ -1228,6 +1565,26 @@ const icons: Icon[] = [
         'vcxproj',
         'vsix',
         'vsixmanifest',
+    ]
+}, {
+    name: 'vite',
+    fileNames: [
+        'vite.config.cjs',
+        'vite.config.cts',
+        'vite.config.js',
+        'vite.config.mjs',
+        'vite.config.mts',
+        'vite.config.ts',
+    ]
+}, {
+    name: 'vitest',
+    fileNames: [
+        'vitest.config.cjs',
+        'vitest.config.cts',
+        'vitest.config.js',
+        'vitest.config.mjs',
+        'vitest.config.mts',
+        'vitest.config.ts',
     ]
 }, {
     name: 'vmware',
@@ -1250,11 +1607,28 @@ const icons: Icon[] = [
     name: 'vue',
     fileExtensions: ['vue']
 }, {
+    name: 'vue-config',
+    fileNames: [
+        'vetur.config.js',
+        'vetur.config.ts',
+        'volar.config.js',
+        'vue.config.js',
+        'vue.config.ts',
+    ]
+}, {
     name: 'watchman',
     fileNames: ['.watchmanconfig']
 }, {
     name: 'webmanifest',
     fileExtensions: ['webmanifest']
+}, {
+    name: 'windi',
+    fileExtensions: ['windi'],
+    fileNames: [
+        'windi.config.js',
+        'windi.config.json',
+        'windi.config.ts',
+    ]
 }, {
     name: 'wolfram',
     fileExtensions: ['wl']
@@ -1274,7 +1648,12 @@ const icons: Icon[] = [
 }, {
     name: 'yarn',
     fileNames: [
+        '.yarn-integrity',
+        '.yarnclean',
         '.yarnrc',
+        '.yarnrc.yaml',
+        '.yarnrc.yml',
+        'yarn-error.log',
         'yarn.lock',
     ]
 }, {

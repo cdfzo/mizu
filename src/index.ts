@@ -3,6 +3,6 @@ import { theme, cmd, overview } from './theme'
 
 exec(cmd +
     `echo '${JSON.stringify(theme)}' > dist/mizu-icon-theme.json &&
-    echo '${overview}' > icons.md`, (err => {
+    echo '${overview}' > test/icons.md`, (err => {
     console.log(err)
 }))
