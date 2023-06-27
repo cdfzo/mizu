@@ -163,10 +163,12 @@ const icons: Icon[] = [
         'bazel',
     ],
     fileNames: [
-        '.bazelignore',
         '.bazelrc',
         '.bazelversion',
     ]
+}, {
+    name: 'bazel-ignore',
+    fileNames: ['.bazelignore']
 }, {
     name: 'blender',
     fileExtensions: ['blend']
@@ -188,6 +190,12 @@ const icons: Icon[] = [
 }, {
     name: 'carbon',
     fileExtensions: ['carbon']
+}, {
+    name: 'cargo',
+    fileNames: ['cargo.toml']
+}, {
+    name: 'cargo-lock',
+    fileNames: ['cargo.lock']
 }, {
     name: 'ceylon',
     fileExtensions: ['ceylon']
@@ -315,10 +323,12 @@ const icons: Icon[] = [
     name: 'dart',
     fileExtensions: ['dart'],
     fileNames: [
-        '.dartignore',
         '.pubignore',
         'dart',
     ]
+}, {
+    name: 'dart-ignore',
+    fileNames: ['.dartignore']
 }, {
     name: 'deno',
     fileNames: [
@@ -337,13 +347,15 @@ const icons: Icon[] = [
 }, {
     name: 'docker',
     fileNames: [
-        '.dockerignore',
         'compose.yaml',
         'compose.yml',
         'docker-compose.yaml',
         'docker-compose.yml',
         'dockerfile',
     ]
+}, {
+    name: 'docker-ignore',
+    fileNames: ['.dockerignore']
 }, {
     name: 'drawio',
     fileExtensions: ['drawio']
@@ -397,7 +409,6 @@ const icons: Icon[] = [
     name: 'eslint',
     fileNames: [
         '.eslintcache',
-        '.eslintignore',
         '.eslintrc',
         '.eslintrc.cjs',
         '.eslintrc.js',
@@ -408,6 +419,9 @@ const icons: Icon[] = [
         'eslint.config.js',
         'eslint.config.mjs',
     ]
+}, {
+    name: 'eslint-ignore',
+    fileNames: ['.eslintignore']
 }, {
     name: 'exe',
     fileExtensions: [
@@ -514,17 +528,26 @@ const icons: Icon[] = [
     name: 'git',
     fileExtensions: ['patch'],
     fileNames: [
-        '.git-blame-ignore',
-        '.git-blame-ignore-revs',
         '.gitattributes',
-        '.gitconfig',
-        '.gitignore',
         '.gitinclude',
         '.gitkeep',
         '.gitmessage',
         '.gitmodules',
         '.gitpreserve',
         '.keep',
+    ]
+}, {
+    name: 'git-config',
+    fileNames: [
+        '.git/config',
+        '.gitconfig',
+    ]
+}, {
+    name: 'git-ignore',
+    fileNames: [
+        '.git-blame-ignore',
+        '.git-blame-ignore-revs',
+        '.gitignore',
     ]
 }, {
     name: 'gitpod',
@@ -1010,8 +1033,10 @@ const icons: Icon[] = [
     fileNames: [
         '.mcattributes',
         '.mcdefinitions',
-        '.mcignore'
-    ],
+    ]
+}, {
+    name: 'minecraft-ignore',
+    fileNames: ['.mcignore']
 }, {
     name: 'mizu',
     fileExtensions: ['mizu']
@@ -1063,20 +1088,19 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'npm',
-    fileNames: [
-        '.npmignore',
-        '.npmrc',
-        'package-lock.json',
-    ]
+    fileNames: ['.npmrc']
+}, {
+    name: 'npm-ignore',
+    fileNames: ['.npmignore']
 }, {
     name: 'nuxt',
-    fileNames: ['.nuxtignore']
-}, {
-    name: 'nuxt-config',
     fileNames: [
         'nuxt.config.js',
         'nuxt.config.ts',
     ]
+}, {
+    name: 'nuxt-ignore',
+    fileNames: ['.nuxtignore']
 }, {
     name: 'nvm',
     fileNames: ['.nvmrc']
@@ -1089,6 +1113,9 @@ const icons: Icon[] = [
 }, {
     name: 'package',
     fileNames: ['package.json']
+}, {
+    name: 'package-lock',
+    fileNames: ['package-lock.json']
 }, {
     name: 'partytown',
     fileNames: ['partytown']
@@ -1176,7 +1203,6 @@ const icons: Icon[] = [
 }, {
     name: 'prettier',
     fileNames: [
-        '.prettierignore',
         '.prettierrc',
         '.prettierrc.cjs',
         '.prettierrc.js',
@@ -1187,6 +1213,9 @@ const icons: Icon[] = [
         'prettier.config.cjs',
         'prettier.config.js',
     ]
+}, {
+    name: 'prettier-ignore',
+    fileNames: ['.prettierignore']
 }, {
     name: 'processing',
     fileExtensions: ['pde']
@@ -1384,7 +1413,6 @@ const icons: Icon[] = [
     name: 'stylelint',
     fileNames: [
         '.stylelintcache',
-        '.stylelintignore',
         '.stylelintrc.cjs',
         '.stylelintrc.js',
         '.stylelintrc.json',
@@ -1393,6 +1421,9 @@ const icons: Icon[] = [
         'stylelint.config.cjs',
         'stylelint.config.js',
     ]
+}, {
+    name: 'stylelint-ignore',
+    fileNames: ['.stylelintignore']
 }, {
     name: 'svelte',
     fileExtensions: ['svelte']
@@ -1601,8 +1632,10 @@ const icons: Icon[] = [
         '.vscode/launch.json',
         '.vscode/settings.json',
         '.vscode/tasks.json',
-        '.vscodeignore',
     ]
+}, {
+    name: 'vscode-ignore',
+    fileNames: ['.vscodeignore']
 }, {
     name: 'vue',
     fileExtensions: ['vue']
