@@ -14,8 +14,7 @@ interface Theme {
     hidesExplorerArrows: boolean
 }
 
-const theme: Theme = await Bun.file('./mizu-icon-theme.json').json(),
-      rows = 9
+const theme: Theme = await Bun.file('./mizu-icon-theme.json').json()
 
 let cmd =
 `rm -r dist;
@@ -28,13 +27,10 @@ rsync -a media dist &&`,
 overview =
 `<style>
 img {
-    display: flex;
-    justify-content: center;
-    width: 22px;
+    width: 30px;
+    margin: 6px;
 }
-</style>
-${'| Icon | Name '.repeat(rows)}|
-${'| --- '.repeat(rows * 2)}|`
+</style>`
 
 // Generate definitions
 icons.forEach((icon, idx) => {
@@ -63,8 +59,7 @@ icons.forEach((icon, idx) => {
 
     // Generate shell script and overview (icons.md)
     cmd += `rsync -a './icons/${name}.svg' ./dist/i/${idx}.svg &&`
-    overview += (idx % rows === 0 ? '\n|' : ' ') +
-        `<img src="icons/${name}.svg"> | ${name.replace(/.*-/, '')} |`
+    overview += `<img src="../icons/${name}.svg">`
 })
 
 export {
