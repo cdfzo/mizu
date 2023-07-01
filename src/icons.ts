@@ -10,6 +10,47 @@ const icons: Icon[] = [
 {
     name: 'file'
 }, {
+    name: '3d',
+    fileExtensions: [
+        '3d',
+        'ac',
+        'blend',
+        'fbx',
+        'kv6',
+        'mesh',
+        'mqo',
+        'obj',
+        'pmd',
+        'pmx',
+        'skp',
+        'stl',
+        'stp',
+        'vac',
+        'vox',
+        'voxb',
+        'x',
+    ]
+}, {
+    name: 'access',
+    fileExtensions: [
+        'accda',
+        'accdb',
+        'accde',
+        'accdr',
+        'accdt',
+        'adn',
+        'laccdb',
+        'maf',
+        'mam',
+        'maq',
+        'mar',
+        'mdb',
+        'mdw',
+    ]
+}, {
+    name: 'actionscript',
+    fileExtensions: ['as']
+}, {
     name: 'ada',
     fileExtensions: [
         'ada',
@@ -22,6 +63,14 @@ const icons: Icon[] = [
 }, {
     name: 'adobe-audition',
     fileExtensions: ['sesx']
+}, {
+    name: 'adobe-coldfusion',
+    fileExtensions: [
+        'cfc',
+        'cfm',
+        'cfml',
+        'lucee',
+    ]
 }, {
     name: 'adobe-illustrator',
     fileExtensions: ['ai']
@@ -62,12 +111,6 @@ const icons: Icon[] = [
     name: 'apache',
     fileNames: ['.htaccess']
 }, {
-    name: 'apple-numbers',
-    fileExtensions: ['numbers']
-}, {
-    name: 'apple-pages',
-    fileExtensions: ['pages']
-}, {
     name: 'arduino',
     fileExtensions: ['ino']
 }, {
@@ -78,6 +121,21 @@ const icons: Icon[] = [
         'cshtml',
         'razor',
         'vbhtml',
+    ]
+}, {
+    name: 'assembly',
+    fileExtensions: [
+        'aea',
+        'agc',
+        'ags',
+        'argus',
+        'asm',
+        'bin',
+        'binsource',
+        'inc',
+        'mitigus',
+        'nasm',
+        's',
     ]
 }, {
     name: 'astro',
@@ -150,6 +208,32 @@ const icons: Icon[] = [
     name: 'autoit',
     fileExtensions: ['au3']
 }, {
+    name: 'babel',
+    fileNames: [
+        '.babel-plugin-macrosrc',
+        '.babel-plugin-macrosrc.js',
+        '.babel-plugin-macrosrc.json',
+        '.babel-plugin-macrosrc.yaml',
+        '.babel-plugin-macrosrc.yml',
+        '.babelrc',
+        '.babelrc.cjs',
+        '.babelrc.js',
+        '.babelrc.json',
+        '.babelrc.mjs',
+        'babel-plugin-macros.config.js',
+        'babel-transform.js',
+        'babel.config.cjs',
+        'babel.config.js',
+        'babel.config.json',
+        'babel.config.mjs',
+    ]
+}, {
+    name: 'ballerina',
+    fileExtensions: [
+        'bal',
+        'balx',
+    ]
+}, {
     name: 'batch',
     fileExtensions: [
         'bat',
@@ -170,8 +254,17 @@ const icons: Icon[] = [
     name: 'bazel-ignore',
     fileNames: ['.bazelignore']
 }, {
-    name: 'blender',
-    fileExtensions: ['blend']
+    name: 'bitbucket',
+    fileNames: [
+        'bitbucket-pipelines.yaml',
+        'bitbucket-pipelines.yml',
+    ]
+}, {
+    name: 'brainfuck',
+    fileExtensions: [
+        'b',
+        'bf',
+    ]
 }, {
     name: 'browserslist',
     fileNames: [
@@ -183,10 +276,7 @@ const icons: Icon[] = [
     fileNames: ['bun.lockb']
 }, {
     name: 'c',
-    fileExtensions: [
-        'c',
-        'h', // TODO: mv h
-    ]
+    fileExtensions: ['c']
 }, {
     name: 'carbon',
     fileExtensions: ['carbon']
@@ -277,10 +367,6 @@ const icons: Icon[] = [
         'cp',
         'cpp',
         'cxx',
-        'h++', // TODO: mv hpp
-        'hh',
-        'hpp',
-        'hxx',
     ]
 }, {
     name: 'crystal',
@@ -302,6 +388,12 @@ const icons: Icon[] = [
     fileExtensions: [
         'rtl.css',
         'rtl.min.css',
+    ]
+}, {
+    name: 'cuda',
+    fileExtensions: [
+        'cu',
+        'cuh',
     ]
 }, {
     name: 'cursor',
@@ -337,6 +429,12 @@ const icons: Icon[] = [
         'deno.lock',
     ]
 }, {
+    name: 'dependabot',
+    fileNames: [
+        'dependabot.yaml',
+        'dependabot.yml',
+    ]
+}, {
     name: 'dll',
     fileExtensions: [
         'dlc',
@@ -357,6 +455,13 @@ const icons: Icon[] = [
     name: 'docker-ignore',
     fileNames: ['.dockerignore']
 }, {
+    name: 'dot',
+    fileExtensions: [
+        'def',
+        'dot',
+        'jst',
+    ]
+}, {
     name: 'drawio',
     fileExtensions: ['drawio']
 }, {
@@ -374,8 +479,11 @@ const icons: Icon[] = [
 }, {
     name: 'elixir',
     fileExtensions: [
+        'eex',
         'ex',
         'exs',
+        'heex',
+        'leex',
     ]
 }, {
     name: 'elm',
@@ -423,6 +531,25 @@ const icons: Icon[] = [
     name: 'eslint-ignore',
     fileNames: ['.eslintignore']
 }, {
+    name: 'excel',
+    fileExtensions: [
+        'xla',
+        'xlam',
+        'xlb',
+        'xlc',
+        'xld',
+        'xlk',
+        'xll',
+        'xlm',
+        'xlsb',
+        'xlsm',
+        'xlsx',
+        'xlt',
+        'xltm',
+        'xlv',
+        'xlw',
+    ]
+}, {
     name: 'exe',
     fileExtensions: [
         'exe',
@@ -449,12 +576,6 @@ const icons: Icon[] = [
         'firebase.json',
         'firestore.indexes.json',
         'firestore.rules',
-    ]
-}, {
-    name: 'flstudio',
-    fileExtensions: [
-        'dmpatch',
-        'fst',
     ]
 }, {
     name: 'font',
@@ -520,10 +641,10 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'gemfile',
-    fileNames: [
-        'gemfile',
-        'gemfile.lock',
-    ]
+    fileNames: ['gemfile']
+}, {
+    name: 'gemfile-lock',
+    fileNames: ['gemfile.lock']
 }, {
     name: 'git',
     fileExtensions: ['patch'],
@@ -550,11 +671,22 @@ const icons: Icon[] = [
         '.gitignore',
     ]
 }, {
+    name: 'gitlab',
+    fileNames: ['.gitlab-ci.yml']
+}, {
     name: 'gitpod',
     fileNames: ['.gitpod.yml']
 }, {
     name: 'go',
     fileExtensions: ['go']
+}, {
+    name: 'go-mod',
+    fileNames: [
+        'go.mod',
+        'go.sum',
+        'go.work',
+        'go.work.sum',
+    ]
 }, {
     name: 'godot',
     fileExtensions: ['gd']
@@ -566,6 +698,35 @@ const icons: Icon[] = [
         'gradle-wrapper.properties',
         'gradle.properties',
         'gradlew',
+    ]
+}, {
+    name: 'graphcool',
+    fileExtensions: ['graphcool']
+}, {
+    name: 'graphql',
+    fileExtensions: [
+        'gql',
+        'graphql',
+    ]
+}, {
+    name: 'graphql-config',
+    fileNames: [
+        '.graphqlconfig',
+        '.graphqlrc',
+        '.graphqlrc.cjs',
+        '.graphqlrc.js',
+        '.graphqlrc.json',
+        '.graphqlrc.toml',
+        '.graphqlrc.ts',
+        '.graphqlrc.yaml',
+        '.graphqlrc.yml',
+        'graphql.config.cjs',
+        'graphql.config.js',
+        'graphql.config.json',
+        'graphql.config.toml',
+        'graphql.config.ts',
+        'graphql.config.yaml',
+        'graphql.config.yml',
     ]
 }, {
     name: 'groovy',
@@ -587,6 +748,9 @@ const icons: Icon[] = [
         'gulpfile.ts',
     ]
 }, {
+    name: 'h',
+    fileExtensions: ['h']
+}, {
     name: 'hack',
     fileExtensions: [
         'hack',
@@ -595,6 +759,19 @@ const icons: Icon[] = [
 }, {
     name: 'hack-config',
     fileNames: ['.hhconfig']
+}, {
+    name: 'handlebars',
+    fileExtensions: [
+        'handlebars',
+        'hbs',
+        'mustache',
+    ]
+}, {
+    name: 'hardhat',
+    fileNames: [
+        'hardhat.config.js',
+        'hardhat.config.ts',
+    ]
 }, {
     name: 'harbour',
     fileExtensions: [
@@ -614,6 +791,25 @@ const icons: Icon[] = [
     fileExtensions: [
         'hx',
         'hxml',
+    ]
+}, {
+    name: 'hcl',
+    fileExtensions: ['hcl']
+}, {
+    name: 'heroku',
+    fileNames: [
+        'heroku.yml',
+        'procfile',
+    ]
+}, {
+    name: 'hpp',
+    fileExtensions: [
+        'h++',
+        'hh',
+        'hpp',
+        'hxx',
+        'inl',
+        'tcc',
     ]
 }, {
     name: 'html',
@@ -644,126 +840,108 @@ const icons: Icon[] = [
         'ifb',
     ]
 }, {
+    name: 'idris',
+    fileExtensions: [
+        'ibc',
+        'idr',
+    ]
+}, {
     name: 'image',
     fileExtensions: [
         'afphoto',
         'apng',
-        'apng',
-        'avci',
+        'apx',
+        'ase',
+        'aseprite',
         'avci',
         'avcs',
-        'avcs',
-        'avif',
         'avif',
         'avifs',
-        'avifs',
-        'bmp',
         'bmp',
         'bpg',
-        'bpg',
-        'dib',
+        'brk',
+        'clip',
+        'cpt',
+        'dds',
         'dib',
         'djv',
-        'djv',
         'djvu',
-        'djvu',
-        'exr',
+        'dng',
+        'eps', // TODO: mv eps
         'exr',
         'flif',
-        'flif',
-        'gif',
+        'fpx',
+        'gbr',
         'gif',
         'hdp',
         'hdp',
         'heic',
-        'heic',
-        'heics',
         'heics',
         'heif',
-        'heif',
         'heifs',
-        'heifs',
+        'icns',
         'ico',
-        'ico',
-        'j2c',
+        'img',
         'j2c',
         'j2k',
-        'j2k',
-        'jb2',
         'jb2',
         'jbg',
-        'jbg',
-        'jbig',
         'jbig',
         'jbig2',
-        'jbig2',
-        'jfi',
         'jfi',
         'jfif',
-        'jfif',
-        'jif',
         'jif',
         'jng',
-        'jng',
-        'jp2',
         'jp2',
         'jpc',
-        'jpc',
-        'jpe',
         'jpe',
         'jpeg',
-        'jpeg',
-        'jpf',
         'jpf',
         'jpg',
-        'jpg',
-        'jpg2',
         'jpg2',
         'jpm',
-        'jpm',
-        'jpx',
         'jpx',
         'jxl',
-        'jxl',
-        'jxr',
         'jxr',
         'jxs',
-        'jxs',
+        'kra',
+        'mdp',
         'mng',
-        'mng',
+        'ora',
+        'pbm',
+        'pdn',
         'pgf',
-        'pgf',
+        'pgm',
+        'pic',
         'png',
-        'png',
-        'qoi',
+        'pnm',
+        'ppm',
         'qoi',
         'qtvr',
-        'qtvr',
         'raw',
-        'raw',
-        'tga',
+        'sai',
+        'sai2',
         'tga',
         'tif',
-        'tif',
-        'tiff',
         'tiff',
         'wbmp',
-        'wbmp',
-        'wdp',
         'wdp',
         'webp',
-        'webp',
-        'xcf',
+        'wp2',
         'xcf',
     ]
 }, {
     name: 'iso',
     fileExtensions: ['iso']
 }, {
-    name: 'java',
+    name: 'jar',
     fileExtensions: [
         'class',
-        'jar', // TODO: mv jar
+        'jar',
+    ]
+}, {
+    name: 'java',
+    fileExtensions: [
         'java',
         'jmod',
         'jsp',
@@ -801,6 +979,20 @@ const icons: Icon[] = [
         'test.mjs',
     ]
 }, {
+    name: 'jenkins',
+    fileExtensions: [
+        'jenkins',
+        'jenkinsfile',
+    ],
+    fileNames: ['jenkinsfile']
+}, {
+    name: 'jinja',
+    fileExtensions: [
+        'j2',
+        'jinja',
+        'jinja2',
+    ]
+}, {
     name: 'jquery',
     fileNames: [
         'jquery.js',
@@ -820,6 +1012,7 @@ const icons: Icon[] = [
     fileExtensions: [
         'cson',
         'ron',
+        'tf.json',
     ]
 }, {
     name: 'julia',
@@ -847,6 +1040,13 @@ const icons: Icon[] = [
 }, {
     name: 'less',
     fileExtensions: ['less']
+}, {
+    name: 'laravel',
+    fileExtensions: [
+        'blade.php',
+        'inky.php',
+    ],
+    fileNames: ['artisan']
 }, {
     name: 'license',
     fileNames: [
@@ -914,6 +1114,9 @@ const icons: Icon[] = [
     name: 'markdown-mdx',
     fileExtensions: ['mdx']
 }, {
+    name: 'marko',
+    fileExtensions: ['marko']
+}, {
     name: 'mathematica',
     fileExtensions: ['nb']
 }, {
@@ -930,87 +1133,10 @@ const icons: Icon[] = [
         'p',
     ]
 }, {
-    name: 'microsoft-access',
+    name: 'mermaid',
     fileExtensions: [
-        'accda',
-        'accdb',
-        'accde',
-        'accdr',
-        'accdt',
-        'adn',
-        'laccdb',
-        'maf',
-        'mam',
-        'maq',
-        'mar',
-        'mdw',
-    ]
-}, {
-    name: 'microsoft-excel',
-    fileExtensions: [
-        'xla',
-        'xlam',
-        'xlb',
-        'xlc',
-        'xld',
-        'xlk',
-        'xll',
-        'xlm',
-        'xlsb',
-        'xlsm',
-        'xlsx',
-        'xlt',
-        'xltm',
-        'xlv',
-        'xlw',
-    ]
-}, {
-    name: 'microsoft-onenote',
-    fileExtensions: [
-        'one',
-        'onetoc2',
-    ]
-}, {
-    name: 'microsoft-powerpoint',
-    fileExtensions: [
-        'odp',
-        'potm',
-        'potx',
-        'ppa',
-        'ppam',
-        'pps',
-        'ppsm',
-        'ppsx',
-        'ppt',
-        'pptm',
-        'pptx',
-    ]
-}, {
-    name: 'microsoft-visio',
-    fileExtensions: [
-        'vdw',
-        'vsd',
-        'vsdm',
-        'vsdx',
-        'vsl',
-        'vss',
-        'vssm',
-        'vssx',
-        'vst',
-        'vstm',
-        'vstx',
-    ]
-}, {
-    name: 'microsoft-word',
-    fileExtensions: [
-        'doc',
-        'docb',
-        'docm',
-        'docx',
-        'dot',
-        'dotm',
-        'dotx',
-        'wbk',
+        'mermaid',
+        'mmd',
     ]
 }, {
     name: 'minecraft',
@@ -1039,7 +1165,20 @@ const icons: Icon[] = [
     fileNames: ['.mcignore']
 }, {
     name: 'mizu',
-    fileExtensions: ['mizu']
+    fileExtensions: [
+        'mizu',
+        'mz',
+    ]
+}, {
+    name: 'mocha',
+    fileNames: [
+        '.mocharc.js',
+        '.mocharc.json',
+        '.mocharc.jsonc',
+        '.mocharc.yaml',
+        '.mocharc.yml',
+        'mocha.opts',
+    ]
 }, {
     name: 'mojo',
     fileExtensions: [
@@ -1050,11 +1189,26 @@ const icons: Icon[] = [
     name: 'music',
     fileExtensions: [
         'als',
+        'dmpatch',
+        'fst',
         'mid',
         'ppsf',
         'vpr',
         'vsq',
         'vsqx',
+    ]
+}, {
+    name: 'nanostaged',
+    fileNames: [
+        '.nano-staged.cjs',
+        '.nano-staged.js',
+        '.nano-staged.json',
+        '.nano-staged.mjs',
+        '.nanostagedrc',
+        'nano-staged.cjs',
+        'nano-staged.js',
+        'nano-staged.json',
+        'nano-staged.mjs',
     ]
 }, {
     name: 'netlify',
@@ -1087,11 +1241,20 @@ const icons: Icon[] = [
         '.node-version',
     ]
 }, {
+    name: 'nodemon',
+    fileNames: [
+        'nodemon-debug.json',
+        'nodemon.json',
+    ]
+}, {
     name: 'npm',
     fileNames: ['.npmrc']
 }, {
     name: 'npm-ignore',
     fileNames: ['.npmignore']
+}, {
+    name: 'numbers',
+    fileExtensions: ['numbers']
 }, {
     name: 'nuxt',
     fileNames: [
@@ -1111,11 +1274,20 @@ const icons: Icon[] = [
         'mli',
     ]
 }, {
+    name: 'onenote',
+    fileExtensions: [
+        'one',
+        'onetoc2',
+    ]
+}, {
     name: 'package',
     fileNames: ['package.json']
 }, {
     name: 'package-lock',
     fileNames: ['package-lock.json']
+}, {
+    name: 'pages',
+    fileExtensions: ['pages']
 }, {
     name: 'partytown',
     fileNames: ['partytown']
@@ -1142,6 +1314,9 @@ const icons: Icon[] = [
         'pht',
         'phtml',
     ]
+}, {
+    name: 'pine',
+    fileExtensions: ['pine']
 }, {
     name: 'plantuml',
     fileExtensions: [
@@ -1189,6 +1364,21 @@ const icons: Icon[] = [
         'postcss.config.ts',
     ]
 }, {
+    name: 'powerpoint',
+    fileExtensions: [
+        'odp',
+        'potm',
+        'potx',
+        'ppa',
+        'ppam',
+        'pps',
+        'ppsm',
+        'ppsx',
+        'ppt',
+        'pptm',
+        'pptx',
+    ]
+}, {
     name: 'powershell',
     fileExtensions: [
         'cdxml',
@@ -1219,6 +1409,14 @@ const icons: Icon[] = [
 }, {
     name: 'processing',
     fileExtensions: ['pde']
+}, {
+    name: 'pug',
+    fileExtensions: ['pug'],
+    fileNames: [
+        '.pug-lintrc',
+        '.pug-lintrc.js',
+        '.pug-lintrc.json',
+    ]
 }, {
     name: 'purescript',
     fileExtensions: ['purs']
@@ -1318,6 +1516,12 @@ const icons: Icon[] = [
         'remix.config.ts'
     ],
 }, {
+    name: 'replit',
+    fileNames: ['.replit']
+}, {
+    name: 'rescript',
+    fileExtensions: ['res']
+}, {
     name: 'rexx',
     fileExtensions: [
         'exec',
@@ -1373,6 +1577,12 @@ const icons: Icon[] = [
         'sprite3',
     ]
 }, {
+    name: 'semgrep',
+    fileNames: ['semgrep.yml']
+}, {
+    name: 'semgrep-ignore',
+    fileNames: ['.semgrepignore']
+}, {
     name: 'shell',
     fileExtensions: [
         'awk',
@@ -1389,6 +1599,9 @@ const icons: Icon[] = [
         'smallbasic',
     ]
 }, {
+    name: 'solidity',
+    fileExtensions: ['sol']
+}, {
     name: 'spreadsheet',
     fileExtensions: [
         'csv',
@@ -1398,16 +1611,37 @@ const icons: Icon[] = [
     ]
 }, {
     name: 'sql',
-    fileExtensions: ['sql']
+    fileExtensions: [
+        'db',
+        'pdb',
+        'pgsql',
+        'pkb',
+        'pks',
+        'sql',
+    ]
 }, {
     name: 'sqlite',
     fileExtensions: [
-        'db',
         'db3',
         's3db',
         'sl3',
         'sqlite',
         'sqlite3',
+    ]
+}, {
+    name: 'storybook',
+    fileExtensions: [
+        'stories.js',
+        'stories.jsx',
+        'stories.mdx',
+        'stories.svelte',
+        'stories.ts',
+        'stories.tsx',
+        'story.js',
+        'story.jsx',
+        'story.mdx',
+        'story.ts',
+        'story.tsx',
     ]
 }, {
     name: 'stylelint',
@@ -1424,6 +1658,18 @@ const icons: Icon[] = [
 }, {
     name: 'stylelint-ignore',
     fileNames: ['.stylelintignore']
+}, {
+    name: 'sublime',
+    fileExtensions: [
+        'sublime-project',
+        'sublime-workspace',
+    ]
+}, {
+    name: 'supabase',
+    fileNames: [
+        'supabase.js',
+        'supabase.py',
+    ]
 }, {
     name: 'svelte',
     fileExtensions: ['svelte']
@@ -1470,8 +1716,27 @@ const icons: Icon[] = [
         'tcl',
     ]
 }, {
+    name: 'terraform',
+    fileExtensions: [
+        'tf',
+        'tfstate',
+        'tfvars',
+    ]
+}, {
     name: 'text',
     fileExtensions: ['txt']
+}, {
+    name: 'todo',
+    fileExtensions: ['todo'],
+    fileNames: [
+        'todo',
+        'todo.md',
+        'todo.rst',
+        'todo.txt',
+        'todos.md',
+        'todos.rst',
+        'todos.txt',
+]
 }, {
     name: 'toml',
     fileExtensions: ['toml']
@@ -1481,6 +1746,9 @@ const icons: Icon[] = [
 }, {
     name: 'travis',
     fileNames: ['.travis.yml']
+}, {
+    name: 'turborepo',
+    fileNames: ['turbo.json']
 }, {
     name: 'typescript',
     fileExtensions: [
@@ -1520,13 +1788,44 @@ const icons: Icon[] = [
         'ts.snap',
     ]
 }, {
+    name: 'uno',
+    fileNames: [
+        'uno.config.js',
+        'uno.config.mjs',
+        'uno.config.mts',
+        'uno.config.ts',
+        'unocss.config.js',
+        'unocss.config.mjs',
+        'unocss.config.mts',
+        'unocss.config.ts',
+    ]
+}, {
     name: 'url',
     fileExtensions: ['url']
+}, {
+    name: 'v',
+    fileExtensions: ['v'],
+    fileNames: [
+        'v.mod',
+        'vpkg.json',
+    ]
 }, {
     name: 'vala',
     fileExtensions: [
         'vala',
         'vapi',
+    ]
+}, {
+    name: 'vercel',
+    fileNames: [
+        'now.json',
+        'vercel.json',
+    ]
+}, {
+    name: 'vercel-ignore',
+    fileNames: [
+        '.nowignore',
+        '.vercelignore',
     ]
 }, {
     name: 'video',
@@ -1568,6 +1867,21 @@ const icons: Icon[] = [
         'webm',
         'wmv',
         'yuv',
+    ]
+}, {
+    name: 'visio',
+    fileExtensions: [
+        'vdw',
+        'vsd',
+        'vsdm',
+        'vsdx',
+        'vsl',
+        'vss',
+        'vssm',
+        'vssx',
+        'vst',
+        'vstm',
+        'vstx',
     ]
 }, {
     name: 'visualbasic',
@@ -1652,6 +1966,12 @@ const icons: Icon[] = [
     name: 'watchman',
     fileNames: ['.watchmanconfig']
 }, {
+    name: 'webassembly',
+    fileExtensions: [
+        'wasm',
+        'wat',
+    ]
+}, {
     name: 'webmanifest',
     fileExtensions: ['webmanifest']
 }, {
@@ -1666,17 +1986,47 @@ const icons: Icon[] = [
     name: 'wolfram',
     fileExtensions: ['wl']
 }, {
+    name: 'word',
+    fileExtensions: [
+        'doc',
+        'docb',
+        'docm',
+        'docx',
+        'dot',
+        'dotm',
+        'dotx',
+        'odt',
+        'rtf',
+        'wbk',
+    ]
+}, {
     name: 'xml',
     fileExtensions: [
         'classpath',
+        'dtd',
+        'iml',
+        'jrxml',
+        'manifest',
+        'plist',
         'project',
+        'resx',
+        'tmLanguage',
         'xml',
+        'xml.dist',
+        'xml.dist.sample',
+        'xquery',
+        'xsd',
+        'xsl',
+        'xslt',
     ]
 }, {
     name: 'yaml',
     fileExtensions: [
         'yaml',
+        'yaml-tmlanguage',
+        'yaml.dist',
         'yml',
+        'yml.dist',
     ]
 }, {
     name: 'yarn',

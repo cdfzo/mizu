@@ -33,6 +33,7 @@ img {
 </style>`
 
 // Generate definitions
+console.log(`Generating ${icons.length} icons..`)
 icons.forEach((icon, idx) => {
     const id = `${idx}`,
           name = icon.name
