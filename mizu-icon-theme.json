@@ -1,9 +1,11 @@
 {
     "file": "file",
-    "folder": "folder-orange",
+    "folder": "default",
+    "folderExpanded": "default-open",
     "iconDefinitions": {},
     "fileExtensions": {},
     "folderNames": {},
+    "folderNamesExpanded": {},
     "fileNames": {},
     "hidesExplorerArrows": false
 }
