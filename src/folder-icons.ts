@@ -4,8 +4,18 @@ export const folderIcons: Icon[] = [
 {
     name: 'android',
     folderNames: [
+        '.android',
         'android',
         'apk',
+    ]
+}, {
+    name: 'archive',
+    folderNames: [
+        'arc',
+        'archival',
+        'archive',
+        'archives',
+        'arcs',
     ]
 }, {
     name: 'app',
@@ -41,11 +51,6 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'backup',
     folderNames: [
-        'arc',
-        'archival',
-        'archive',
-        'archives',
-        'arcs',
         'back-up',
         'back-ups',
         'backup',
@@ -57,6 +62,8 @@ export const folderIcons: Icon[] = [
         'bkps',
         'dump',
         'dumps',
+        'storage',
+        'storages',
     ]
 }, {
     name: 'benchmark',
@@ -70,6 +77,9 @@ export const folderIcons: Icon[] = [
         'performance',
     ]
 }, {
+    name: 'circleci',
+    folderNames: ['.circleci']
+}, {
     name: 'client',
     folderNames: [
         'client',
@@ -79,8 +89,25 @@ export const folderIcons: Icon[] = [
         'pwa',
     ]
 }, {
+    name: 'cloud',
+    folderNames: [
+        '.aws',
+        'aws',
+        'cloud',
+        'drive',
+        'iclouddrive',
+        'onedrive',
+    ]
+}, {
+    name: 'component',
+    folderNames: [
+        'component',
+        'components',
+    ]
+}, {
     name: 'config',
     folderNames: [
+        '.config',
         '.setting',
         '.settings',
         'cfg',
@@ -91,6 +118,7 @@ export const folderIcons: Icon[] = [
         'configuration',
         'configurations',
         'confs',
+        'local settings',
         'meta-inf',
         'setting',
         'settings',
@@ -112,6 +140,16 @@ export const folderIcons: Icon[] = [
         'flutter',
     ]
 }, {
+    name: 'database',
+    folderNames: [
+        'database',
+        'databases',
+        'db',
+        'dbms',
+        'migrate',
+        'sql',
+    ]
+}, {
     name: 'debug',
     folderNames: [
         'bug',
@@ -128,10 +166,10 @@ export const folderIcons: Icon[] = [
     folderNames: [
         'bin',
         'build',
+        'cgi-bin',
         'dist',
         'out',
         'release',
-        'target', // TODO: mv target
     ]
 }, {
     name: 'doc',
@@ -141,6 +179,15 @@ export const folderIcons: Icon[] = [
         'document',
         'documentation',
         'documents',
+        'my documents',
+    ]
+}, {
+    name: 'download',
+    folderNames: [
+        'dl',
+        'dls',
+        'download',
+        'downloads',
     ]
 }, {
     name: 'environment',
@@ -166,6 +213,25 @@ export const folderIcons: Icon[] = [
         'fails',
     ]
 }, {
+    name: 'etc',
+    folderNames: [
+        'etc',
+        'extra',
+        'extras',
+        'misc',
+        'miscellaneous',
+        'other',
+        'others',
+    ]
+}, {
+    name: 'event',
+    folderNames: [
+        'event',
+        'events',
+        'state',
+        'states',
+    ]
+}, {
     name: 'favicon',
     folderNames: [
         'favicon',
@@ -174,9 +240,15 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'file',
     folderNames: [
-       'file',
-       'filedata',
-       'files',
+        'asset',
+        'assets',
+        'file',
+        'filedata',
+        'files',
+        'res',
+        'resource',
+        'resources',
+        'static',
     ]
 }, {
     name: 'firebase',
@@ -200,6 +272,27 @@ export const folderIcons: Icon[] = [
         'fnts',
         'font',
         'fonts',
+    ]
+}, {
+    name: 'game',
+    folderNames: [
+        'game',
+        'games',
+        'gaming',
+        'saved games',
+        'xboxgames',
+    ]
+}, {
+    name: 'generator',
+    folderNames: [
+        'auto',
+        'cfn-gen',
+        'gen',
+        'generate',
+        'generated',
+        'generator',
+        'generators',
+        'gens',
     ]
 }, {
     name: 'git',
@@ -234,9 +327,16 @@ export const folderIcons: Icon[] = [
         'gradle',
     ]
 }, {
+    name: 'helper',
+    folderNames: [
+        'helper',
+        'helpers',
+    ]
+}, {
     name: 'home',
     folderNames: [
         'home',
+        'start menu',
         'start',
     ]
 }, {
@@ -268,6 +368,7 @@ export const folderIcons: Icon[] = [
         '_images',
         '_img',
         '_imgs',
+        'accountpictures',
         'fig',
         'figs',
         'figure',
@@ -278,6 +379,7 @@ export const folderIcons: Icon[] = [
         'imgs',
         'm',
         'media',
+        'my pictures',
         'pic',
         'pics',
         'picture',
@@ -286,6 +388,25 @@ export const folderIcons: Icon[] = [
         'screengrabs',
         'screenshot',
         'screenshots',
+    ]
+}, {
+    name: 'import',
+    folderNames: [
+        '_includes',
+        '_partials',
+        'import',
+        'imported',
+        'imports',
+        'inc',
+        'include',
+        'includes',
+        'partials',
+    ]
+}, {
+    name: 'in',
+    folderNames: [
+        'in',
+        'login',
     ]
 }, {
     name: 'intellij',
@@ -320,9 +441,6 @@ export const folderIcons: Icon[] = [
         'libraries',
         'library',
         'libs',
-        'third-party',
-        'vendor', // TODO: mv vendor
-        'vendors',
     ]
 }, {
     name: 'linux',
@@ -332,10 +450,19 @@ export const folderIcons: Icon[] = [
         'ubuntu',
     ]
 }, {
+    name: 'link',
+    folderNames: [
+        'link',
+        'links',
+        'url',
+        'urls',
+    ]
+}, {
     name: 'locale',
     folderNames: [
         'i18n',
         'internationalization',
+        'intl',
         'l10n',
         'lang',
         'langs',
@@ -349,13 +476,21 @@ export const folderIcons: Icon[] = [
         'translations',
     ]
 }, {
+    name: 'log',
+    folderNames: [
+        'log',
+        'logs',
+    ]
+}, {
     name: 'mailer',
     folderNames: [
         'email',
         'emails',
         'mail',
         'mailers',
+        'mailoutput',
         'mails',
+        'mailtodisk',
         'smtp',
     ]
 }, {
@@ -397,6 +532,8 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'restore',
     folderNames: [
+        'recover',
+        'recovery',
         'restore',
         'restored',
     ]
@@ -409,6 +546,12 @@ export const folderIcons: Icon[] = [
         'routes',
     ]
 }, {
+    name: 'ruby',
+    folderNames: [
+        'rails',
+        'ruby',
+    ]
+}, {
     name: 'runner',
     folderNames: [
         'runner',
@@ -418,6 +561,7 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'rust',
     folderNames: [
+        '.cargo',
         'cargo',
         'rs',
         'rust',
@@ -441,13 +585,31 @@ export const folderIcons: Icon[] = [
         'srcs',
     ]
 }, {
+    name: 'target',
+    folderNames: [
+        'target',
+        'tgt',
+    ]
+}, {
+    name: 'template',
+    folderNames: [
+        '_template',
+        '_templates',
+        'templ',
+        'template',
+        'templates',
+    ]
+}, {
     name: 'temporary',
     folderNames: [
         '.cache',
         '.temp',
         '.tmp',
+        'aitemp',
         'cache',
         'cached',
+        'onedrivetemp',
+        'systemtemp',
         'temp',
         'temporary',
         'tmp',
@@ -466,6 +628,12 @@ export const folderIcons: Icon[] = [
         'tests',
     ]
 }, {
+    name: 'texture',
+    folderNames: [
+        'texture',
+        'textures',
+    ]
+}, {
     name: 'typescript',
     folderNames: [
         '@types',
@@ -477,22 +645,40 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'user',
     folderNames: [
+        'all users',
+        'default user',
         'personal',
         'user',
         'users',
         'usr',
     ]
 }, {
+    name: 'vendor',
+    folderNames: [
+        'third-party',
+        'vendor',
+        'vendors',
+    ]
+}, {
     name: 'video',
     folderNames: [
+        'caps',
+        'captures',
         'mov',
         'movie',
         'movies',
+        'my videos',
         'v',
         'vid',
         'video',
         'videos',
         'vids',
+    ]
+}, {
+    name: 'vscode',
+    folderNames: [
+        '.vscode',
+        '.vscode-test',
     ]
 }, {
     name: 'windows',
