@@ -1134,6 +1134,13 @@ const fileIcons: Icon[] = [
         'p',
     ]
 }, {
+    name: 'maven',
+    fileNames: [
+        'maven.config',
+        'mvnw',
+        'mvnw.cmd',
+    ]
+}, {
     name: 'mermaid',
     fileExtensions: [
         'mermaid',

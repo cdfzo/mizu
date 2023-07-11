@@ -77,6 +77,9 @@ export const folderIcons: Icon[] = [
         'performance',
     ]
 }, {
+    name: 'c',
+    folderNames: ['c']
+}, {
     name: 'circleci',
     folderNames: ['.circleci']
 }, {
@@ -122,6 +125,18 @@ export const folderIcons: Icon[] = [
         'meta-inf',
         'setting',
         'settings',
+    ]
+}, {
+    name: 'controller',
+    folderNames: [
+        'controller',
+        'controllers',
+        'handler',
+        'handlers',
+        'provider',
+        'providers',
+        'service', // TODO: mv service
+        'services',
     ]
 }, {
     name: 'css',
@@ -409,6 +424,15 @@ export const folderIcons: Icon[] = [
         'login',
     ]
 }, {
+    name: 'initializer',
+    folderNames: [
+        'init',
+        'initialize',
+        'initializer',
+        'initializers',
+        'inits',
+    ]
+}, {
     name: 'intellij',
     folderNames: ['.idea']
 }, {
@@ -419,8 +443,6 @@ export const folderIcons: Icon[] = [
     folderNames: [
         'javascript',
         'js',
-        'script',
-        'scripts'
     ]
 }, {
     name: 'job',
@@ -482,6 +504,9 @@ export const folderIcons: Icon[] = [
         'logs',
     ]
 }, {
+    name: 'lua',
+    folderNames: ['lua']
+}, {
     name: 'mailer',
     folderNames: [
         'email',
@@ -491,7 +516,14 @@ export const folderIcons: Icon[] = [
         'mailoutput',
         'mails',
         'mailtodisk',
+        'phpmailer',
         'smtp',
+    ]
+}, {
+    name: 'maven',
+    folderNames: [
+        '.mvn',
+        'maven',
     ]
 }, {
     name: 'module',
@@ -499,6 +531,26 @@ export const folderIcons: Icon[] = [
         'node',
         'node_modules',
         'node_modules.nosync',
+    ]
+}, {
+    name: 'php',
+    folderNames: ['php']
+}, {
+    name: 'post',
+    folderNames: [
+        'chat',
+        'chats',
+        'conversation',
+        'conversations',
+        'forum',
+        'forums',
+        'message',
+        'messages',
+        'messaging',
+        'msg',
+        'msgs',
+        'post',
+        'posts',
     ]
 }, {
     name: 'private',
@@ -530,12 +582,27 @@ export const folderIcons: Icon[] = [
         'python',
     ]
 }, {
+    name: 'repository',
+    folderNames: [
+        'repo',
+        'repos',
+        'repositories',
+        'repository',
+    ]
+}, {
     name: 'restore',
     folderNames: [
         'recover',
         'recovery',
         'restore',
         'restored',
+    ]
+}, {
+    name: 'role',
+    folderNames: [
+        'role',
+        'roles',
+        'userroles',
     ]
 }, {
     name: 'route',
@@ -567,6 +634,18 @@ export const folderIcons: Icon[] = [
         'rust',
     ]
 }, {
+    name: 'scala',
+    folderNames: [
+        'sc',
+        'scala',
+    ]
+}, {
+    name: 'script',
+    folderNames: [
+        'script',
+        'scripts',
+    ]
+}, {
     name: 'server',
     folderNames: [
         'back-end',
@@ -585,10 +664,31 @@ export const folderIcons: Icon[] = [
         'srcs',
     ]
 }, {
+    name: 'swift',
+    folderNames: ['swift']
+}, {
+    name: 'syntax',
+    folderNames: [
+        'spellcheck',
+        'spellchecks',
+        'syntax',
+        'syntaxes',
+    ]
+}, {
     name: 'target',
     folderNames: [
         'target',
         'tgt',
+    ]
+}, {
+    name: 'task',
+    folderNames: [
+        'task',
+        'tasks',
+        'ticket',
+        'tickets',
+        'todo',
+        'todos',
     ]
 }, {
     name: 'template',
@@ -634,6 +734,16 @@ export const folderIcons: Icon[] = [
         'textures',
     ]
 }, {
+    name: 'tool',
+    folderNames: [
+        'tool',
+        'toolbox',
+        'toolboxes',
+        'toolkit',
+        'toolkits',
+        'tools',
+    ]
+}, {
     name: 'typescript',
     folderNames: [
         '@types',
@@ -652,6 +762,9 @@ export const folderIcons: Icon[] = [
         'users',
         'usr',
     ]
+}, {
+    name: 'vala',
+    folderNames: ['vala']
 }, {
     name: 'vendor',
     folderNames: [
