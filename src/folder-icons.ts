@@ -160,6 +160,7 @@ export const folderIcons: Icon[] = [
         'database',
         'databases',
         'db',
+        'dbs',
         'dbms',
         'migrate',
         'sql',
@@ -245,6 +246,19 @@ export const folderIcons: Icon[] = [
         'events',
         'state',
         'states',
+    ]
+}, {
+    name: 'example',
+    folderNames: [
+        'demo',
+        'demos',
+        'example',
+        'examples',
+        'idea',
+        'ideas',
+        'sample',
+        'sample-data',
+        'samples',
     ]
 }, {
     name: 'favicon',

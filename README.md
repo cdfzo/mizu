@@ -1,5 +1,5 @@
 # Mizu Icons
 ## Icons
 * Based on 15 colors
-* Over 370 icons
+* Over 400 icons
 <img src="./media/icons.png" alt="Icons">

@@ -7,8 +7,6 @@ interface Icon {
 
 const fileIcons: Icon[] = [
 {
-    name: 'file'
-}, {
     name: '3d',
     fileExtensions: [
         '3d',
@@ -57,37 +55,8 @@ const fileIcons: Icon[] = [
         'ads',
     ]
 }, {
-    name: 'adobe-aftereffects',
+    name: 'aftereffects',
     fileExtensions: ['aep']
-}, {
-    name: 'adobe-audition',
-    fileExtensions: ['sesx']
-}, {
-    name: 'adobe-coldfusion',
-    fileExtensions: [
-        'cfc',
-        'cfm',
-        'cfml',
-        'lucee',
-    ]
-}, {
-    name: 'adobe-illustrator',
-    fileExtensions: ['ai']
-}, {
-    name: 'adobe-indesign',
-    fileExtensions: ['indd']
-}, {
-    name: 'adobe-photoshop',
-    fileExtensions: [
-        'psb',
-        'psd',
-    ]
-}, {
-    name: 'adobe-premiere',
-    fileExtensions: ['prproj']
-}, {
-    name: 'adobe-xd',
-    fileExtensions: ['xd']
 }, {
     name: 'agda',
     fileExtensions: [
@@ -109,6 +78,26 @@ const fileIcons: Icon[] = [
 }, {
     name: 'apache',
     fileNames: ['.htaccess']
+}, {
+    name: 'applescript',
+    fileExtensions: [
+        'applescript',
+        'ipa',
+        'scpt',
+        'scptd',
+    ]
+}, {
+    name: 'appletouchicon',
+    fileNames: [
+        'apple-touch-icon-precomposed.png',
+        'apple-touch-icon.png',
+    ]
+}, {
+    name: 'appveyor',
+    fileNames: [
+        '.appveyor.yml',
+        'appveyor.yml',
+    ]
 }, {
     name: 'arduino',
     fileExtensions: ['ino']
@@ -201,6 +190,9 @@ const fileIcons: Icon[] = [
         'wvc',
     ]
 }, {
+    name: 'audition',
+    fileExtensions: ['sesx']
+}, {
     name: 'autohotkey',
     fileExtensions: ['ahk']
 }, {
@@ -271,6 +263,12 @@ const fileIcons: Icon[] = [
         'browserslist',
     ]
 }, {
+    name: 'buildkite',
+    fileNames: [
+        'buildkite.yaml',
+        'buildkite.yml',
+    ]
+}, {
     name: 'bun',
     fileNames: ['bun.lockb']
 }, {
@@ -318,6 +316,20 @@ const fileIcons: Icon[] = [
         'cljc',
         'cljs',
         'edn',
+    ]
+}, {
+    name: 'cobol',
+    fileExtensions: [
+        'cbl',
+        'cob',
+    ]
+}, {
+    name: 'coldfusion',
+    fileExtensions: [
+        'cfc',
+        'cfm',
+        'cfml',
+        'lucee',
     ]
 }, {
     name: 'conduct',
@@ -568,6 +580,8 @@ const fileIcons: Icon[] = [
         'fig',
         'jam',
     ]
+}, {
+    name: 'file'
 }, {
     name: 'firebase',
     fileNames: [
@@ -845,6 +859,9 @@ const fileIcons: Icon[] = [
         'idr',
     ]
 }, {
+    name: 'illustrator',
+    fileExtensions: ['ai']
+}, {
     name: 'image',
     fileExtensions: [
         'afphoto',
@@ -932,6 +949,9 @@ const fileIcons: Icon[] = [
         'xcf',
     ]
 }, {
+    name: 'indesign',
+    fileExtensions: ['indd']
+}, {
     name: 'iso',
     fileExtensions: ['iso']
 }, {
@@ -955,8 +975,26 @@ const fileIcons: Icon[] = [
         'mjs',
     ]
 }, {
+    name: 'javascript-component',
+    fileExtensions: ['component.js']
+}, {
     name: 'javascript-config',
     fileNames: ['jsconfig.json']
+}, {
+    name: 'javascript-controller',
+    fileExtensions: ['controller.js']
+}, {
+    name: 'javascript-exception',
+    fileExtensions: [
+        'error.js',
+        'exception.js',
+    ]
+}, {
+    name: 'javascript-filter',
+    fileExtensions: ['filter.js']
+}, {
+    name: 'javascript-guard',
+    fileExtensions: ['guard.js']
 }, {
     name: 'javascript-map',
     fileExtensions: [
@@ -964,6 +1002,12 @@ const fileIcons: Icon[] = [
         'js.map',
         'mjs.map',
     ]
+}, {
+    name: 'javascript-server',
+    fileExtensions: ['server.js']
+}, {
+    name: 'javascript-store',
+    fileExtensions: ['store.js']
 }, {
     name: 'javascript-test',
     fileExtensions: [
@@ -1075,6 +1119,12 @@ const fileIcons: Icon[] = [
         'lighthouserc.yml',
     ]
 }, {
+    name: 'lisp',
+    fileExtensions: [
+        'lisp',
+        'lsp',
+    ]
+}, {
     name: 'livescript',
     fileExtensions: ['ls']
 }, {
@@ -1091,6 +1141,12 @@ const fileIcons: Icon[] = [
 }, {
     name: 'log',
     fileExtensions: ['log']
+}, {
+    name: 'lolcode',
+    fileExtensions: [
+        'lol',
+        'lols',
+    ]
 }, {
     name: 'lua',
     fileExtensions: ['lua'],
@@ -1131,14 +1187,15 @@ const fileIcons: Icon[] = [
         'mlpkginstall',
         'mltbx',
         'mlx',
-        'p',
     ]
 }, {
     name: 'maven',
     fileNames: [
+        'jvm.config',
         'maven.config',
         'mvnw',
         'mvnw.cmd',
+        'pom.xml',
     ]
 }, {
     name: 'mermaid',
@@ -1235,6 +1292,14 @@ const fileIcons: Icon[] = [
         'next.config.ts',
     ]
 }, {
+    name: 'nginx',
+    fileNames: [
+        'fastcgi.conf',
+        'mime.types',
+        'nginx.conf',
+        'proxy.conf',
+    ]
+}, {
     name: 'nim',
     fileExtensions: [
         'nim',
@@ -1312,6 +1377,12 @@ const fileIcons: Icon[] = [
         'pod',
         't',
         'xs',
+    ]
+}, {
+    name: 'photoshop',
+    fileExtensions: [
+        'psb',
+        'psd',
     ]
 }, {
     name: 'php',
@@ -1399,6 +1470,9 @@ const fileIcons: Icon[] = [
         'pssc',
     ]
 }, {
+    name: 'premiere',
+    fileExtensions: ['prproj']
+}, {
     name: 'prettier',
     fileNames: [
         '.prettierrc',
@@ -1415,8 +1489,17 @@ const fileIcons: Icon[] = [
     name: 'prettier-ignore',
     fileNames: ['.prettierignore']
 }, {
+    name: 'prisma',
+    fileExtensions: ['prisma']
+}, {
     name: 'processing',
     fileExtensions: ['pde']
+}, {
+    name: 'prolog',
+    fileExtensions: [
+        'p',
+        'pro',
+    ]
 }, {
     name: 'pug',
     fileExtensions: ['pug'],
@@ -1530,6 +1613,12 @@ const fileIcons: Icon[] = [
     name: 'rescript',
     fileExtensions: ['res']
 }, {
+    name: 'restql',
+    fileExtensions: [
+        'restql',
+        'rql',
+    ]
+}, {
     name: 'rexx',
     fileExtensions: [
         'exec',
@@ -1550,11 +1639,35 @@ const fileIcons: Icon[] = [
     ]
 }, {
     name: 'ruby',
-    fileExtensions: ['rb'],
+    fileExtensions: [
+        'rake',
+        'rb',
+    ],
     fileNames: [
         '.ruby-version',
         'rake',
         'rakefile',
+    ]
+}, {
+    name: 'ruby-assets',
+    fileNames: ['assets.rb']
+}, {
+    name: 'ruby-config',
+    fileNames: ['config.ru']
+}, {
+    name: 'ruby-environment',
+    fileNames: ['environment.rb']
+}, {
+    name: 'ruby-importmap',
+    fileNames: ['importmap.rb']
+}, {
+    name: 'ruby-routes',
+    fileNames: ['routes.rb']
+}, {
+    name: 'ruby-schema',
+    fileNames: [
+        'schema.rb',
+        'seeds.rb',
     ]
 }, {
     name: 'rust',
@@ -1591,6 +1704,9 @@ const fileIcons: Icon[] = [
     name: 'semgrep-ignore',
     fileNames: ['.semgrepignore']
 }, {
+    name: 'sentry',
+    fileNames: ['.sentryclirc']
+}, {
     name: 'shell',
     fileExtensions: [
         'awk',
@@ -1605,6 +1721,17 @@ const fileIcons: Icon[] = [
     fileExtensions: [
         'sb',
         'smallbasic',
+    ]
+}, {
+    name: 'snowpack',
+    fileNames: [
+        'snowpack.config.cjs',
+        'snowpack.config.cts',
+        'snowpack.config.js',
+        'snowpack.config.json',
+        'snowpack.config.mjs',
+        'snowpack.config.mts',
+        'snowpack.config.ts',
     ]
 }, {
     name: 'solidity',
@@ -1766,8 +1893,14 @@ const fileIcons: Icon[] = [
     ],
     fileNames: ['tsc']
 }, {
+    name: 'typescript-component',
+    fileExtensions: ['component.ts']
+}, {
     name: 'typescript-config',
     fileNames: ['tsconfig.json']
+}, {
+    name: 'typescript-controller',
+    fileExtensions: ['controller.ts']
 }, {
     name: 'typescript-def',
     fileExtensions: [
@@ -1776,8 +1909,30 @@ const fileIcons: Icon[] = [
         'd.ts',
     ]
 }, {
+    name: 'typescript-exception',
+    fileExtensions: [
+        'error.ts',
+        'exception.ts',
+    ]
+}, {
+    name: 'typescript-filter',
+    fileExtensions: ['filter.ts']
+}, {
+    name: 'typescript-guard',
+    fileExtensions: ['guard.ts']
+}, {
     name: 'typescript-map',
-    fileExtensions: ['ts.map']
+    fileExtensions: [
+        'cts.map',
+        'mts.map',
+        'ts.map',
+    ]
+}, {
+    name: 'typescript-server',
+    fileExtensions: ['server.ts']
+}, {
+    name: 'typescript-store',
+    fileExtensions: ['store.ts']
 }, {
     name: 'typescript-test',
     fileExtensions: [
@@ -1806,6 +1961,14 @@ const fileIcons: Icon[] = [
         'unocss.config.mjs',
         'unocss.config.mts',
         'unocss.config.ts',
+    ]
+}, {
+    name: 'unity',
+    fileExtensions: [
+        'unity',
+        'unity3d',
+        'unitypackage',
+        'unityweb',
     ]
 }, {
     name: 'url',
@@ -1971,6 +2134,12 @@ const fileIcons: Icon[] = [
         'vue.config.ts',
     ]
 }, {
+    name: 'wakatime',
+    fileNames: [
+        '.wakatime-project',
+        '.wakatime.cfg',
+    ],
+}, {
     name: 'watchman',
     fileNames: ['.watchmanconfig']
 }, {
@@ -1980,8 +2149,44 @@ const fileIcons: Icon[] = [
         'wat',
     ]
 }, {
+    name: 'webhint',
+    fileNames: ['.hintrc']
+}, {
     name: 'webmanifest',
-    fileExtensions: ['webmanifest']
+    fileExtensions: ['webmanifest'],
+    fileNames: ['manifest.json']
+}, {
+    name: 'webpack',
+    fileNames: [
+        'webpack.base.js',
+        'webpack.base.ts',
+        'webpack.common.js',
+        'webpack.common.ts',
+        'webpack.config.babel.js',
+        'webpack.config.babel.ts',
+        'webpack.config.base.js',
+        'webpack.config.base.ts',
+        'webpack.config.cjs',
+        'webpack.config.common.js',
+        'webpack.config.common.ts',
+        'webpack.config.cts',
+        'webpack.config.dev.js',
+        'webpack.config.dev.ts',
+        'webpack.config.js',
+        'webpack.config.mjs',
+        'webpack.config.mts',
+        'webpack.config.prod.js',
+        'webpack.config.prod.ts',
+        'webpack.config.ts',
+        'webpack.dev.js',
+        'webpack.dev.ts',
+        'webpack.dist.js',
+        'webpack.dist.ts',
+        'webpack.prod.js',
+        'webpack.prod.ts',
+        'webpack.test.js',
+        'webpack.test.ts',
+    ]
 }, {
     name: 'windi',
     fileExtensions: ['windi'],
@@ -2007,6 +2212,9 @@ const fileIcons: Icon[] = [
         'rtf',
         'wbk',
     ]
+}, {
+    name: 'xd',
+    fileExtensions: ['xd']
 }, {
     name: 'xml',
     fileExtensions: [
