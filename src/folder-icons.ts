@@ -2,11 +2,63 @@ import { Icon } from './file-icons'
 
 export const folderIcons: Icon[] = [
 {
+    name: 'admin',
+    folderNames: [
+        'admin',
+        'admins',
+        'manager',
+        'managers',
+        'moderator',
+    ]
+}, {
+    name: 'adobe',
+    folderNames: [
+        'adobe',
+        'creative cloud files',
+    ]
+}, {
+    name: 'ai',
+    folderNames: [
+        'ai',
+        'ai-art',
+        'codeformer',
+        'dalle',
+        'deepbooru',
+        'esrgan',
+        'gfpgan',
+        'gpt',
+        'lora',
+        'stable-diffusion',
+        'swinir',
+        'vae',
+        'vae-approx',
+    ]
+}, {
     name: 'android',
     folderNames: [
         '.android',
         'android',
+        'androidstudioprojects',
         'apk',
+    ]
+}, {
+    name: 'api',
+    folderNames: [
+        'api',
+        'apis',
+        'openapi',
+        'rest',
+        'restapi',
+    ]
+}, {
+    name: 'app',
+    folderNames: [
+        'app',
+        'apps',
+        'program files (x86)',
+        'program files',
+        'program',
+        'programs',
     ]
 }, {
     name: 'archive',
@@ -16,14 +68,6 @@ export const folderIcons: Icon[] = [
         'archive',
         'archives',
         'arcs',
-    ]
-}, {
-    name: 'app',
-    folderNames: [
-        'app',
-        'apps',
-        'program files (x86)',
-        'program files',
     ]
 }, {
     name: 'audio',
@@ -49,6 +93,14 @@ export const folderIcons: Icon[] = [
         'sessions',
     ]
 }, {
+    name: 'azure',
+    folderNames: [
+        '.azure',
+        '.azure-pipelines',
+        '.azure-pipelines-ci',
+        'azure',
+    ]
+}, {
     name: 'backup',
     folderNames: [
         'back-up',
@@ -64,6 +116,9 @@ export const folderIcons: Icon[] = [
         'dumps',
         'storage',
         'storages',
+        'store',
+        'stores',
+        'syncbackup',
     ]
 }, {
     name: 'benchmark',
@@ -127,6 +182,13 @@ export const folderIcons: Icon[] = [
         'settings',
     ]
 }, {
+    name: 'contact',
+    folderNames: [
+        'contact',
+        'contacts',
+        'userdata',
+    ]
+}, {
     name: 'controller',
     folderNames: [
         'controller',
@@ -150,7 +212,10 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'dart',
     folderNames: [
+        '.dart',
+        '.dart-tool',
         '.dart_tool',
+        '.flutter-devtools',
         'dart',
         'flutter',
     ]
@@ -178,14 +243,27 @@ export const folderIcons: Icon[] = [
     name: 'default',
     folderNames: []
 }, {
+    name: 'desktop',
+    folderNames: [
+        'desktop',
+        'desktops',
+    ]
+}, {
     name: 'dist',
     folderNames: [
+        '.bin',
         'bin',
         'build',
+        'builds',
         'cgi-bin',
+        'desktop-build',
         'dist',
+        'dists',
         'out',
+        'output',
+        'outputs',
         'release',
+        'releases',
     ]
 }, {
     name: 'doc',
@@ -198,6 +276,13 @@ export const folderIcons: Icon[] = [
         'my documents',
     ]
 }, {
+    name: 'docker',
+    folderNames: [
+        '.docker',
+        'docker',
+        'dockerfiles',
+    ]
+}, {
     name: 'download',
     folderNames: [
         'dl',
@@ -206,14 +291,24 @@ export const folderIcons: Icon[] = [
         'downloads',
     ]
 }, {
+    name: 'elixir',
+    folderNames: [
+        '.mix',
+        'elixir',
+    ]
+}, {
     name: 'environment',
     folderNames: [
         '.env',
         '.venv',
+        'devenvironments',
         'env',
         'environment',
         'environments',
         'envs',
+        'venv',
+        'venvs',
+        'virtualenv',
     ]
 }, {
     name: 'error',
@@ -242,6 +337,7 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'event',
     folderNames: [
+        'config_states',
         'event',
         'events',
         'state',
@@ -278,6 +374,26 @@ export const folderIcons: Icon[] = [
         'resource',
         'resources',
         'static',
+    ]
+}, {
+    name: 'filter',
+    folderNames: [
+        'filter',
+        'filters',
+    ]
+}, {
+    name: 'finance',
+    folderNames: [
+        'banking',
+        'finance',
+        'finances',
+        'income',
+        'money',
+        'payment',
+        'payments',
+        'revenue',
+        'tax',
+        'taxes',
     ]
 }, {
     name: 'firebase',
@@ -333,7 +449,9 @@ export const folderIcons: Icon[] = [
     name: 'github',
     folderNames: [
         '.github',
+        'github desktop',
         'github',
+        'githubdesktop',
     ]
 }, {
     name: 'global',
@@ -344,9 +462,17 @@ export const folderIcons: Icon[] = [
         'globals',
     ]
 }, {
+    name: 'gnupg',
+    folderNames: [
+        '.gnupg',
+        'gnupg',
+        'gpg',
+    ]
+}, {
     name: 'go',
     folderNames: [
         'go',
+        'go-build',
         'golang',
     ]
 }, {
@@ -354,6 +480,12 @@ export const folderIcons: Icon[] = [
     folderNames: [
         '.gradle',
         'gradle',
+    ]
+}, {
+    name: 'guard',
+    folderNames: [
+        'guard',
+        'guards',
     ]
 }, {
     name: 'helper',
@@ -385,10 +517,13 @@ export const folderIcons: Icon[] = [
     name: 'icon',
     folderNames: [
         'i',
+        'icns',
         'ico',
         'icon',
         'icons',
         'icos',
+        'svg',
+        'svgs',
     ]
 }, {
     name: 'image',
@@ -406,9 +541,13 @@ export const folderIcons: Icon[] = [
         'images',
         'img',
         'imgs',
+        'logo',
+        'logos',
         'm',
         'media',
         'my pictures',
+        'photo',
+        'photos',
         'pic',
         'pics',
         'picture',
@@ -426,16 +565,11 @@ export const folderIcons: Icon[] = [
         'import',
         'imported',
         'imports',
+        'in',
         'inc',
         'include',
         'includes',
         'partials',
-    ]
-}, {
-    name: 'in',
-    folderNames: [
-        'in',
-        'login',
     ]
 }, {
     name: 'initializer',
@@ -467,8 +601,26 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'json',
     folderNames: [
+        'appdata',
+        'application data',
         'data',
         'json',
+    ]
+}, {
+    name: 'julia',
+    folderNames: [
+        'jl',
+        'julia',
+    ]
+}, {
+    name: 'key',
+    folderNames: [
+        'jwt',
+        'key',
+        'keys',
+        'tkn',
+        'token',
+        'tokens',
     ]
 }, {
     name: 'lib',
@@ -479,11 +631,14 @@ export const folderIcons: Icon[] = [
         'libs',
     ]
 }, {
-    name: 'linux',
+    name: 'like',
     folderNames: [
-        'arch',
-        'linux',
-        'ubuntu',
+        'fav',
+        'favorite',
+        'favorites',
+        'favs',
+        'like',
+        'likes',
     ]
 }, {
     name: 'link',
@@ -494,11 +649,20 @@ export const folderIcons: Icon[] = [
         'urls',
     ]
 }, {
+    name: 'linux',
+    folderNames: [
+        'arch',
+        'linux',
+        'ubuntu',
+    ]
+}, {
     name: 'locale',
     folderNames: [
         'i18n',
         'internationalization',
+        'internationalizations',
         'intl',
+        'intls',
         'l10n',
         'lang',
         'langs',
@@ -507,6 +671,7 @@ export const folderIcons: Icon[] = [
         'locale',
         'locales',
         'localization',
+        'localizations',
         'translate',
         'translation',
         'translations',
@@ -514,8 +679,15 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'log',
     folderNames: [
+        '_logs',
         'log',
         'logs',
+    ]
+}, {
+    name: 'login',
+    folderNames: [
+        'login',
+        'signup',
     ]
 }, {
     name: 'lua',
@@ -540,7 +712,13 @@ export const folderIcons: Icon[] = [
         'maven',
     ]
 }, {
-    name: 'module',
+    name: 'middleware',
+    folderNames: [
+        'middleware',
+        'middlewares',
+    ]
+}, {
+    name: 'node',
     folderNames: [
         'node',
         'node_modules',
@@ -549,6 +727,35 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'php',
     folderNames: ['php']
+}, {
+    name: 'package',
+    folderNames: [
+        'package',
+        'packages',
+        'pkg',
+        'pkgs',
+    ]
+}, {
+    name: 'pipe',
+    folderNames: [
+        'pipe',
+        'pipes',
+    ]
+}, {
+    name: 'plugin',
+    folderNames: [
+        'addon',
+        'addons',
+        'builtin',
+        'extension',
+        'extensions',
+        'extensions-builtin',
+        'mod',
+        'module',
+        'modules',
+        'plugin',
+        'plugins',
+    ]
 }, {
     name: 'post',
     folderNames: [
@@ -592,6 +799,7 @@ export const folderIcons: Icon[] = [
     folderNames: [
         '.pytest_cache',
         '__pycache__',
+        'pip',
         'py',
         'python',
     ]
@@ -612,6 +820,15 @@ export const folderIcons: Icon[] = [
         'restored',
     ]
 }, {
+    name: 'review',
+    folderNames: [
+        'review',
+        'reviewed',
+        'reviews',
+        'revisal',
+        'revisals',
+    ]
+}, {
     name: 'role',
     folderNames: [
         'role',
@@ -629,6 +846,8 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'ruby',
     folderNames: [
+        'gem',
+        'gems',
         'rails',
         'ruby',
     ]
@@ -643,6 +862,7 @@ export const folderIcons: Icon[] = [
     name: 'rust',
     folderNames: [
         '.cargo',
+        '.rustup',
         'cargo',
         'rs',
         'rust',
@@ -668,6 +888,16 @@ export const folderIcons: Icon[] = [
         'servers',
     ]
 }, {
+    name: 'share',
+    folderNames: [
+        'common',
+        'commons',
+        'sendto',
+        'share',
+        'shared',
+        'sharing',
+    ]
+}, {
     name: 'src',
     folderNames: [
         'code',
@@ -676,6 +906,18 @@ export const folderIcons: Icon[] = [
         'sources',
         'src',
         'srcs',
+    ]
+}, {
+    name: 'stats',
+    folderNames: [
+        'diagram',
+        'diagrams',
+        'excel',
+        'numbers',
+        'stat',
+        'statistic',
+        'statistics',
+        'stats',
     ]
 }, {
     name: 'swift',
@@ -717,12 +959,14 @@ export const folderIcons: Icon[] = [
     name: 'temporary',
     folderNames: [
         '.cache',
+        '.pkg-cache',
         '.temp',
         '.tmp',
         'aitemp',
         'cache',
         'cached',
         'onedrivetemp',
+        'package cache',
         'systemtemp',
         'temp',
         'temporary',
@@ -758,6 +1002,12 @@ export const folderIcons: Icon[] = [
         'tools',
     ]
 }, {
+    name: 'trash',
+    folderNames: [
+        '.trash',
+        'trash',
+    ]
+}, {
     name: 'typescript',
     folderNames: [
         '@types',
@@ -765,6 +1015,12 @@ export const folderIcons: Icon[] = [
         'types',
         'typescript',
         'typings',
+    ]
+}, {
+    name: 'upload',
+    folderNames: [
+        'upload',
+        'uploads',
     ]
 }, {
     name: 'user',
@@ -806,6 +1062,16 @@ export const folderIcons: Icon[] = [
     folderNames: [
         '.vscode',
         '.vscode-test',
+        'code - insiders',
+        'vscode-extensions',
+    ]
+}, {
+    name: 'webhook',
+    folderNames: [
+        'hook',
+        'hooks',
+        'webhook',
+        'webhooks',
     ]
 }, {
     name: 'windows',
@@ -813,6 +1079,13 @@ export const folderIcons: Icon[] = [
         'system32',
         'win',
         'windows',
+    ]
+}, {
+    name: 'wrapper',
+    folderNames: [
+        'wrap',
+        'wrapper',
+        'wrappers',
     ]
 }, {
     name: 'zig',
