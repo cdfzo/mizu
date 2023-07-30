@@ -45,9 +45,13 @@ export const folderIcons: Icon[] = [
     name: 'api',
     folderNames: [
         'api',
+        'api_def',
         'apis',
+        'base_api',
+        'global-api',
         'openapi',
         'rest',
+        'rest-api',
         'restapi',
     ]
 }, {
@@ -132,11 +136,55 @@ export const folderIcons: Icon[] = [
         'performance',
     ]
 }, {
+    name: 'bloc',
+    folderNames: ['bloc']
+}, {
+    name: 'boot',
+    folderNames: ['boot']
+}, {
+    name: 'buildkite',
+    folderNames: [
+        '.buildkite',
+        'buildkite',
+    ]
+}, {
+    name: 'bun',
+    folderNames: [
+        '.bun',
+        'bun',
+        'bunjs',
+    ]
+}, {
     name: 'c',
     folderNames: ['c']
 }, {
+    name: 'calendar',
+    folderNames: [
+        'calendar',
+        'date',
+        'dates',
+    ]
+}, {
+    name: 'certificate',
+    folderNames: [
+        'ca-cert',
+        'ca-certificates',
+        'cert',
+        'certificate',
+        'certificates',
+        'certs',
+        'ssl',
+        'ssl-cert',
+        'tls',
+        'verified',
+        'verify',
+    ]
+}, {
     name: 'circleci',
-    folderNames: ['.circleci']
+    folderNames: [
+        '.circleci',
+        'circleci',
+    ]
 }, {
     name: 'client',
     folderNames: [
@@ -144,7 +192,12 @@ export const folderIcons: Icon[] = [
         'clients',
         'front-end',
         'frontend',
+        'mobile',
+        'mobiles',
+        'portability',
+        'portable',
         'pwa',
+        'webapp',
     ]
 }, {
     name: 'cloud',
@@ -157,11 +210,25 @@ export const folderIcons: Icon[] = [
         'onedrive',
     ]
 }, {
+    name: 'cmake',
+    folderNames: [
+        'cmake',
+        'cmaketools',
+    ]
+}, {
     name: 'component',
     folderNames: [
+        'bower_components',
         'component',
         'components',
+        'fragment',
+        'fragments',
+        'part',
+        'parts',
     ]
+}, {
+    name: 'composer',
+    folderNames: ['composer']
 }, {
     name: 'config',
     folderNames: [
@@ -197,8 +264,45 @@ export const folderIcons: Icon[] = [
         'handlers',
         'provider',
         'providers',
-        'service', // TODO: mv service
-        'services',
+    ]
+}, {
+    name: 'core',
+    folderNames: [
+        'core',
+        'cores',
+        'kernel',
+        'kernels',
+    ]
+}, {
+    name: 'cpp',
+    folderNames: [
+        'c++',
+        'cc',
+        'cp',
+        'cpp',
+        'cxx',
+    ]
+}, {
+    name: 'crash',
+    folderNames: [
+        'crash',
+        'crashes',
+        'crashing',
+    ]
+}, {
+    name: 'cron',
+    folderNames: [
+        'cron',
+        'cron.d',
+        'cron.daily',
+        'cron.hourly',
+        'cron.monthly',
+        'cron.weekly',
+        'cronjob',
+        'cronjobs',
+        'crons',
+        'time',
+        'timer',
     ]
 }, {
     name: 'css',
@@ -208,6 +312,12 @@ export const folderIcons: Icon[] = [
         'styles',
         'stylesheet',
         'stylesheets',
+    ]
+}, {
+    name: 'cypress',
+    folderNames: [
+        '.cypress',
+        'cypress',
     ]
 }, {
     name: 'dart',
@@ -259,11 +369,13 @@ export const folderIcons: Icon[] = [
         'desktop-build',
         'dist',
         'dists',
+        'ebin',
         'out',
         'output',
         'outputs',
         'release',
         'releases',
+        'sbin',
     ]
 }, {
     name: 'doc',
@@ -273,6 +385,8 @@ export const folderIcons: Icon[] = [
         'document',
         'documentation',
         'documents',
+        'markdown',
+        'md',
         'my documents',
     ]
 }, {
@@ -289,6 +403,9 @@ export const folderIcons: Icon[] = [
         'dls',
         'download',
         'downloads',
+        'install',
+        'installed',
+        'installs',
     ]
 }, {
     name: 'elixir',
@@ -315,6 +432,8 @@ export const folderIcons: Icon[] = [
     folderNames: [
         'err',
         'error',
+        'error-codes',
+        'errorcodes',
         'errors',
         'errs',
         'exception',
@@ -326,11 +445,16 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'etc',
     folderNames: [
+        'alt',
+        'alternative',
+        'alternatives',
+        'alts',
         'etc',
         'extra',
         'extras',
         'misc',
         'miscellaneous',
+        'more',
         'other',
         'others',
     ]
@@ -355,6 +479,21 @@ export const folderIcons: Icon[] = [
         'sample',
         'sample-data',
         'samples',
+    ]
+}, {
+    name: 'experimental',
+    folderNames: [
+        'experiment',
+        'experimental',
+        'experimentals',
+        'experimenting',
+    ]
+}, {
+    name: 'export',
+    folderNames: [
+        'export',
+        'exported',
+        'exports',
     ]
 }, {
     name: 'favicon',
@@ -431,6 +570,9 @@ export const folderIcons: Icon[] = [
     name: 'generator',
     folderNames: [
         'auto',
+        'autoload',
+        'autoloader',
+        'autostart',
         'cfn-gen',
         'gen',
         'generate',
@@ -440,10 +582,21 @@ export const folderIcons: Icon[] = [
         'gens',
     ]
 }, {
+    name: 'getx',
+    folderNames: ['getx']
+}, {
     name: 'git',
     folderNames: [
         '.git',
+        '.githooks',
+        '.submodules',
+        'commit',
+        'commits',
         'git',
+        'git-hooks',
+        'githooks',
+        'patches',
+        'submodules',
     ]
 }, {
     name: 'github',
@@ -451,13 +604,15 @@ export const folderIcons: Icon[] = [
         '.github',
         'github desktop',
         'github',
-        'githubdesktop',
+        'issue_template',
+        'workflows',
     ]
 }, {
     name: 'global',
     folderNames: [
         'g11n',
         'global',
+        'globalisation',
         'globalization',
         'globals',
     ]
@@ -476,27 +631,45 @@ export const folderIcons: Icon[] = [
         'golang',
     ]
 }, {
+    name: 'godot',
+    folderNames: [
+        '.godot',
+        '.godot-cpp',
+        'godot',
+        'godot-cpp',
+    ]
+}, {
     name: 'gradle',
     folderNames: [
         '.gradle',
         'gradle',
     ]
 }, {
+    name: 'graphql',
+    folderNames: [
+        'gql',
+        'graphql',
+    ]
+}, {
     name: 'guard',
     folderNames: [
         'guard',
         'guards',
+        'secure',
+        'security',
     ]
 }, {
     name: 'helper',
     folderNames: [
         'helper',
         'helpers',
+        'render-helpers',
     ]
 }, {
     name: 'home',
     folderNames: [
         'home',
+        'menu',
         'start menu',
         'start',
     ]
@@ -533,6 +706,9 @@ export const folderIcons: Icon[] = [
         '_img',
         '_imgs',
         'accountpictures',
+        'brand',
+        'branding',
+        'brands',
         'fig',
         'figs',
         'figure',
@@ -587,6 +763,12 @@ export const folderIcons: Icon[] = [
     name: 'ios',
     folderNames: ['ios']
 }, {
+    name: 'java',
+    folderNames: [
+        'java',
+        'jvm',
+    ]
+}, {
     name: 'javascript',
     folderNames: [
         'javascript',
@@ -623,12 +805,29 @@ export const folderIcons: Icon[] = [
         'tokens',
     ]
 }, {
+    name: 'kubernetes',
+    folderNames: [
+        '.k8s',
+        '.kubernetes',
+        'k8s',
+        'kubernetes',
+    ]
+}, {
+    name: 'layer',
+    folderNames: [
+        'layer',
+        'layers',
+    ]
+}, {
     name: 'lib',
     folderNames: [
         'lib',
+        'lib32',
+        'lib64',
         'libraries',
         'library',
         'libs',
+        'libx32',
     ]
 }, {
     name: 'like',
@@ -654,6 +853,8 @@ export const folderIcons: Icon[] = [
         'arch',
         'linux',
         'ubuntu',
+        'wsl',
+        'wslg',
     ]
 }, {
     name: 'locale',
@@ -680,7 +881,10 @@ export const folderIcons: Icon[] = [
     name: 'log',
     folderNames: [
         '_logs',
+        'changelog',
+        'changelogs',
         'log',
+        'logging',
         'logs',
     ]
 }, {
@@ -718,15 +922,41 @@ export const folderIcons: Icon[] = [
         'middlewares',
     ]
 }, {
+    name: 'mock',
+    folderNames: [
+        '__mocks__',
+        '_draft',
+        '_drafts',
+        'concept',
+        'concepts',
+        'draft',
+        'drafts',
+        'fixture',
+        'fixtures',
+        'mock',
+        'mocks',
+        'mockup',
+        'mockups',
+        'sketch',
+        'sketches',
+    ]
+}, {
+    name: 'nginx',
+    folderNames: ['nginx']
+}, {
     name: 'node',
     folderNames: [
         'node',
         'node_modules',
         'node_modules.nosync',
+        'nodejs',
     ]
 }, {
-    name: 'php',
-    folderNames: ['php']
+    name: 'nuxt',
+    folderNames: [
+        '.nuxt',
+        'nuxt',
+    ]
 }, {
     name: 'package',
     folderNames: [
@@ -735,6 +965,20 @@ export const folderIcons: Icon[] = [
         'pkg',
         'pkgs',
     ]
+}, {
+    name: 'password',
+    folderNames: [
+        'password',
+        'passwords',
+        'pwd',
+        'pwds',
+    ]
+}, {
+    name: 'perl',
+    folderNames: ['perl']
+}, {
+    name: 'php',
+    folderNames: ['php']
 }, {
     name: 'pipe',
     folderNames: [
@@ -774,11 +1018,16 @@ export const folderIcons: Icon[] = [
         'posts',
     ]
 }, {
+    name: 'prisma',
+    folderNames: ['prisma']
+}, {
     name: 'private',
     folderNames: [
         '.private',
         '_private',
         'hidden',
+        'lock',
+        'locked',
         'priv',
         'private',
     ]
@@ -802,6 +1051,16 @@ export const folderIcons: Icon[] = [
         'pip',
         'py',
         'python',
+    ]
+}, {
+    name: 'react',
+    folderNames: [
+        'jsx',
+        'react',
+        'react-dom',
+        'react-native',
+        'reactjs',
+        'vdom',
     ]
 }, {
     name: 'repository',
@@ -829,11 +1088,20 @@ export const folderIcons: Icon[] = [
         'revisals',
     ]
 }, {
+    name: 'riverpod',
+    folderNames: ['riverpod']
+}, {
     name: 'role',
     folderNames: [
         'role',
         'roles',
         'userroles',
+    ]
+}, {
+    name: 'root',
+    folderNames: [
+        'root',
+        'roots',
     ]
 }, {
     name: 'route',
@@ -854,9 +1122,14 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'runner',
     folderNames: [
+        'common_runtime',
+        'distributed_runtime',
+        'run',
         'runner',
         'runner.xcodeproj',
         'runner.xcworkspace',
+        'runtime',
+        'runtime_client',
     ]
 }, {
     name: 'rust',
@@ -868,6 +1141,15 @@ export const folderIcons: Icon[] = [
         'rust',
     ]
 }, {
+    name: 'save',
+    folderNames: [
+        'bookmark',
+        'bookmarks',
+        'save',
+        'saved',
+        'saving',
+    ]
+}, {
     name: 'scala',
     folderNames: [
         'sc',
@@ -876,22 +1158,47 @@ export const folderIcons: Icon[] = [
 }, {
     name: 'script',
     folderNames: [
+        'build_scripts',
         'script',
         'scripts',
     ]
 }, {
+    name: 'search',
+    folderNames: [
+        'lost+found',
+        'search',
+        'searches',
+    ]
+}, {
     name: 'server',
     folderNames: [
+        'api-server',
         'back-end',
         'backend',
         'server',
         'servers',
     ]
 }, {
+    name: 'service',
+    folderNames: [
+        'service',
+        'services',
+    ]
+}, {
+    name: 'shader',
+    folderNames: [
+        'glsl',
+        'hlsl',
+        'shader',
+        'shaders',
+    ]
+}, {
     name: 'share',
     folderNames: [
         'common',
         'commons',
+        'redirect',
+        'redirects',
         'sendto',
         'share',
         'shared',
@@ -978,12 +1285,39 @@ export const folderIcons: Icon[] = [
         '.test',
         '.testing',
         '.tests',
+        '__test__',
+        '__tests__',
+        '_test',
+        '_tests',
+        'boot-tests',
+        'boot_tests',
+        'coverage',
+        'dts-test',
+        'e2e',
+        'e2e-test',
+        'e2e-tests',
+        'integration-test',
+        'integration-testing',
+        'integration-tests',
+        'integration_test',
+        'integration_testing',
+        'integration_tests',
+        'it',
+        'kernel-tests',
+        'kernel_tests',
+        'memory-tests',
+        'memory_tests',
         'runnertests',
         'spec',
         'specs',
         'test',
         'testing',
         'tests',
+        'unit',
+        'unit-test',
+        'unit-tests',
+        'unit_test',
+        'unit_tests',
     ]
 }, {
     name: 'texture',
@@ -1005,7 +1339,25 @@ export const folderIcons: Icon[] = [
     name: 'trash',
     folderNames: [
         '.trash',
+        'delete',
+        'dev/null',
+        'remove',
+        'removed',
         'trash',
+    ]
+}, {
+    name: 'tutorial',
+    folderNames: [
+        'howto',
+        'howtos',
+        'intro',
+        'introduction',
+        'introductions',
+        'intros',
+        'learn',
+        'learning',
+        'tutorial',
+        'tutorials',
     ]
 }, {
     name: 'typescript',
@@ -1033,14 +1385,32 @@ export const folderIcons: Icon[] = [
         'usr',
     ]
 }, {
+    name: 'util',
+    folderNames: [
+        'test-utils',
+        'util',
+        'utilities',
+        'utility',
+        'utils',
+    ]
+}, {
     name: 'vala',
     folderNames: ['vala']
 }, {
     name: 'vendor',
     folderNames: [
         'third-party',
+        'third_party',
         'vendor',
         'vendors',
+    ]
+}, {
+    name: 'vercel',
+    folderNames: [
+        '.now',
+        '.vercel',
+        'now',
+        'vercel',
     ]
 }, {
     name: 'video',
@@ -1061,9 +1431,18 @@ export const folderIcons: Icon[] = [
     name: 'vscode',
     folderNames: [
         '.vscode',
+        '.vscode-server',
         '.vscode-test',
         'code - insiders',
         'vscode-extensions',
+    ]
+}, {
+    name: 'vue',
+    folderNames: [
+        '.vuepress',
+        'vue',
+        'vue-compat',
+        'vuejs',
     ]
 }, {
     name: 'webhook',
@@ -1074,11 +1453,27 @@ export const folderIcons: Icon[] = [
         'webhooks',
     ]
 }, {
+    name: 'widget',
+    folderNames: [
+        'widget',
+        'widgets',
+    ]
+}, {
     name: 'windows',
     folderNames: [
         'system32',
         'win',
         'windows',
+    ]
+}, {
+    name: 'work',
+    folderNames: [
+        'biz',
+        'business',
+        'work',
+        'worker',
+        'workers',
+        'working',
     ]
 }, {
     name: 'wrapper',
