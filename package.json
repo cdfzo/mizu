@@ -2,7 +2,7 @@
     "name": "mizu",
     "displayName": "Mizu Icons",
     "description": "Mizu Icons for Visual Studio Code",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "license": "MIT",
     "publisher": "cdfzo",
     "homepage": "https://github.com/cdfzo/mizu/blob/main/README.md",
@@ -17,7 +17,8 @@
     "keywords": [
         "material",
         "icons",
-        "dark"
+        "dark",
+        "rails"
     ],
     "engines": {
         "vscode": "^1.60.0"

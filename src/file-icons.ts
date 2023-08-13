@@ -76,6 +76,17 @@ const fileIcons: Icon[] = [
     ],
     fileNames: ['androidmanifest.xml']
 }, {
+    name: 'angular',
+    fileNames: [
+        '.angular-cli.json',
+        'angular-cli.json',
+        'angular.json',
+        'ng-package.json',
+    ]
+}, {
+    name: 'antlr',
+    fileExtensions: ['g4']
+}, {
     name: 'apache',
     fileNames: ['.htaccess']
 }, {
@@ -193,6 +204,9 @@ const fileIcons: Icon[] = [
     name: 'audition',
     fileExtensions: ['sesx']
 }, {
+    name: 'aurelia',
+    fileNames: ['aurelia.json']
+}, {
     name: 'autohotkey',
     fileExtensions: ['ahk']
 }, {
@@ -251,6 +265,9 @@ const fileIcons: Icon[] = [
         'bitbucket-pipelines.yml',
     ]
 }, {
+    name: 'bithound',
+    fileNames: ['.bithoundrc']
+}, {
     name: 'brainfuck',
     fileExtensions: [
         'b',
@@ -303,6 +320,12 @@ const fileIcons: Icon[] = [
         'version.txt',
     ]
 }, {
+    name: 'check',
+    fileNames: [
+        'check',
+        'fastcheck',
+    ]
+}, {
     name: 'clean',
     fileExtensions: [
         'abc',
@@ -318,11 +341,17 @@ const fileIcons: Icon[] = [
         'edn',
     ]
 }, {
+    name: 'cloudfoundry',
+    fileNames: ['.cfignore']
+}, {
     name: 'cobol',
     fileExtensions: [
         'cbl',
         'cob',
     ]
+}, {
+    name: 'codeclimate',
+    fileNames: ['.codeclimate.yml']
 }, {
     name: 'coldfusion',
     fileExtensions: [
@@ -363,9 +392,11 @@ const fileIcons: Icon[] = [
     fileNames: [
         '.env.defaults',
         '.env.dev',
+        '.env.development',
         '.env.dist',
         '.env.example',
         '.env.prod',
+        '.env.production',
         '.env.sample',
         '.env.template',
         '.env.test',
@@ -455,6 +486,7 @@ const fileIcons: Icon[] = [
     ]
 }, {
     name: 'docker',
+    fileExtensions: ['dockerfile'],
     fileNames: [
         'compose.yaml',
         'compose.yml',
@@ -495,7 +527,8 @@ const fileIcons: Icon[] = [
         'exs',
         'heex',
         'leex',
-    ]
+    ],
+    fileNames: ['.elixir']
 }, {
     name: 'elm',
     fileExtensions: ['elm']
@@ -565,6 +598,12 @@ const fileIcons: Icon[] = [
     fileExtensions: [
         'exe',
         'msi',
+    ]
+}, {
+    name: 'fastlane',
+    fileNames: [
+        'appfile',
+        'fastfile',
     ]
 }, {
     name: 'favicon',
@@ -813,7 +852,11 @@ const fileIcons: Icon[] = [
     fileNames: [
         'heroku.yml',
         'procfile',
+        'procfile.dev',
     ]
+}, {
+    name: 'heroku-ignore',
+    fileNames: ['.slugignore']
 }, {
     name: 'hpp',
     fileExtensions: [
@@ -955,18 +998,18 @@ const fileIcons: Icon[] = [
     name: 'iso',
     fileExtensions: ['iso']
 }, {
-    name: 'jar',
-    fileExtensions: [
-        'class',
-        'jar',
-    ]
-}, {
     name: 'java',
     fileExtensions: [
         'java',
         'jmod',
         'jsp',
     ]
+}, {
+    name: 'java-class',
+    fileExtensions: ['class']
+}, {
+    name: 'java-jar',
+    fileExtensions: ['jar']
 }, {
     name: 'javascript',
     fileExtensions: [
@@ -1003,11 +1046,17 @@ const fileIcons: Icon[] = [
         'mjs.map',
     ]
 }, {
+    name: 'javascript-pipe',
+    fileExtensions: ['pipe.js']
+}, {
     name: 'javascript-server',
     fileExtensions: ['server.js']
 }, {
     name: 'javascript-store',
     fileExtensions: ['store.js']
+}, {
+    name: 'javascript-service',
+    fileExtensions: ['service.js']
 }, {
     name: 'javascript-test',
     fileExtensions: [
@@ -1022,6 +1071,14 @@ const fileIcons: Icon[] = [
         'test.cjs',
         'test.js',
         'test.mjs',
+    ]
+}, {
+    name: 'javascript-worker',
+    fileNames: [
+        'service-worker.js',
+        'serviceworker.js',
+        'sw.js',
+        'worker.js',
     ]
 }, {
     name: 'jenkins',
@@ -1075,6 +1132,9 @@ const fileIcons: Icon[] = [
         'pub',
     ],
     fileNames: ['.htpasswd']
+}, {
+    name: 'ki',
+    fileExtensions: ['ki']
 }, {
     name: 'kotlin',
     fileExtensions: [
@@ -1171,6 +1231,9 @@ const fileIcons: Icon[] = [
     name: 'markdown-mdx',
     fileExtensions: ['mdx']
 }, {
+    name: 'markdownlint',
+    fileNames: ['.mdlrc']
+}, {
     name: 'marko',
     fileExtensions: ['marko']
 }, {
@@ -1229,12 +1292,6 @@ const fileIcons: Icon[] = [
     name: 'minecraft-ignore',
     fileNames: ['.mcignore']
 }, {
-    name: 'mizu',
-    fileExtensions: [
-        'mizu',
-        'mz',
-    ]
-}, {
     name: 'mocha',
     fileNames: [
         '.mocharc.js',
@@ -1243,6 +1300,13 @@ const fileIcons: Icon[] = [
         '.mocharc.yaml',
         '.mocharc.yml',
         'mocha.opts',
+    ]
+}, {
+    name: 'modernizr',
+    fileNames: [
+        '.modernizrrc',
+        '.modernizrrc.js',
+        '.modernizrrc.json',
     ]
 }, {
     name: 'mojo',
@@ -1283,6 +1347,9 @@ const fileIcons: Icon[] = [
         'netlify.yaml',
         'netlify.yml',
     ]
+}, {
+    name: 'newrelic',
+    fileNames: ['newrelic.yml']
 }, {
     name: 'next',
     fileNames: [
@@ -1326,6 +1393,12 @@ const fileIcons: Icon[] = [
     name: 'npm-ignore',
     fileNames: ['.npmignore']
 }, {
+    name: 'nrwl',
+    fileNames: ['nx.json']
+}, {
+    name: 'nrwl-ignore',
+    fileNames: ['.nxignore']
+}, {
     name: 'numbers',
     fileExtensions: ['numbers']
 }, {
@@ -1368,6 +1441,9 @@ const fileIcons: Icon[] = [
     name: 'pdf',
     fileExtensions: ['pdf']
 }, {
+    name: 'percy',
+    fileNames: ['.percy.yml']
+}, {
     name: 'perl',
     fileExtensions: [
         'cgi',
@@ -1403,6 +1479,12 @@ const fileIcons: Icon[] = [
         'pu',
         'puml',
     ]
+}, {
+    name: 'plasmic',
+    fileNames: ['plasmic.json']
+}, {
+    name: 'plasmic-lock',
+    fileNames: ['plasmic.lock']
 }, {
     name: 'playwright',
     fileNames: [
@@ -1499,6 +1581,15 @@ const fileIcons: Icon[] = [
     fileExtensions: [
         'p',
         'pro',
+    ]
+}, {
+    name: 'protractor',
+    fileNames: [
+        'protractor.conf.coffee',
+        'protractor.conf.js',
+        'protractor.conf.ts',
+        'protractor.config.js',
+        'protractor.config.ts',
     ]
 }, {
     name: 'pug',
@@ -1630,7 +1721,10 @@ const fileIcons: Icon[] = [
     fileNames: ['robots.txt']
 }, {
     name: 'rspec',
-    fileNames: ['.rspec']
+    fileNames: [
+        '.rspec',
+        'rspec',
+    ]
 }, {
     name: 'rubocop',
     fileNames: [
@@ -1640,14 +1734,18 @@ const fileIcons: Icon[] = [
 }, {
     name: 'ruby',
     fileExtensions: [
+        'gem',
+        'gemspec',
         'rake',
         'rb',
     ],
     fileNames: [
-        '.ruby-version',
         'rake',
         'rakefile',
     ]
+}, {
+    name: 'ruby-application',
+    fileNames: ['application.rb']
 }, {
     name: 'ruby-assets',
     fileNames: ['assets.rb']
@@ -1656,10 +1754,18 @@ const fileIcons: Icon[] = [
     fileNames: ['config.ru']
 }, {
     name: 'ruby-environment',
-    fileNames: ['environment.rb']
+    fileNames: [
+        'development.rb',
+        'environment.rb',
+        'environments/test.rb',
+        'production.rb',
+    ]
 }, {
     name: 'ruby-importmap',
     fileNames: ['importmap.rb']
+}, {
+    name: 'ruby-puma',
+    fileNames: ['puma.rb']
 }, {
     name: 'ruby-routes',
     fileNames: ['routes.rb']
@@ -1670,11 +1776,20 @@ const fileIcons: Icon[] = [
         'seeds.rb',
     ]
 }, {
+    name: 'ruby-version',
+    fileNames: ['.ruby-version']
+}, {
+    name: 'run',
+    fileNames: ['run']
+}, {
     name: 'rust',
     fileExtensions: [
         'rlib',
         'rs',
     ]
+}, {
+    name: 'rust-main',
+    fileNames: ['main.rs']
 }, {
     name: 'sass',
     fileExtensions: [
@@ -1707,6 +1822,12 @@ const fileIcons: Icon[] = [
     name: 'sentry',
     fileNames: ['.sentryclirc']
 }, {
+    name: 'server',
+    fileExtensions: ['pid']
+}, {
+    name: 'setup',
+    fileNames: ['setup']
+}, {
     name: 'shell',
     fileExtensions: [
         'awk',
@@ -1716,6 +1837,9 @@ const fileIcons: Icon[] = [
 }, {
     name: 'sketch',
     fileExtensions: ['sketch']
+}, {
+    name: 'slim',
+    fileExtensions: ['slim']
 }, {
     name: 'smallbasic',
     fileExtensions: [
@@ -1928,8 +2052,14 @@ const fileIcons: Icon[] = [
         'ts.map',
     ]
 }, {
+    name: 'typescript-pipe',
+    fileExtensions: ['pipe.ts']
+}, {
     name: 'typescript-server',
     fileExtensions: ['server.ts']
+}, {
+    name: 'typescript-service',
+    fileExtensions: ['service.ts']
 }, {
     name: 'typescript-store',
     fileExtensions: ['store.ts']
@@ -1949,6 +2079,14 @@ const fileIcons: Icon[] = [
         'test.mts',
         'test.ts',
         'ts.snap',
+    ]
+}, {
+    name: 'typescript-worker',
+    fileNames: [
+        'service-worker.ts',
+        'serviceworker.ts',
+        'sw.ts',
+        'worker.ts',
     ]
 }, {
     name: 'uno',
@@ -1998,6 +2136,9 @@ const fileIcons: Icon[] = [
         '.nowignore',
         '.vercelignore',
     ]
+}, {
+    name: 'verdaccio',
+    fileNames: ['verdaccio.yml']
 }, {
     name: 'video',
     fileExtensions: [
@@ -2113,6 +2254,7 @@ const fileIcons: Icon[] = [
     ]
 }, {
     name: 'vscode',
+    fileExtensions: ['code-profile'],
     fileNames: [
         '.vscode/launch.json',
         '.vscode/settings.json',
@@ -2213,6 +2355,10 @@ const fileIcons: Icon[] = [
         'wbk',
     ]
 }, {
+    name: 'workspace',
+    fileExtensions: ['workspace'],
+    fileNames: ['workspace']
+}, {
     name: 'xd',
     fileExtensions: ['xd']
 }, {
@@ -2220,13 +2366,17 @@ const fileIcons: Icon[] = [
     fileExtensions: [
         'classpath',
         'dtd',
+        'entitlements',
         'iml',
         'jrxml',
         'manifest',
         'plist',
         'project',
         'resx',
-        'tmLanguage',
+        'tmlanguage',
+        'xcscheme',
+        'xcsettings', // TODO: mv xcode
+        'xcworkspacedata',
         'xml',
         'xml.dist',
         'xml.dist.sample',
@@ -2252,9 +2402,13 @@ const fileIcons: Icon[] = [
         '.yarnrc',
         '.yarnrc.yaml',
         '.yarnrc.yml',
+        'yarn',
         'yarn-error.log',
         'yarn.lock',
     ]
+}, {
+    name: 'yarn-lock',
+    fileNames: ['yarn.lock']
 }, {
     name: 'zenodo',
     fileNames: ['.zenodo.json']
