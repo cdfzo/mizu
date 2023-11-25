@@ -539,6 +539,7 @@ export const folderIcons: Icon[] = [
     folderNames: [
         'feedback',
         'feedbacks',
+        'support',
     ]
 }, {
     name: 'file',
@@ -947,7 +948,11 @@ export const folderIcons: Icon[] = [
     name: 'login',
     folderNames: [
         'login',
+        'logins',
+        'registration',
+        'registrations',
         'signup',
+        'signups',
     ]
 }, {
     name: 'lua',
@@ -958,6 +963,7 @@ export const folderIcons: Icon[] = [
         'email',
         'emails',
         'mail',
+        'mailer',
         'mailers',
         'mailoutput',
         'mails',
@@ -1248,7 +1254,7 @@ export const folderIcons: Icon[] = [
     ]
 }, {
     name: 'semaphore',
-    folderNames: ['semaphore']
+    folderNames: ['.semaphore']
 }, {
     name: 'server',
     folderNames: [

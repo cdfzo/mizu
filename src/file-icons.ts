@@ -287,6 +287,9 @@ const fileIcons: Icon[] = [
     ]
 }, {
     name: 'bun',
+    fileNames: ['bunfig.toml']
+}, {
+    name: 'bun-lock',
     fileNames: ['bun.lockb']
 }, {
     name: 'c',
@@ -324,6 +327,12 @@ const fileIcons: Icon[] = [
     fileNames: [
         'check',
         'fastcheck',
+    ]
+}, {
+    name: 'ci-yml',
+    fileNames: [
+        'ci.yaml',
+        'ci.yml',
     ]
 }, {
     name: 'clean',
@@ -678,6 +687,12 @@ const fileIcons: Icon[] = [
         'fsx',
     ]
 }, {
+    name: 'funding-yml',
+    fileNames: [
+        'funding.yaml',
+        'funding.yml',
+    ]
+}, {
     name: 'gatsby',
     fileNames: [
         'gatsby-browser.js',
@@ -853,6 +868,7 @@ const fileIcons: Icon[] = [
         'heroku.yml',
         'procfile',
         'procfile.dev',
+        'procfile.prod',
     ]
 }, {
     name: 'heroku-ignore',
@@ -1592,8 +1608,17 @@ const fileIcons: Icon[] = [
         'protractor.config.ts',
     ]
 }, {
+    name: 'publish-yml',
+    fileNames: [
+        'publish.yaml',
+        'publish.yml',
+    ]
+}, {
     name: 'pug',
-    fileExtensions: ['pug'],
+    fileExtensions: [
+        'jade',
+        'pug',
+    ],
     fileNames: [
         '.pug-lintrc',
         '.pug-lintrc.js',
@@ -1945,6 +1970,9 @@ const fileIcons: Icon[] = [
         'svgz',
     ]
 }, {
+    name: 'swc',
+    fileNames: ['.swcrc']
+}, {
     name: 'swift',
     fileExtensions: ['swift']
 }, {
@@ -1992,10 +2020,11 @@ const fileIcons: Icon[] = [
         'todo.md',
         'todo.rst',
         'todo.txt',
+        'todos',
         'todos.md',
         'todos.rst',
         'todos.txt',
-]
+    ]
 }, {
     name: 'toml',
     fileExtensions: ['toml']
@@ -2021,7 +2050,12 @@ const fileIcons: Icon[] = [
     fileExtensions: ['component.ts']
 }, {
     name: 'typescript-config',
-    fileNames: ['tsconfig.json']
+    fileNames: [
+        'tsconfig.cjs.json',
+        'tsconfig.esm.json',
+        'tsconfig.json',
+        'tsconfig.test.json',
+    ]
 }, {
     name: 'typescript-controller',
     fileExtensions: ['controller.ts']
@@ -2386,15 +2420,6 @@ const fileIcons: Icon[] = [
         'xslt',
     ]
 }, {
-    name: 'yaml',
-    fileExtensions: [
-        'yaml',
-        'yaml-tmlanguage',
-        'yaml.dist',
-        'yml',
-        'yml.dist',
-    ]
-}, {
     name: 'yarn',
     fileNames: [
         '.yarn-integrity',
@@ -2410,6 +2435,15 @@ const fileIcons: Icon[] = [
     name: 'yarn-lock',
     fileNames: ['yarn.lock']
 }, {
+    name: 'yml',
+    fileExtensions: [
+        'yaml',
+        'yaml-tmlanguage',
+        'yaml.dist',
+        'yml',
+        'yml.dist',
+    ]
+}, {
     name: 'zenodo',
     fileNames: ['.zenodo.json']
 }, {
@@ -2417,6 +2451,7 @@ const fileIcons: Icon[] = [
     fileExtensions: [
         'zig',
         'zir',
+        'zon',
     ]
 }, {
     name: 'zip',
