@@ -1,0 +1,6 @@
+telemetry = false
+
+[test]
+coverage = true
+# coverageThreshold = 1
+root = 'tests'

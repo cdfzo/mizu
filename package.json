@@ -18,6 +18,7 @@
   "scripts": {
     "dev": "bun run src/index.ts",
     "lint": "bunx --bun eslint .",
+    "test": "bun test",
     "build": "bunx --bun vsce package",
     "demo": "bun run src/demo.ts"
   },
