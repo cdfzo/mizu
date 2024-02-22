@@ -1,8 +1,9 @@
-import { exec } from 'child_process'
-import { theme, cmd, overview } from './theme'
+import { Generator } from './utils/generator'
+import { icons } from './icons'
 
-exec(cmd +
-    `echo '${JSON.stringify(theme)}' > dist/mizu-icon-theme.json &&
-    echo '${overview}' > test/icons.md`, (err => {
-    console.log(err)
-}))
+const gen = new Generator()
+
+gen.setTheme(icons)
+gen.setDefault()
+
+Bun.write('icon-theme.json', JSON.stringify(gen.theme))
