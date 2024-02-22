@@ -1,11 +1,10 @@
 {
-    "compilerOptions": {
-        "lib": ["ESNext"],
-        "module": "esnext",
-        "target": "esnext",
-        "moduleResolution": "node",
-        "types": ["bun-types"],
-        "rootDir": "src",
-        "strict": true
-    }
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+    "strict": true
+  }
 }

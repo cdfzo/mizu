@@ -1,5 +1,5 @@
-/node_modules*
-/dist/
-/test/
+examples
+node_modules
 
-/bun.lockb
+*.vsix
+icon-theme.json
