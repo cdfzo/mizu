@@ -1,0 +1,52 @@
+name: ci
+
+on: push
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    env:
+      NODE_ENV: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: npm-${{ hashFiles('bun.lockb') }}
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun i
+
+      - name: Run linters
+        run: bun run lint
+
+      - name: Run tests
+        run: bun run test
+
+      - name: Check for version change
+        run: |
+          commitMsg=$(git log -n 1 --format=%B)
+          [[ $commitMsg =~ ^Release\ v[0-9] ]] || exit 0
+          version=$(jq -r '.version' package.json)
+          [[ $commitMsg == v$version ]] || exit 0
+          echo "version=$version" >> $GITHUB_ENV
+
+      - name: Build dist
+        run: bun run build
+        if: ${{ env.version }}
+
+      - name: Publish to VS Marketplace
+        run: cd dist && bunx vsce publish
+        if: ${{ env.version }}
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
