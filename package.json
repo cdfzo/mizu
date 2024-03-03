@@ -11,16 +11,15 @@
     "Themes"
   ],
   "keywords": [
-    "material",
     "icons",
+    "material",
+    "theme",
     "dark"
   ],
   "scripts": {
-    "dev": "bun run src/index.ts",
     "lint": "bunx --bun eslint .",
     "test": "bun test",
-    "build": "bunx --bun vsce package",
-    "demo": "bun run src/demo.ts"
+    "build": "bun run src/build.ts"
   },
   "repository": {
     "type": "git",
