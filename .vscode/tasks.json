@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch",
+      "type": "shell",
+      "command": "tsc src/extension.ts -w --outDir dist",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true
+    }
+  ]
+}
