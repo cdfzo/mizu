@@ -27,9 +27,9 @@ export class Generator {
   iconTheme = theme
 
   constructor() {
-    this.iconTheme.file = this.definition('file')
-    this.iconTheme.folder = this.definition('folder')
-    this.iconTheme.folderExpanded = this.definition('folder-open')
+    for (const def of ['file', 'folder', 'folder-x']) {
+      this.define(def)
+    }
 
     this.colors({
       silver: '#e0e0e0',
@@ -111,7 +111,7 @@ export class Generator {
         // Folders
         if (name.startsWith('/')) {
           this.icon('folderNames', '-folder')
-          this.icon('folderNamesExpanded', '-folder-open')
+          this.icon('folderNamesExpanded', '-folder-x')
         }
         // Files
         else {

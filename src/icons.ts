@@ -419,7 +419,7 @@ export const icons: Icons = {
   crystal: ['*.cr'],
   csharp: ['*.cs', '*.csx'],
   css: ['/css', '/style', '/styles', '/stylesheet', '/stylesheets', '*.css'],
-  'css-map': ['*css.map'],
+  'css-map': ['*.css.map'],
   'css-rtl': ['*.rtl.css', '*.rtl.min.css'],
   cuda: ['*.cu', '*.cuh'],
   cursor: ['*.cur'],
@@ -1714,7 +1714,7 @@ export const icons: Icons = {
   tool: ['/tool', '/toolbox', '/toolboxes', '/toolkit', '/toolkits', '/tools'],
   torrent: ['*.torrent'],
   trash: [
-    '/$recycle.bin',
+    // '/$recycle.bin',
     '/.trash',
     '/delete',
     '/dev/null',

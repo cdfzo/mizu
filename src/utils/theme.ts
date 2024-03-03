@@ -20,9 +20,9 @@ type Theme = {
 }
 
 export const theme: Theme = {
-  file: '2',
-  folder: '0',
-  folderExpanded: '1',
+  file: '0',
+  folder: '1',
+  folderExpanded: '2',
   iconDefinitions: {},
   folderNames: {},
   folderNamesExpanded: {},
