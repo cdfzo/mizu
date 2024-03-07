@@ -18,6 +18,7 @@
     "dark"
   ],
   "scripts": {
+    "dev": "bun run build:ext --watch",
     "lint": "bunx --bun eslint .",
     "test": "bun test",
     "build": "bun run src/build.ts",
@@ -37,6 +38,9 @@
     "color": "#000000",
     "theme": "dark"
   },
+  "activationEvents": [
+    "onCommand:mizu.update"
+  ],
   "contributes": {
     "iconThemes": [
       {

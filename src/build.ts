@@ -1,33 +1,27 @@
 import { execSync as $ } from 'child_process'
-import { Generator } from './utils/generator'
 import { icons } from './icons'
-import pkg from '../package.json'
+import { iconTheme } from './utils/icons'
 
-$('rm -rf dist && mkdir dist && mkdir dist/media')
-$('cp {LICENSE,CHANGELOG.md} dist')
-$('cp media/*.png dist/media')
+$('rm -rf dist && mkdir dist')
+$('cp {package.json,LICENSE,*.md,src/theme/icon-theme.json} dist')
+$('cp -r media dist')
+$('mv dist/media/icons dist/i')
 
-const theme = new Generator().theme(icons).iconTheme
+const theme = await iconTheme(icons, 'dist')
 
-const map = (prop: keyof typeof theme, join = '" "') =>
-  Object.keys(theme[prop])
-    .filter((name) => !name.includes('/'))
-    .join(join)
+$('rm dist/icon-theme.json.bk')
+$(`bun run build:ext`)
+$('cd dist && bunx --bun vsce package')
 
 // Generate examples
-if (Bun.env.NODE_ENV !== 'production') {
-  pkg.name += '-dev'
-  pkg.displayName += ' (dev)'
-  pkg.contributes.iconThemes[0].id += '-dev'
-  pkg.contributes.iconThemes[0].label += ' (dev)'
+const map = (prop: keyof typeof theme, join = '') =>
+  Object.keys(theme[prop])
+    .filter((name) => !name.includes('/'))
+    .join(`" ${join}"`)
 
+if (Bun.env.NODE_ENV !== 'production') {
   $('rm -rf examples && mkdir examples')
   $(`cd examples && mkdir "${map('folderNames')}"`)
   $(`cd examples && touch "${map('fileNames')}"`)
-  $(`cd examples && touch ".${map('fileExtensions', '" *."')}"`)
+  $(`cd examples && touch ".${map('fileExtensions', '*.')}"`)
 }
-
-Bun.write('dist/package.json', JSON.stringify(pkg, null, 2))
-Bun.write('dist/icon-theme.json', JSON.stringify(theme))
-
-$('cd dist && bunx --bun vsce package')

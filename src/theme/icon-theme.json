@@ -2,7 +2,11 @@
   "file": "0",
   "folder": "1",
   "folderExpanded": "2",
-  "iconDefinitions": {},
+  "iconDefinitions": {
+    "0": { "iconPath": "i/file.svg" },
+    "1": { "iconPath": "i/folder.svg" },
+    "2": { "iconPath": "i/folder-x.svg" }
+  },
   "folderNames": {},
   "folderNamesExpanded": {},
   "fileExtensions": {},
