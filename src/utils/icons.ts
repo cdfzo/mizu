@@ -1,3 +1,5 @@
+import { copyFile, exists, readFile, writeFile } from 'fs/promises'
+
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>
 
@@ -23,16 +25,16 @@ const prefixes: Record<string, string[][]> = {
 
 export const iconTheme = async (icons: Icons, dir = '.') => {
   const filePath = `${dir}/icon-theme.json`
-  // TODO: node
-  let file = Bun.file(`${filePath}.bk`)
 
   // Make backup file
-  if (file.size === 0) {
-    file = Bun.file(filePath)
-    Bun.write(`${filePath}.bk`, file)
+  if (!(await exists(`${filePath}.bk`))) {
+    await copyFile(filePath, `${filePath}.bk`)
   }
 
-  const theme: Theme = await file.json()
+  const theme: Theme = JSON.parse(await readFile(`${filePath}.bk`, 'utf8'))
+  const definitions = Object.values(theme.iconDefinitions).map(
+    (v) => v.iconPath
+  )
 
   for (const [icon, rawNodes] of Object.entries(icons)) {
     const name = icon.replace(/[A-Z]/g, (v) => `-${v.toLowerCase()}`)
@@ -41,35 +43,34 @@ export const iconTheme = async (icons: Icons, dir = '.') => {
       const [, prefix = '', nodes] = raw.match(/^(\/|\*\.)?(.+)/) as string[]
       const [types, extensions] = prefixes[prefix] as string[][]
 
-      types.forEach((type, i) => {
+      for (const i in types) {
+        const type = types[i] as keyof typeof theme
         const nodeList = theme[type as keyof typeof theme] as StrObj
         const iconPath = `i/${name + (extensions?.[i] ?? '')}.svg`
-        // TODO: performance
-        const entries = Object.entries(theme.iconDefinitions)
-        const index = entries.find(([, def]) => def.iconPath === iconPath)?.[0]
+        const index = definitions.indexOf(iconPath)
+        const value = (index === -1 ? definitions.length : index).toString()
 
-        if (!index) {
-          if (Bun.file(`${dir}/${iconPath}`).size === 0) {
-            throw Error(`Icon "${icon}" doesn't exist`)
+        if (index === -1) {
+          if (!(await exists(`${dir}/${iconPath}`))) {
+            throw `Icon "${icon}" doesn't exist`
           }
 
-          theme.iconDefinitions[entries.length] = { iconPath }
+          theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
         }
 
         // TODO: alternations
         for (const node of [nodes]) {
           if (node in nodeList) {
-            type = type.slice(0, -1)
-            throw Error(`Remove ${type} "${node}" from icon "${icon}"`)
+            throw `Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`
           }
 
-          nodeList[node] = index ?? entries.length.toString()
+          nodeList[node] = value
         }
-      })
+      }
     }
   }
 
-  Bun.write(filePath, JSON.stringify(theme))
+  await writeFile(filePath, JSON.stringify(theme))
   return theme
 }
 
