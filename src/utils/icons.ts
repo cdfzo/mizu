@@ -23,15 +23,16 @@ const prefixes: Record<string, string[][]> = {
   '': [['fileNames']],
 }
 
-export const iconTheme = async (icons: Icons, dir = '.') => {
-  const filePath = `${dir}/icon-theme.json`
+export const iconTheme = async (icons: Icons) => {
+  const file = 'icon-theme.json'
+  const fileBackup = `${file}.bk`
 
   // Make backup file
-  if (!(await exists(`${filePath}.bk`))) {
-    await copyFile(filePath, `${filePath}.bk`)
+  if (!(await exists(fileBackup))) {
+    await copyFile(file, fileBackup)
   }
 
-  const theme: Theme = JSON.parse(await readFile(`${filePath}.bk`, 'utf8'))
+  const theme: Theme = JSON.parse(await readFile(fileBackup, 'utf8'))
   const definitions = Object.values(theme.iconDefinitions).map(
     (v) => v.iconPath
   )
@@ -51,7 +52,7 @@ export const iconTheme = async (icons: Icons, dir = '.') => {
         const value = (index === -1 ? definitions.length : index).toString()
 
         if (index === -1) {
-          if (!(await exists(`${dir}/${iconPath}`))) {
+          if (!(await exists(iconPath))) {
             throw `Icon "${icon}" doesn't exist`
           }
 
@@ -70,8 +71,8 @@ export const iconTheme = async (icons: Icons, dir = '.') => {
     }
   }
 
-  await writeFile(filePath, JSON.stringify(theme))
-  return theme
+  await writeFile(file, JSON.stringify(theme))
+  return { theme, definitions }
 }
 
 export type { Icons }
