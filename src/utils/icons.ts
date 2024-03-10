@@ -1,4 +1,4 @@
-import { copyFile, exists, readFile, writeFile } from 'fs/promises'
+import { existsSync, copyFileSync, readFileSync, writeFileSync } from 'fs'
 
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>
@@ -23,16 +23,44 @@ const prefixes: Record<string, string[][]> = {
   '': [['fileNames']],
 }
 
-export const iconTheme = async (icons: Icons) => {
+const iconDefinitions = (
+  theme: Theme,
+  definitions: string[],
+  type: keyof Theme,
+  { nodes, icon, iconPath }: StrObj
+) => {
+  const nodeList = theme[type] as StrObj
+  const index = definitions.indexOf(iconPath)
+  const value = (index === -1 ? definitions.length : index).toString()
+
+  if (index === -1) {
+    if (!existsSync(iconPath)) {
+      throw `Icon "${icon}" doesn't exist`
+    }
+
+    theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
+  }
+
+  // TODO: alternations
+  for (const node of [nodes]) {
+    if (node in nodeList) {
+      throw `Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`
+    }
+
+    nodeList[node] = value
+  }
+}
+
+export const iconTheme = (icons: Icons) => {
   const file = 'icon-theme.json'
   const fileBackup = `${file}.bk`
 
   // Make backup file
-  if (!(await exists(fileBackup))) {
-    await copyFile(file, fileBackup)
+  if (!existsSync(fileBackup)) {
+    copyFileSync(file, fileBackup)
   }
 
-  const theme: Theme = JSON.parse(await readFile(fileBackup, 'utf8'))
+  const theme: Theme = JSON.parse(readFileSync(fileBackup, 'utf8'))
   const definitions = Object.values(theme.iconDefinitions).map(
     (v) => v.iconPath
   )
@@ -46,32 +74,14 @@ export const iconTheme = async (icons: Icons) => {
 
       for (const i in types) {
         const type = types[i] as keyof typeof theme
-        const nodeList = theme[type as keyof typeof theme] as StrObj
         const iconPath = `i/${name + (extensions?.[i] ?? '')}.svg`
-        const index = definitions.indexOf(iconPath)
-        const value = (index === -1 ? definitions.length : index).toString()
 
-        if (index === -1) {
-          if (!(await exists(iconPath))) {
-            throw `Icon "${icon}" doesn't exist`
-          }
-
-          theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
-        }
-
-        // TODO: alternations
-        for (const node of [nodes]) {
-          if (node in nodeList) {
-            throw `Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`
-          }
-
-          nodeList[node] = value
-        }
+        iconDefinitions(theme, definitions, type, { nodes, icon, iconPath })
       }
     }
   }
 
-  await writeFile(file, JSON.stringify(theme))
+  writeFileSync(file, JSON.stringify(theme))
   return { theme, definitions }
 }
 

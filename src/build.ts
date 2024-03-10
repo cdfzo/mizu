@@ -8,11 +8,11 @@ $('cp -r media dist')
 $('mv dist/media/icons dist/i')
 process.chdir('dist')
 
-const { theme, definitions } = await iconTheme(icons)
+const { theme, definitions } = iconTheme(icons)
 
 process.chdir('..')
 $('rm dist/icon-theme.json.bk')
-$(`bun run build:ext`)
+$('bun run build:ext')
 $('cd dist && bunx --bun vsce package')
 
 if (Bun.env.NODE_ENV !== 'production') {
@@ -47,8 +47,8 @@ if (Bun.env.NODE_ENV !== 'production') {
       m.slice(1).toUpperCase()
     )}</div>`
 
-  const generateHtml = (icons: string[], extension = '') =>
-    icons.map((icon) => iconHtml(icon, extension)).join('')
+  const generateHtml = (icns: string[], extension = '') =>
+    icns.map((icon) => iconHtml(icon, extension)).join('')
 
   Bun.write(
     'examples/overview.html',

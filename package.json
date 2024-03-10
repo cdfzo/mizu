@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "dev": "bun run build:ext --watch",
-    "lint": "bunx --bun eslint .",
+    "lint": "bunx --bun eslint src tests",
     "test": "bun test",
     "build": "bun run src/build.ts",
     "build:ext": "bunx --bun esbuild src/extension.ts --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --bundle --minify"
