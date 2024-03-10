@@ -1,9 +1,9 @@
 import { execSync as $ } from 'child_process'
 import { icons } from './icons'
-import { iconTheme } from './utils/icons'
+import { iconTheme } from '../utils/icons'
 
 $('rm -rf dist && mkdir dist')
-$('cp {package.json,LICENSE,*.md,src/theme/icon-theme.json} dist')
+$('cp {package.json,LICENSE,*.md,src/assets/icon-theme.json} dist')
 $('cp -r media dist')
 $('mv dist/media/icons dist/i')
 process.chdir('dist')
@@ -52,7 +52,7 @@ if (Bun.env.NODE_ENV !== 'production') {
 
   Bun.write(
     'examples/overview.html',
-    (await Bun.file('src/dev/overview.html').text()).replace(
+    (await Bun.file('src/assets/overview.html').text()).replace(
       '{{icons}}',
       `${generateHtml(files)}${generateHtml(folders, '-folder')}`
     )
