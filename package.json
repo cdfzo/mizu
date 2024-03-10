@@ -39,7 +39,7 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "onCommand:mizu.update"
+    "onStartupFinished"
   ],
   "contributes": {
     "iconThemes": [
