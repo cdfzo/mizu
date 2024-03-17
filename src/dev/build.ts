@@ -4,6 +4,7 @@ import { iconTheme } from '../utils/icons'
 
 $('rm -rf dist && mkdir dist')
 $('cp {package.json,LICENSE,*.md,src/assets/icon-theme.json} dist')
+$('cp dist/icon-theme.json dist/icon-theme.json.bk')
 $('cp -r media dist')
 $('mv dist/media/icons dist/i')
 process.chdir('dist')

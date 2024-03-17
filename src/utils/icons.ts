@@ -76,7 +76,7 @@ Please provide an array for this custom icon association.`
       )
     }
 
-    for (const raw of typeof rawNodes) {
+    for (const raw of rawNodes) {
       const [, prefix = '', nodes] = raw.match(/^(\/|\*\.)?(.+)/) as string[]
       const [types, ext] = prefixes[prefix] as [(keyof Theme)[], string[]?]
 
