@@ -27,7 +27,8 @@ const iconDefinitions = (
   theme: Theme,
   definitions: string[],
   type: keyof Theme,
-  { nodes, icon, iconPath }: StrObj
+  { nodes, icon, iconPath }: StrObj,
+  overwrite: boolean
 ) => {
   const nodeList = theme[type] as StrObj
   const index = definitions.indexOf(iconPath)
@@ -35,7 +36,10 @@ const iconDefinitions = (
 
   if (index === -1) {
     if (!existsSync(iconPath)) {
-      throw Error(`Icon "${icon}" doesn't exist`)
+      throw Error(
+        `The icon '${iconPath.replace(/^.\/|.svg$/g, '')}' doesn't exist. \
+See the Mizu README for a list of available icons.`
+      )
     }
 
     theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
@@ -43,23 +47,20 @@ const iconDefinitions = (
 
   // TODO: alternations
   for (const node of [nodes]) {
-    if (node in nodeList) {
-      throw Error(`Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`)
+    if (overwrite && node in nodeList) {
+      throw Error(
+        `The icon '${icon}' overwrites ${type.slice(0, -1)} '${node}'. \
+Remove it from the list or change the settings to allow overwriting.`
+      )
     }
 
     nodeList[node] = value
   }
 }
 
-export const iconTheme = (icons: Icons) => {
+export const iconTheme = (icons: Icons, overwrite = false) => {
   const file = 'icon-theme.json'
   const fileBackup = `${file}.bk`
-
-  // Make backup file
-  if (!existsSync(fileBackup)) {
-    copyFileSync(file, fileBackup)
-  }
-
   const theme = JSON.parse(readFileSync(fileBackup, 'utf8')) as Theme
   const definitions = Object.values(theme.iconDefinitions).map(
     (v) => v.iconPath
@@ -74,8 +75,9 @@ export const iconTheme = (icons: Icons) => {
 
       types.forEach((type, i) => {
         const iconPath = `i/${name}${ext?.[i] ?? ''}.svg`
+        const iconInfo = { nodes, icon, iconPath }
 
-        iconDefinitions(theme, definitions, type, { nodes, icon, iconPath })
+        iconDefinitions(theme, definitions, type, iconInfo, overwrite)
       })
     }
   }

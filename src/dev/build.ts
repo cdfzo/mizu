@@ -8,7 +8,7 @@ $('cp -r media dist')
 $('mv dist/media/icons dist/i')
 process.chdir('dist')
 
-const { theme, definitions } = iconTheme(icons)
+const { theme, definitions } = iconTheme(icons, true)
 
 process.chdir('..')
 $('rm dist/icon-theme.json.bk')

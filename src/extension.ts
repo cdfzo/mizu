@@ -10,7 +10,6 @@ export const activate = () => {
     process.chdir(extension?.extensionPath ?? '')
     update(config)
   } catch (error) {
-    console.error(error, (error as Error).message)
     return vscode.window.showErrorMessage((error as Error).message)
   }
 }
