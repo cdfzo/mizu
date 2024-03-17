@@ -4,13 +4,14 @@ import { update } from './utils/update'
 /** This function is called when the extension is activated. */
 export const activate = () => {
   const config = vscode.workspace.getConfiguration('mizu')
+  const extension = vscode.extensions.getExtension('cdfzo.mizu')
 
   try {
-    process.chdir(vscode.extensions.getExtension('cdfzo.mizu')!.extensionPath)
+    process.chdir(extension?.extensionPath ?? '')
     update(config)
   } catch (error) {
-    console.error(error)
-    return vscode.window.showErrorMessage(error as string)
+    console.error(error, (error as Error).message)
+    return vscode.window.showErrorMessage((error as Error).message)
   }
 }
 

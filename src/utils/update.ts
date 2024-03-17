@@ -19,11 +19,11 @@ export const update = (config: vscode.WorkspaceConfiguration) => {
     return
   }
 
-  const icons: Icons | undefined = config.icons
+  const icons = config.icons as Icons | undefined
 
   if (icons) {
     if (typeof icons !== 'object') {
-      throw 'Icons must be an object'
+      throw Error('Icons must be an object')
     }
 
     iconTheme(icons)

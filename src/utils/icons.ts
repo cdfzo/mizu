@@ -35,7 +35,7 @@ const iconDefinitions = (
 
   if (index === -1) {
     if (!existsSync(iconPath)) {
-      throw `Icon "${icon}" doesn't exist`
+      throw Error(`Icon "${icon}" doesn't exist`)
     }
 
     theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
@@ -44,7 +44,7 @@ const iconDefinitions = (
   // TODO: alternations
   for (const node of [nodes]) {
     if (node in nodeList) {
-      throw `Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`
+      throw Error(`Remove ${type.slice(0, -1)} "${node}" from icon "${icon}"`)
     }
 
     nodeList[node] = value
@@ -60,7 +60,7 @@ export const iconTheme = (icons: Icons) => {
     copyFileSync(file, fileBackup)
   }
 
-  const theme: Theme = JSON.parse(readFileSync(fileBackup, 'utf8'))
+  const theme = JSON.parse(readFileSync(fileBackup, 'utf8')) as Theme
   const definitions = Object.values(theme.iconDefinitions).map(
     (v) => v.iconPath
   )
@@ -70,14 +70,13 @@ export const iconTheme = (icons: Icons) => {
 
     for (const raw of rawNodes) {
       const [, prefix = '', nodes] = raw.match(/^(\/|\*\.)?(.+)/) as string[]
-      const [types, extensions] = prefixes[prefix] as string[][]
+      const [types, ext] = prefixes[prefix] as [(keyof Theme)[], string[]?]
 
-      for (const i in types) {
-        const type = types[i] as keyof typeof theme
-        const iconPath = `i/${name + (extensions?.[i] ?? '')}.svg`
+      types.forEach((type, i) => {
+        const iconPath = `i/${name}${ext?.[i] ?? ''}.svg`
 
         iconDefinitions(theme, definitions, type, { nodes, icon, iconPath })
-      }
+      })
     }
   }
 
