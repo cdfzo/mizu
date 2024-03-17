@@ -48,7 +48,24 @@
         "label": "Mizu Icons",
         "path": "icon-theme.json"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Mizu Icons",
+      "properties": {
+        "mizu.icons": {
+          "type": "object",
+          "description": "Define custom icon associations. See https://github.com/cdfzo/mizu?tab=readme-ov-file#custom-icon-associations for more information.",
+          "properties": {
+            "icon": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
   },
   "devDependencies": {
     "@cdfzo/eslint-config": "^0.2.0",

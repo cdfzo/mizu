@@ -1,4 +1,4 @@
-import { existsSync, copyFileSync, readFileSync, writeFileSync } from 'fs'
+import { existsSync, readFileSync, writeFileSync } from 'fs'
 
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>
@@ -69,7 +69,14 @@ export const iconTheme = (icons: Icons, overwrite = false) => {
   for (const [icon, rawNodes] of Object.entries(icons)) {
     const name = icon.replace(/[A-Z]/g, (v) => `-${v.toLowerCase()}`)
 
-    for (const raw of rawNodes) {
+    if (rawNodes.constructor.name !== 'Array') {
+      throw Error(
+        `The icon '${icon}' is not an array. \
+Please provide an array for this custom icon association.`
+      )
+    }
+
+    for (const raw of typeof rawNodes) {
       const [, prefix = '', nodes] = raw.match(/^(\/|\*\.)?(.+)/) as string[]
       const [types, ext] = prefixes[prefix] as [(keyof Theme)[], string[]?]
 

@@ -1,9 +1,22 @@
 # Mizu Icons
-> [!IMPORTANT]
-> I will update the icons soon. Just need to find some time to do it.
 
-## Icons
+500+ icons, based on 15 colors.
 
-* Based on 15 colors
-* Over 520 icons
-<img src="./media/icons.png" alt="Icons">
+![Icons](https://raw.githubusercontent.com/cdfzo/mizu/main/media/icons.png)
+
+## Custom Icon Associations
+
+You can customize the icon associations in the *settings.json* file:
+
+```json
+"mizu.icons": {
+  "javascript": ["/scripts", "*.js", "*.cjs"],
+  "readme": "readme.md"
+}
+```
+
+Use the following formats for the different file types:
+
+- Folder names: `/[name]`
+- File extensions: `*.[name]`
+- File names: `[name]`
