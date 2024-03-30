@@ -537,8 +537,8 @@ export const logos: Icons = {
     'playwright.config.ts',
   ],
   pnpm: ['.pnpmfile.cjs', 'pnpm-lock.yaml', 'pnpm-workspace.yaml'],
-  postcss: ['*.pcss', '*.sss'],
-  postcssConfig: [
+  post: ['*.pcss', '*.sss'],
+  postConfig: [
     '.postcssrc',
     '.postcssrc.cjs',
     '.postcssrc.cts',
