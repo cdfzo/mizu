@@ -297,7 +297,6 @@ export const icons: Icons = {
     '/installers',
     '/installs',
   ],
-  email: ['*.eml', '*.emlx', '*.mbx', '*.msg', '.mailmap'],
   environment: [
     '/.env',
     '/.venv',
@@ -686,6 +685,11 @@ export const icons: Icons = {
     '/mailtodisk',
     '/phpmailer',
     '/smtp',
+    '*.eml',
+    '*.emlx',
+    '*.mbx',
+    '*.msg',
+    '.mailmap',
   ],
   mobile: [
     '/client',
