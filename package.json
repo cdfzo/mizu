@@ -6,7 +6,7 @@
   "license": "MIT",
   "publisher": "cdfzo",
   "homepage": "https://github.com/cdfzo/mizu#readme",
-  "icon": "media/mizu.png",
+  "icon": "mizu.png",
   "main": "extension.js",
   "categories": [
     "Themes"
@@ -54,7 +54,7 @@
       "properties": {
         "mizu.icons": {
           "type": "object",
-          "description": "Define custom icon associations. See https://github.com/cdfzo/mizu?tab=readme-ov-file#custom-icon-associations for more information.",
+          "description": "Define custom icon associations. This will be released in a future version. Do not use it yet.",
           "properties": {
             "icon": {
               "type": "array",

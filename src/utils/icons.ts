@@ -38,7 +38,7 @@ const iconDefinitions = (
     if (!existsSync(iconPath)) {
       throw Error(
         `The icon '${iconPath.replace(/^.\/|.svg$/g, '')}' doesn't exist. \
-See the Mizu README for a list of available icons.`
+See the readme for a list of available icons.`
       )
     }
 
