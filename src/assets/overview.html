@@ -1,16 +1,22 @@
 <style>
-  body {
+  body,
+  div {
     background-color: #000;
     color: #fff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 100%;
   }
 
-  div {
+  div:first-child {
+    margin-bottom: 1.625rem;
+  }
+
+  span {
     align-items: center;
     display: flex;
-    margin: 0.25rem;
+    margin: 0.125rem;
+    width: calc(100% / 6 - 0.25rem);
   }
 
   img {
@@ -19,5 +25,6 @@
   }
 </style>
 <body>
-  {{icons}}
+  <div>{{files}}</div>
+  <div>{{folders}}</div>
 </body>

@@ -1,17 +1,20 @@
 import { execSync as $ } from 'child_process'
-import { icons } from './icons'
 import { iconTheme } from '../utils/icons'
+import { icons } from './icons'
+import { logos } from './logos'
 
-$('rm -rf dist && mkdir dist')
-$('cp {package.json,LICENSE,*.md,src/assets/icon-theme.json} dist')
-$('cp dist/icon-theme.json dist/icon-theme.json.bk')
-$('cp -r media dist')
-$('mv dist/media/icons dist/i')
+$('rm -rf dist && mkdir -p dist/i')
+$('cp {package.json,LICENSE,*.md,media/mizu.png} dist')
+$('cp src/assets/icon-theme.json dist/icon-theme.json.bk')
+$('cp media/*/* dist/i')
+
 process.chdir('dist')
+iconTheme(logos)
+$('mv icon-theme.json *.bk')
 
-const { theme, definitions } = iconTheme(icons, true)
-
+const { theme, definitions } = iconTheme(icons)
 process.chdir('..')
+
 $('rm dist/icon-theme.json.bk')
 $('bun run build:ext')
 $('cd dist && bunx --bun vsce package')
@@ -43,21 +46,22 @@ if (Bun.env.NODE_ENV !== 'production') {
     isFolder ? folders.push(name) : files.push(name)
   }
 
+  const fmtName = (icon: string) =>
+    icon.replace(/-./g, (m) => m.slice(1).toUpperCase())
+
   const iconHtml = (icon: string, extension = '') =>
-    `<div><img src=../dist/i/${icon}${extension}.svg>${icon.replace(/-./, (m) =>
-      m.slice(1).toUpperCase()
-    )}</div>`
+    `<span><img src=../dist/i/${icon}${extension}.svg>${fmtName(icon)}</span>`
 
   const generateHtml = (icns: string[], extension = '') =>
     icns.map((icon) => iconHtml(icon, extension)).join('')
 
   Bun.write(
     'examples/overview.html',
-    (await Bun.file('src/assets/overview.html').text()).replace(
-      '{{icons}}',
-      `${generateHtml(files)}${generateHtml(folders, '-folder')}`
-    )
+    (await Bun.file('src/assets/overview.html').text())
+      .replace('{{files}}', generateHtml(files))
+      .replace('{{folders}}', generateHtml(folders, '-folder'))
   )
 
   $('open examples/overview.html')
+  // $('echo overview: $(realpath examples/overview.html)') // TODO
 }
