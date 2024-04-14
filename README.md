@@ -6,11 +6,11 @@
 
 ## File Icons
 
-![Files](https://raw.githubusercontent.com/cdfzo/mizu/main/media/files.png)
+![Files](https://codeberg.org/cdfzo/mizu/raw/branch/main/media/files.png)
 
 ## Folder Icons
 
-![Folders](https://raw.githubusercontent.com/cdfzo/mizu/main/media/folders.png)
+![Folders](https://codeberg.org/cdfzo/mizu/raw/branch/main/media/folders.png)
 
 ## Custom Icon Associations
 

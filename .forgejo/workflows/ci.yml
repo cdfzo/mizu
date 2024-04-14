@@ -1,0 +1,21 @@
+name: ci
+
+on: push
+
+jobs:
+  lint-and-test:
+    runs-on: self-hosted
+    shell: sh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: bun i
+
+      - name: Run linters
+        run: bun run lint
+
+      - name: Run tests
+        run: bun run test
