@@ -2,10 +2,10 @@
   "name": "mizu",
   "displayName": "Mizu Icons",
   "description": "Mizu Icons for Visual Studio Code",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "license": "MIT",
   "publisher": "cdfzo",
-  "homepage": "https://github.com/cdfzo/mizu#readme",
+  "homepage": "https://github.com/cdfzo/mizu",
   "icon": "mizu.png",
   "main": "extension.js",
   "categories": [
@@ -45,14 +45,14 @@
     "iconThemes": [
       {
         "id": "mizu",
-        "label": "Mizu Icons",
+        "label": "Mizu",
         "path": "icon-theme.json"
       }
     ],
     "configuration": {
-      "title": "Mizu Icons",
+      "title": "Mizu",
       "properties": {
-        "mizu.icons": {
+        "mizu.customIconAssociations": {
           "type": "object",
           "description": "Define custom icon associations. This will be released in a future version. Do not use it yet.",
           "properties": {

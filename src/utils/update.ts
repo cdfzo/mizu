@@ -19,7 +19,7 @@ export const update = (config: vscode.WorkspaceConfiguration) => {
     return
   }
 
-  const icons = config.icons as Icons | undefined
+  const icons = config.customIconAssociations as Icons | undefined
 
   if (icons?.toString() === '[object Object]') {
     iconTheme(icons, true)

@@ -1,22 +1,28 @@
 # Mizu Icons
 
-500+ icons, based on 15 colors.
+> Dive into a sea of clarity and focus as Mizu's crisp visuals guide you through
+> your files and folders.\
+> \- ChatGPT
 
-![Icons](https://raw.githubusercontent.com/cdfzo/mizu/main/media/icons.png)
+## File Icons
+
+![Files](https://raw.githubusercontent.com/cdfzo/mizu/main/media/files.png)
+
+## Folder Icons
+
+![Folders](https://raw.githubusercontent.com/cdfzo/mizu/main/media/folders.png)
 
 ## Custom Icon Associations
 
-You can customize the icon associations in the *settings.json* file:
+Coming Soon~
 
-```json
-"mizu.icons": {
-  "javascript": ["/scripts", "*.js", "*.cjs"],
-  "readme": "readme.md"
-}
-```
+## Credits
 
-Use the following formats for the different file types:
+This extension is heavily inspired by PKief's [Material Icon Theme] and
+Google's [Material Symbols].
 
-- Folder names: `/[name]`
-- File extensions: `*.[name]`
-- File names: `[name]`
+If there is a logo anyone wishes taken down,
+please let me know.
+
+[Material Icon Theme]: https://github.com/PKief/vscode-material-icon-theme
+[Material Symbols]: https://github.com/google/material-design-icons
