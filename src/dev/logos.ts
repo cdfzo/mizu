@@ -406,6 +406,7 @@ export const logos: Icons = {
   jsonOther: ['*.cson', '*.ron', '*.tf.json'],
   julia: ['/jl', '/julia', '*.jl'],
   jupyter: ['*.ipynb'],
+  kh: ['*.kh'],
   kotlin: ['*.kt', '*.ktm', '*.kts'],
   kubernetes: ['/.k8s', '/.kubernetes', '/k8s', '/kubernetes'],
   laravel: ['*.blade.php', '*.inky.php', 'artisan'],
@@ -925,7 +926,6 @@ export const logos: Icons = {
   watchman: ['.watchmanconfig'],
   webassembly: ['*.wasm', '*.wat'],
   webhint: ['.hintrc'],
-  webhook: ['/hook', '/hooks', '/webhook', '/webhooks'],
   webpack: [
     '/webpack',
     'webpack',
