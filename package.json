@@ -5,7 +5,7 @@
   "version": "2.0.0",
   "license": "MIT",
   "publisher": "cdfzo",
-  "homepage": "https://github.com/cdfzo/mizu",
+  "homepage": "https://codeberg.org/cdfzo/mizu",
   "icon": "mizu.png",
   "main": "extension.js",
   "categories": [
@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdfzo/mizu.git"
+    "url": "https://codeberg.org/cdfzo/mizu.git"
   },
   "bugs": {
-    "url": "https://github.com/cdfzo/mizu/issues"
+    "url": "https://codeberg.org/cdfzo/mizu/issues"
   },
   "engines": {
     "vscode": "^1.70.0"
