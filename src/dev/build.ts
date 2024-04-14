@@ -46,6 +46,8 @@ if (Bun.env.NODE_ENV !== 'production') {
     isFolder ? folders.push(name) : files.push(name)
   }
 
+  folders.splice(folders.indexOf('folder'), 1)
+
   const fmtName = (icon: string) =>
     icon.replace(/-./g, (m) => m.slice(1).toUpperCase())
 
@@ -53,7 +55,10 @@ if (Bun.env.NODE_ENV !== 'production') {
     `<span><img src=../dist/i/${icon}${extension}.svg>${fmtName(icon)}</span>`
 
   const generateHtml = (icns: string[], extension = '') =>
-    icns.map((icon) => iconHtml(icon, extension)).join('')
+    icns
+      .sort()
+      .map((icon) => iconHtml(icon, extension))
+      .join('')
 
   Bun.write(
     'examples/overview.html',
