@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.0.0 (2024-04-14)
+
+### Added
+
+- 6 folder icons (`danger`, `forgejo`, `gitea`, `ignore`, `layout`, `logout`)
+- 3 file icons (`css-app`, `lingui`, `sass-app`)
+- 1 file lock icon (`deno-lock`)
+- 4 file icons for js and ts (`js-app`, `js-main`, `ts-app`, `ts-main`)
+- 6 file icons for rails and ruby (`rails-app`, `rails-js`, `rails-text`,
+  `ruby-boot`, `ruby-filter`, `ruby-help`)
+- 4 file icons for yml (`yml-app`, `yml-database`, `yml-example`, `yml-storage`)
+
+### Changed
+
+- Mizu logo
+- Remade all icons from scratch
+- Renamed some icons
+
+### Removed
+
+- 3 folder icons (`crash`, `password`, `script`)
+- 6 file icons (`dll`, `drawio`, `numbers`, `qwik`, `setup`, `vcard`)
+
 ## 1.7.0 (2023-11-25)
 
 ### Added
