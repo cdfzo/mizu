@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from 'fs'
+import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'fs'
 
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>
@@ -47,7 +47,7 @@ See the readme for a list of available icons.`
 
   // TODO: alternations
   for (const node of [nodes]) {
-    if (overwrite && node in nodeList) {
+    if (!overwrite && node in nodeList) {
       throw Error(
         `The icon '${icon}' overwrites ${type.slice(0, -1)} '${node}'. \
 Remove it from the list or change the settings to allow overwriting.`
@@ -61,6 +61,12 @@ Remove it from the list or change the settings to allow overwriting.`
 export const iconTheme = (icons: Icons, overwrite = false) => {
   const file = 'icon-theme.json'
   const fileBackup = `${file}.bk`
+
+  // Make backup file
+  if (!existsSync(fileBackup)) {
+    copyFileSync(file, fileBackup)
+  }
+
   const theme = JSON.parse(readFileSync(fileBackup, 'utf8')) as Theme
   const definitions = Object.values(theme.iconDefinitions).map(
     (v) => v.iconPath

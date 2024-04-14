@@ -806,7 +806,6 @@ export const icons: Icons = {
   review: [
     '/preview',
     '/previews',
-    '/reviews',
     '/review',
     '/reviewed',
     '/reviews',
