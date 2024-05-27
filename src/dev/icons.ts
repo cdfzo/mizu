@@ -3,8 +3,8 @@ import type { Icons } from '../utils/icons'
 /* eslint max-lines: 0 */
 export const icons: Icons = {
   admin: ['/(admin|manager|moderator)s?'],
-  api: ['/(|base_|global-|open|rest|rest-)api', '/(api_def|apis|rest)'],
-  app: ['/(app|application|program)s?', '/program files'],
+  api: ['/(|base_|global-|open|rest|rest-|web-)api', '/(api_def|apis|rest)'],
+  app: ['/(app|application|program)s?', '*.app'],
   archive: ['/(arc|archive|archival)s?', '/archived'],
   audio: [
     '/(sound|soundtrack|track)s?',
@@ -21,7 +21,10 @@ export const icons: Icons = {
     '/(bench|measure|performance|profiling|speed|stress)',
     '/(benchmark|measurement)s?',
   ],
-  binary: ['*.(aea|agc|ags|argus|asm|bin|binsource|inc|mitigus|nasm|s)'],
+  binary: [
+    '/binary',
+    '*.(aea|agc|ags|argus|asm|bin|binsource|inc|mitigus|nasm|s)',
+  ],
   boot: ['/(boot|reboot|startup)', '/bootloaders?'],
   calendar: ['/(calendar|date|meeting)s?', '*.(ical|icalendar|ics|ifb)'],
   cd: ['*.(iso|udf)'],
@@ -33,8 +36,11 @@ export const icons: Icons = {
   chat: ['/(chat|conversation|forum|msg|message|post)s?', '/messaging'],
   ci: ['/(actions|ci)', 'ci'],
   cloud: ['/(.aws|aws|cloud|drive|iclouddrive|onedrive)'],
-  code: ['/(code|main|sourcecode)', '/(src|source)s?'],
-  component: ['/(component|frag|fragment|part|partial)s?'],
+  code: ['/(code|main|sourcecode)', '/(cmd|command|src|source)s?', 'console'],
+  component: [
+    '/(category|categories)',
+    '/(component|frag|fragment|part|partial)s?',
+  ],
   conduct: ['code_of_conduct(|.md|.rst)'],
   config: [
     '/(cfg|conf|config|configuration|configurator)s?',
@@ -53,7 +59,7 @@ export const icons: Icons = {
   ],
   cursor: ['/cursors?', '*.cur'],
   database: [
-    '/(db|database|migration)s?',
+    '/(db|database|migration|seed)s?',
     '/(dbms|migrate|query|queries|sql)',
     '*.(db|pdb|pgsql|pkb|pks|sql)',
   ],
@@ -64,7 +70,7 @@ export const icons: Icons = {
   desktop: ['/(desk|desktop|tablet)s?'],
   dist: [
     '/(build|deploy|deployment|dist|distrib|output|pub|release)s?',
-    '/(desktop-build|out)',
+    '/(_build|desktop-build|out)',
     '/(|.|cgi-|e|s|usr)bin',
   ],
   document: [
@@ -119,11 +125,14 @@ export const icons: Icons = {
     '/(g11n|public|web|www|wwwroot)',
     '/globali(s|z)ation',
   ],
-  group: ['/(community|communities)', '/(customer|friend|group|team)s?'],
+  group: [
+    '/(community|communities|people)',
+    '/(customer|friend|group|member|partner|team)s?',
+  ],
   guard: ['/guards?', '/(protected|secure|security)'],
   help: ['/helpers?', '/render-helpers'],
   home: ['/(home|menu|start|start menu|startpage)'],
-  ignore: ['/ignore(|d|s)', '/skip(|ped|s)'],
+  ignore: ['/ignore(|d|s)', '/skip(|ped|s)', '*.ignore'],
   image: [
     '/(accountpictures|branding|m|media|my pictures)',
     '/(avatar|brand|fig|figure|img|image|logo|pfp|photo|pic|picture)s?',
@@ -156,14 +165,16 @@ export const icons: Icons = {
     '(authors|codeowners|patent_grant)',
     'copyright(|.md|.txt)',
     'licen(c|s)e(|.md|.rst|.txt)',
+    'licen(c|s)e-(apache|mit)',
   ],
   like: ['/(fav|favorite|like)s?'],
   link: ['/(link|shortcut|url)s?', '*.url'],
-  lint: ['/(lint|linter)s?', 'lint'],
+  lint: ['/(lint|linter)s?', '/valid', 'lint'],
   locale: [
-    '/(i18n|l10n|t|tl|translate)',
+    '/(gettext|i18n|l10n|t|tl|translate)',
     '/(intl|internationalisation|internationalization|lng|lang|language)s?',
     '/(locales|localisation|localization|translation|translator)s?',
+    '*.po(|t)',
   ],
   lock: [
     '/(|.|_)(priv|private)',
@@ -246,7 +257,7 @@ export const icons: Icons = {
   ],
   test: [
     '/(.|_)tests?',
-    '/(boot|e2e|integration|kernel|memory|unit)(-|_)tests?',
+    '/(boot|e2e|integration|kernel|memory|unit)(|-|_)tests?',
     '/(coverage|it|e2e|runnertests|testing|unit)',
     '/(spec|test)s?',
     '/__tests?__',
@@ -262,11 +273,11 @@ export const icons: Icons = {
   tool: ['/(tool|toolkit)s?', '/(toolbox|toolboxes)'],
   trash: ['/.?trash', '/(delete|remove)d?', 'null'],
   tutorial: [
-    '/(intro|introduction|tut|tutorial)s?',
+    '/(guide|intro|introduction|tut|tutorial)s?',
     '/how-?to',
     '/learn(|ing)',
   ],
-  upload: ['/(publisher|upload|uploader)s?'],
+  upload: ['/(publisher|upload|uploader)s?', '/publish'],
   user: ['/(all users|default user|pers|personal)', '/(profile|usr|user)s?'],
   util: ['/(utilities|utility)', '/test-utils', '/utils?'],
   vendor: ['/third(|-|_)party', '/vendors?'],
