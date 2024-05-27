@@ -1,8 +1,8 @@
 {
   "name": "mizu",
   "displayName": "Mizu Icons",
-  "description": "Mizu Icons for Visual Studio Code",
-  "version": "2.0.0",
+  "description": "700+ Simple Icons for Most Languages/Frameworks (esp. JS and Rails)",
+  "version": "2.1.0",
   "license": "MIT",
   "publisher": "cdfzo",
   "homepage": "https://codeberg.org/cdfzo/mizu",
@@ -54,7 +54,7 @@
       "properties": {
         "mizu.customIconAssociations": {
           "type": "object",
-          "description": "Define custom icon associations. This will be released in a future version. Do not use it yet.",
+          "description": "Define custom icon associations. See https://codeberg.org/cdfzo/mizu#custom-icon-associations for more information.",
           "properties": {
             "icon": {
               "type": "array",
