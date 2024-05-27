@@ -1,6 +1,6 @@
-import * as vscode from 'vscode'
-import { Icons, iconTheme } from './icons'
+import { type Icons, iconTheme } from './icons'
 import { existsSync, readFileSync, writeFileSync } from 'fs'
+import type { WorkspaceConfiguration } from 'vscode'
 
 const hasChanged = (config: string) => {
   const file = 'settings.json.bk'
@@ -14,7 +14,7 @@ const hasChanged = (config: string) => {
   return config !== readFileSync(file, 'utf8')
 }
 
-export const update = (config: vscode.WorkspaceConfiguration) => {
+export const update = (config: WorkspaceConfiguration) => {
   if (!hasChanged(JSON.stringify(config))) {
     return
   }

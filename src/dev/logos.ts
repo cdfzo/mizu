@@ -1,4 +1,4 @@
-import { Icons } from '../utils/icons'
+import type { Icons } from '../utils/icons'
 
 /* eslint max-lines: 0 */
 export const logos: Icons = {

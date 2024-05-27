@@ -40,10 +40,10 @@ if (Bun.env.NODE_ENV !== 'production') {
       continue
     }
 
-    const isFolder = /-folder.svg$/g.test(iconPath)
-    const name = iconPath.replace(/i\/|(-folder)?.svg$/g, '')
+    const type = /-folder.svg$/g.test(iconPath) ? folders : files
+    const name = iconPath.replace(/i\/|(?:-folder)?.svg$/g, '')
 
-    isFolder ? folders.push(name) : files.push(name)
+    type.push(name)
   }
 
   folders.splice(folders.indexOf('folder'), 1)

@@ -68,12 +68,12 @@
     }
   },
   "devDependencies": {
-    "@cdfzo/eslint-config": "^0.2.0",
-    "@types/bun": "^1.0.0",
+    "@cdfzo/eslint-config": "^1.0.0",
+    "@types/bun": "^1.1.0",
     "@types/vscode": "^1.70.0",
-    "@vscode/vsce": "^2.24.0",
-    "esbuild": "^0.20.0",
-    "svgo": "^3.2.0"
+    "@vscode/vsce": "^2.26.0",
+    "esbuild": "^0.21.0",
+    "svgo": "^3.3.0"
   },
   "peerDependencies": {
     "typescript": "^5.4.0"

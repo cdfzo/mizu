@@ -2,7 +2,7 @@ export const alternations = (...names: string[]) => {
   const alts: string[] = []
 
   for (const name of names) {
-    const quant = name.match(/(.)\?/)
+    const quant = /(?<char>.)\?/.exec(name)
 
     if (quant) {
       const map = [name.replace(quant[0], ''), name.replace(quant[0], quant[1])]
@@ -10,7 +10,7 @@ export const alternations = (...names: string[]) => {
       continue
     }
 
-    const or = name.match(/\((.+?)\)/)
+    const or = /\((?<node>.+?)\)/.exec(name)
 
     if (or) {
       const map = or[1].split('|').map((alt) => name.replace(or[0], alt))
