@@ -1,5 +1,5 @@
-import { alternations } from './alternations'
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'fs'
+import { alternations } from './alternations'
 
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>

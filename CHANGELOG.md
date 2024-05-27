@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.1.0 (2024-05-27)
+
+### Added
+
+- Option to customize icon associations
+- 1 folder and file icon (`mercurial`)
+- 5 file icons (`cake`, `cucumber`, `elixir-lock`, `git-module`, `poetry-lock`)
+- 8 file icons for rails and ruby (`rails-edit`, `rails-index`, `rails-new`,
+  `rails-show`, `ruby-controller`, `ruby-job`, `ruby-mail`, `ruby-model`)
+- 6 icons for rust and wasm (`cargo`, `rust-lib`, `rust-mod`, `toml-config`,
+  `webassembly`, `webassembly-text`)
+
+### Changed
+
+- 1 file icon (`ruby-database`)
+
 ## 2.0.0 (2024-04-14)
 
 ### Added

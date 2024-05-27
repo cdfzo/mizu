@@ -30,6 +30,9 @@ array with the following formats for the different file types:
 - File extensions: `*.[name]`
 - File names: `[name]`
 
+Reload VS Code (`Developer: Reload Window` in the command palette) to see the
+changes. If it doesn't work, wait a few seconds and try again.
+
 ## Credits
 
 This extension is heavily inspired by PKief's [Material Icon Theme] and
