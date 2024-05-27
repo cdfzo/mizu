@@ -1,3 +1,4 @@
+import { alternations } from './alternations'
 import { copyFileSync, existsSync, readFileSync, writeFileSync } from 'fs'
 
 type StrObj = Record<string, string>
@@ -45,8 +46,9 @@ See the readme for a list of available icons.`
     theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
   }
 
-  // TODO: alternations
-  for (const node of [nodes]) {
+  for (const node of (nodes.match(/[|?]/g) ?? []).length > 20
+    ? nodes
+    : alternations(nodes)) {
     if (!overwrite && node in nodeList) {
       throw Error(
         `The icon '${icon}' overwrites ${type.slice(0, -1)} '${node}'. \
