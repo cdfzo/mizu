@@ -298,7 +298,7 @@ export const logos: Icons = {
   lighthouse: ['.?lighthouserc.(js|cjs|json|yml|yaml)'],
   lingui: ['lingui.config.js'],
   linux: ['/(arch|linux|ubuntu|wsl|wslg)'],
-  lisp: ['*.lisp', '*.lsp'], // TODO
+  lisp: ['*.lisp', '*.lsp'],
   livescript: ['*.ls'],
   lolcode: ['*.lol', '*.lols'],
   lua: ['/lua', '*.lua', '.luacheckrc'],
