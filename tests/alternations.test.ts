@@ -1,25 +1,38 @@
 import { describe, expect, it } from 'bun:test'
 import { alternations } from '../src/utils/alternations'
 
+const alts = (str: string) => alternations(str).sort()
+
 describe('alternations()', () => {
   it('splits values with OR', () => {
-    expect(alternations('a(b|c|d)e').sort()).toEqual(['abe', 'ace', 'ade'])
-  })
-
-  it('splits values with nested OR', () => {
-    expect(alternations('a(b(c|d)|e)f').sort()).toEqual(['abcf', 'abdf', 'aef'])
+    expect(alts('a(b|c|d)e')).toEqual(['abe', 'ace', 'ade'])
   })
 
   it('allows empty OR', () => {
-    expect(alternations('aa(|bb)').sort()).toEqual(['aa', 'aabb'])
-    expect(alternations('aa(bb|)').sort()).toEqual(['aa', 'aabb'])
+    expect(alts('aa(|bb)')).toEqual(['aa', 'aabb'])
+    expect(alts('aa(bb|)')).toEqual(['aa', 'aabb'])
   })
 
   it('removes values with quantifiers', () => {
-    expect(alternations('ab?c?d').sort()).toEqual(['abcd', 'abd', 'acd', 'ad'])
+    expect(alts('ab?c?d')).toEqual(['abcd', 'abd', 'acd', 'ad'])
   })
 
   it('removes values with quantifier inside groups', () => {
-    expect(alternations('a(b?c|d)e').sort()).toEqual(['abce', 'ace', 'ade'])
+    expect(alts('a(b?c|d)e')).toEqual(['abce', 'ace', 'ade'])
+  })
+})
+
+describe('limitations', () => {
+  it('cannot split values with nested OR', () => {
+    const res = ['abcf', 'abdf', 'aef']
+    expect(alts('a(b(c|d)|e)f')).not.toEqual(res)
+  })
+
+  it('only splits OR in groups', () => {
+    expect(alts('a|b')).not.toEqual(['a', 'b'])
+  })
+
+  it('cannot remove groups', () => {
+    expect(alts('a(bc)?')).not.toEqual(['a', 'abc'])
   })
 })

@@ -6,7 +6,6 @@ export const alternations = (...names: string[]) => {
 
     if (or) {
       const map = or[1].split('|').map((alt) => name.replace(or[0], alt))
-      console.log('or', or)
       alts.push(...alternations(...map))
       continue
     }
@@ -15,7 +14,6 @@ export const alternations = (...names: string[]) => {
 
     if (quant) {
       const map = [name.replace(quant[0], ''), name.replace(quant[0], quant[1])]
-      console.log('quant', map)
       alts.push(...alternations(...map))
       continue
     }
