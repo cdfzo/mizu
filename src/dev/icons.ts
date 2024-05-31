@@ -61,7 +61,7 @@ export const icons: Icons = {
   database: [
     '/(db|database|migration|seed)s?',
     '/(dbms|migrate|query|queries|sql)',
-    '*.(db|pdb|pgsql|pkb|pks|sql)',
+    '*.(db|dump|pdb|pgsql|pkb|pks|sql)',
   ],
   danger: ['/(danger|risk|warning)s?'],
   debug: ['/(bugfix|bugfixes)', '/bugs?', '/debug(|ging)'],
