@@ -183,7 +183,7 @@ export const icons: Icons = {
     '/(localisation|localization|translation|translator)s?',
     '*.po(|t)',
   ],
-  location: ['/(geo|geolocation|location|map|position)s?'],
+  location: ['/(geo|geolocation|location|map|mapper|position)s?'],
   lock: ['/(|.|_)(priv|private)', '/hidden', '/lock(|d|ed|s)', '*.(enc|lock)'],
   log: ['/(log|logger)s?', '/logging', '*.log', 'credits(.md|.rst|.txt)'],
   login: ['/(login|registration|signin|signup)s?'],
@@ -228,7 +228,7 @@ export const icons: Icons = {
     'robots.txt',
   ],
   role: ['/(perm|permission|privilege|role|userrole)s?'],
-  route: ['/(map|mapper|route|router)s?', '/routing'],
+  route: ['/(route|router)s?', '/routing'],
   run: [
     '/(common_runtime|distributed_runtime|run|runtime_client)',
     '/(runner|runtime)s?',
