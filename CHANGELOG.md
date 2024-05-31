@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.2.0 (2024-05-31)
+
+### Added
+
+- 3 folder icons (`form`, `gitlab`, `location`)
+- 15 file icons (`caddy`, `chess`, `haml`, `jest`, `jsr`, `karma`, `lerna`,
+  `nix`, `pnpm-lock`, `pug-lint`, `python-lint`, `renovate`, `rollup`, `tex`,
+  `xaml`)
+- 2 file icon for js and ts (`js-initializer`, `ts-initializer`)
+
+### Changed
+
+- Renamed 3 icons (`markdownlint` -> `markdown-lint`, `nrwl` -> `nx`,
+  `webassembly` -> `wasm`)
+
 ## 2.1.0 (2024-05-27)
 
 ### Added
