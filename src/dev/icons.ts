@@ -133,7 +133,7 @@ export const icons: Icons = {
   group: [
     '/(community|communities|people)',
     '/(customer|friend|group|member|partner|team)s?',
-    '(authors|contributors)(.md|.rst|.txt)',
+    '(authors|contributors)(|.md|.rst|.txt)',
   ],
   guard: ['/(protected|secure|security)', '/guards?', 'security(|.md|.txt)'],
   help: ['/helpers?', '/render-helpers'],
@@ -168,10 +168,9 @@ export const icons: Icons = {
     '*.(dlc|dll|drv|ocx)',
   ],
   license: [
-    '(authors|codeowners|patent_grant)',
+    '(codeowners|patent_grant)',
     'copyright(|.md|.txt)',
-    'licen(c|s)e(|.md|.rst|.txt)',
-    'licen(c|s)e-(apache|mit)',
+    'licen(c|s)e(|.md|.rst|.txt|-apache|-mit)',
   ],
   like: ['/(fav|favorite|like)s?'],
   link: ['/(link|shortcut|url)s?', '*.url'],
