@@ -3,8 +3,11 @@ import type { Icons } from '../utils/icons'
 /* eslint max-lines: 0 */
 export const icons: Icons = {
   admin: ['/(admin|manager|moderator)s?'],
-  api: ['/(|base_|global-|open|rest|rest-|web-)api', '/(api_def|apis|rest)'],
-  app: ['/(app|application|program)s?', '*.app'],
+  api: [
+    '/(|base_|global-|open|public-|rest|rest-|web-)api',
+    '/(api_def|apis|rest)',
+  ],
+  app: ['/(app|application|program|project)s?', '*.app'],
   archive: ['/(arc|archive|archival)s?', '/archived'],
   audio: [
     '/(sound|soundtrack|track)s?',
@@ -34,12 +37,13 @@ export const icons: Icons = {
     '/(verify|verified)',
   ],
   chat: ['/(chat|conversation|forum|msg|message|post)s?', '/messaging'],
+  chess: ['*.(fe|pg)n'],
   ci: ['/(actions|ci)', 'ci'],
   cloud: ['/(.aws|aws|cloud|drive|iclouddrive|onedrive)'],
-  code: ['/(code|main|sourcecode)', '/(cmd|command|src|source)s?', 'console'],
+  code: ['/(code|main|sourcecode)', '/(cli|cmd|command|console|src|source)s?'],
   component: [
     '/(category|categories)',
-    '/(component|frag|fragment|part|partial)s?',
+    '/(component|element|frag|fragment|part|partial)s?',
   ],
   conduct: ['code_of_conduct(|.md|.rst)'],
   config: [
@@ -114,6 +118,7 @@ export const icons: Icons = {
     '*.(dfont|eot|fnt|odttf|otf|pfa|pfb|t11|t42|ttc|tte|ttf|ttf.bin|ufo|ufo2)',
     '*.(ufo3|woff|woff2)',
   ],
+  form: ['/(form|input)s?'],
   game: ['/game(|s|ing)', '/(saved games|xboxgames)'],
   generator: [
     '/(auto|autoload|automatic|autostart)',
@@ -128,8 +133,9 @@ export const icons: Icons = {
   group: [
     '/(community|communities|people)',
     '/(customer|friend|group|member|partner|team)s?',
+    '(authors|contributors)(.md|.rst|.txt)',
   ],
-  guard: ['/guards?', '/(protected|secure|security)'],
+  guard: ['/(protected|secure|security)', '/guards?', 'security(|.md|.txt)'],
   help: ['/helpers?', '/render-helpers'],
   home: ['/(home|menu|start|start menu|startpage)'],
   ignore: ['/ignore(|d|s)', '/skip(|ped|s)', '*.ignore'],
@@ -169,21 +175,17 @@ export const icons: Icons = {
   ],
   like: ['/(fav|favorite|like)s?'],
   link: ['/(link|shortcut|url)s?', '*.url'],
-  lint: ['/(lint|linter)s?', '/valid', 'lint'],
+  lint: ['/(lint|linter|validator)s?', '/valid', 'lint'],
   locale: [
     '/(gettext|i18n|l10n|t|tl|translate)',
     '/(intl|internationalisation|internationalization|lng|lang|language)s?',
-    '/(locales|localisation|localization|translation|translator)s?',
+    '/(locales|localise|localize)',
+    '/(localisation|localization|translation|translator)s?',
     '*.po(|t)',
   ],
-  lock: [
-    '/(|.|_)(priv|private)',
-    '/hidden',
-    '/lock(|d|ed|s)',
-    '*.(enc|lock)',
-    'security(|.md|.txt)',
-  ],
-  log: ['/(log|logger)s?', '/logging', '*.log'],
+  location: ['/(geo|geolocation|location|map|position)s?'],
+  lock: ['/(|.|_)(priv|private)', '/hidden', '/lock(|d|ed|s)', '*.(enc|lock)'],
+  log: ['/(log|logger)s?', '/logging', '*.log', 'credits(.md|.rst|.txt)'],
   login: ['/(login|registration|signin|signup)s?'],
   logout: ['/(logout|signout)s?'],
   mail: [
@@ -203,7 +205,7 @@ export const icons: Icons = {
   ],
   model: ['/(class|classes)', '/(model|schema)s?', '*.drawio'],
   music: ['/music', '*.(als|dmpatch|fst|mid|ppsf|vpr|vsq|vsqx)'],
-  package: ['/(pkg|package)s?', 'package.json'],
+  package: ['/(pkg|package)s?', 'package.(json|md)'],
   packageLock: ['package-lock.json'],
   path: ['/(path|root)s?', '/fs', '/filesystems?'],
   payment: [
@@ -231,7 +233,7 @@ export const icons: Icons = {
     '/(common_runtime|distributed_runtime|run|runtime_client)',
     '/(runner|runtime)s?',
     '/runner.(xcodeproj|xcworkspace)',
-    'run',
+    '(.runner|run)',
   ],
   save: ['/bookmarks?', '/sav(e|ed|ing)'],
   search: ['/(search|searches)', '/(find|lookup)s?'],
@@ -258,7 +260,7 @@ export const icons: Icons = {
   test: [
     '/(.|_)tests?',
     '/(boot|e2e|integration|kernel|memory|unit)(|-|_)tests?',
-    '/(coverage|it|e2e|runnertests|testing|unit)',
+    '/(coverage|it|integration|e2e|runnertests|testing|unit)',
     '/(spec|test)s?',
     '/__tests?__',
     '(check|test)',
@@ -295,7 +297,7 @@ export const icons: Icons = {
   ],
   webhook: ['/(hook|webhook)s?'],
   widget: ['/widgets?'],
-  work: ['/(biz|business|work|working)', '/workers?'],
+  work: ['/(biz|business|work|working)', '/(service-worker|worker)s?'],
   workspace: ['/workspaces?', '*.workspace', 'workspace'],
   wrapper: ['/(wrap|wrapper)s?'],
   zip: [
