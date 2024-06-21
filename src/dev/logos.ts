@@ -51,8 +51,8 @@ export const logos: Icons = {
   autoit: ['*.au3'],
   azure: ['/(.azure|.azure-pipelines|.azure-pipelines-ci|azure)'],
   babel: [
-    '.babel-plugin-macrosrc(.js|.json|.yml|.yaml)',
-    '.babelrc(.js|.cjs|.mjs|.json)',
+    '.babel-plugin-macrosrc(|.js|.json|.yml|.yaml)',
+    '.babelrc(|.js|.cjs|.mjs|.json)',
     'babel-plugin-macros.config.(|c|m)js',
     'babel-transform.(js|cjs|mjs|ts)',
     'babel.config.(js|cjs|mjs|json)',
@@ -89,7 +89,7 @@ export const logos: Icons = {
   cpp: ['/(c++|cpp|cxx)', '*.(c++|cc|cpp|cxx)(|m)', '*.(cp|ipp|ixx)'],
   crystal: ['*.cr'],
   csharp: ['*.csx?'],
-  css: ['/(style|stylesheet)?', '/css', '*.css'],
+  css: ['/(style|stylesheet)s?', '/css', '*.css'],
   cssApp: ['app(|lication).css'],
   cssMap: ['*.css.map'],
   cssRtl: ['*.rtl(|.min).css'],
@@ -152,7 +152,7 @@ export const logos: Icons = {
   firebase: [
     '/.?firebase',
     '(.firebaserc|firebase.json)',
-    'firestore(.indexes.json|.rules)',
+    'firestore.(indexes.json|rules)',
   ],
   forgejo: ['/.?forgejo'],
   forth: ['*.(4th|forth|fth)'],
@@ -387,7 +387,7 @@ export const logos: Icons = {
   ],
   premiere: ['*.prproj'],
   prettier: [
-    '.prettierrc(.js|.cjs|.mjs|.json|.json5|.toml|.yml|.yaml)',
+    '.prettierrc(|.js|.cjs|.mjs|.json|.json5|.toml|.yml|.yaml)',
     'prettier.config.(|c|m)js',
   ],
   prettierIgnore: ['.prettierignore'],
