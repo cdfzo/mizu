@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2.3.0 (2024-10-27)
+
+### Added
+
+- 7 folder icons (`animation`, `broadcast`, `jest`, `pdf`, `shell`, `storybook`,
+  `wizard`)
+- 7 file icons (`brakeman`, `expo`, `expo-ignore`, `metro`, `svgo`, `yml-cron`,
+  `yml-temporary`)
+
+### Changed
+
+- Renamed 1 icon (`webhook` -> `hook`)
+
 ## 2.2.0 (2024-05-31)
 
 ### Added
