@@ -1,8 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+## 2.4.0 - 2024-11-27
 
-## 2.3.0 (2024-10-27)
+### Added
+
+- 1 file icon (`windows-sandbox`)
+
+## 2.3.0 - 2024-10-27
 
 ### Added
 
@@ -15,7 +19,7 @@ All notable changes to this project will be documented in this file.
 
 - Renamed 1 icon (`webhook` -> `hook`)
 
-## 2.2.0 (2024-05-31)
+## 2.2.0 - 2024-05-31
 
 ### Added
 
@@ -30,7 +34,7 @@ All notable changes to this project will be documented in this file.
 - Renamed 3 icons (`markdownlint` -> `markdown-lint`, `nrwl` -> `nx`,
   `webassembly` -> `wasm`)
 
-## 2.1.0 (2024-05-27)
+## 2.1.0 - 2024-05-27
 
 ### Added
 
@@ -46,7 +50,7 @@ All notable changes to this project will be documented in this file.
 
 - 1 file icon (`ruby-database`)
 
-## 2.0.0 (2024-04-14)
+## 2.0.0 - 2024-04-14
 
 ### Added
 
@@ -69,7 +73,7 @@ All notable changes to this project will be documented in this file.
 - 3 folder icons (`crash`, `password`, `script`)
 - 6 file icons (`dll`, `drawio`, `numbers`, `qwik`, `setup`, `vcard`)
 
-## 1.7.0 (2023-11-25)
+## 1.7.0 - 2023-11-25
 
 ### Added
 
@@ -80,7 +84,7 @@ All notable changes to this project will be documented in this file.
 
 - 1 folder and file icon (`sass`)
 
-## 1.6.0 (2023-08-13)
+## 1.6.0 - 2023-08-13
 
 ### Added
 
@@ -101,7 +105,7 @@ All notable changes to this project will be documented in this file.
 - 1 folder icon (`runner`)
 - 3 file icons (`changelog`, `readme`, `sass`)
 
-## 1.5.0 (2023-07-30)
+## 1.5.0 - 2023-07-30
 
 ### Added
 
@@ -116,7 +120,7 @@ All notable changes to this project will be documented in this file.
 
 - 2 folder icons (`cloud`, `etc`)
 
-## 1.4.0 (2023-07-26)
+## 1.4.0 - 2023-07-26
 
 ### Added
 
@@ -125,7 +129,7 @@ All notable changes to this project will be documented in this file.
   `like`, `package`, `pipe`, `plugin`, `review`, `script`, `share`, `stats`,
   `trash`, `upload`, `webhook`, `wrapper`)
 
-## 1.3.0 (2023-07-21)
+## 1.3.0 - 2023-07-21
 
 ### Added
 
@@ -145,7 +149,7 @@ All notable changes to this project will be documented in this file.
 - 2 folder icons (`database`, `route`)
 - 3 file icons (`3d`, `audio`, `sql`)
 
-## 1.2.0 (2023-07-11)
+## 1.2.0 - 2023-07-11
 
 ### Added
 
@@ -154,7 +158,7 @@ All notable changes to this project will be documented in this file.
   `tool`, `vala`)
 - 1 file icon (`maven`)
 
-## 1.1.0 (2023-07-08)
+## 1.1.0 - 2023-07-08
 
 ### Added
 
@@ -167,7 +171,7 @@ All notable changes to this project will be documented in this file.
 
 - 1 folder icon (`audio`)
 
-## 1.0.0 (2023-07-07)
+## 1.0.0 - 2023-07-07
 
 ### Added
 
@@ -184,7 +188,7 @@ All notable changes to this project will be documented in this file.
 
 - 14 basic folder icons
 
-## 0.4.0 (2023-07-01)
+## 0.4.0 - 2023-07-01
 
 ### Added
 
@@ -203,7 +207,7 @@ All notable changes to this project will be documented in this file.
 
 - 6 file icons (`browserslist`, `bun`, `fortran`, `makefile`, `raku`, `rebol`)
 
-## 0.3.0 (2023-06-27)
+## 0.3.0 - 2023-06-27
 
 ### Added
 
@@ -223,7 +227,7 @@ All notable changes to this project will be documented in this file.
 
 - 2 file icons (`lock`, `vscode`)
 
-## 0.2.0 (2023-06-22)
+## 0.2.0 - 2023-06-22
 
 ### Added
 
@@ -233,7 +237,7 @@ All notable changes to this project will be documented in this file.
 
 - 1 icon (`julia`)
 
-## 0.1.0 (2023-06-19)
+## 0.1.0 - 2023-06-19
 
 ### Added
 
