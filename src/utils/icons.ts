@@ -3,7 +3,6 @@ import { alternations } from './alternations'
 
 type StrObj = Record<string, string>
 type Icons = Record<string, string[]>
-
 type Theme = {
   file: string
   folder: string
@@ -13,6 +12,10 @@ type Theme = {
   folderNamesExpanded: StrObj
   fileExtensions: StrObj
   fileNames: StrObj
+}
+type IconTheme = {
+  theme: Theme
+  definitions: string[]
 }
 
 const prefixes: Record<string, string[][]> = {
@@ -29,8 +32,8 @@ const iconDefinitions = (
   definitions: string[],
   type: keyof Theme,
   { nodes, icon, iconPath }: StrObj,
-  overwrite: boolean
-) => {
+  overwrite: boolean,
+): void => {
   const nodeList = theme[type] as StrObj
   const index = definitions.indexOf(iconPath)
   const value = (index === -1 ? definitions.length : index).toString()
@@ -39,20 +42,20 @@ const iconDefinitions = (
     if (!existsSync(iconPath)) {
       throw Error(
         `The icon '${iconPath.replace(/^.\/|.svg$/g, '')}' doesn't exist. \
-See the readme for a list of available icons.`
+See the readme for a list of available icons.`,
       )
     }
 
     theme.iconDefinitions[definitions.push(iconPath) - 1] = { iconPath }
   }
 
-  for (const node of (nodes.match(/[|?]/g) ?? []).length > 20
-    ? nodes
-    : alternations(nodes)) {
+  for (const node of (nodes.match(/[|?]/g) ?? []).length > 20 ?
+    nodes
+  : alternations(nodes)) {
     if (!overwrite && node in nodeList) {
       throw Error(
         `The icon '${icon}' overwrites ${type.slice(0, -1)} '${node}'. \
-Remove it from the list or change the settings to allow overwriting.`
+Remove it from the list or change the settings to allow overwriting.`,
       )
     }
 
@@ -60,7 +63,7 @@ Remove it from the list or change the settings to allow overwriting.`
   }
 }
 
-export const iconTheme = (icons: Icons, overwrite = false) => {
+export const iconTheme = (icons: Icons, overwrite = false): IconTheme => {
   const file = 'icon-theme.json'
   const fileBackup = `${file}.bk`
 
@@ -71,7 +74,7 @@ export const iconTheme = (icons: Icons, overwrite = false) => {
 
   const theme = JSON.parse(readFileSync(fileBackup, 'utf8')) as Theme
   const definitions = Object.values(theme.iconDefinitions).map(
-    (v) => v.iconPath
+    (v) => v.iconPath,
   )
 
   for (const [icon, rawNodes] of Object.entries(icons)) {
@@ -80,7 +83,7 @@ export const iconTheme = (icons: Icons, overwrite = false) => {
     if (rawNodes.constructor.name !== 'Array') {
       throw Error(
         `The icon '${icon}' is not an array. \
-Please provide an array for this custom icon association.`
+Please provide an array for this custom icon association.`,
       )
     }
 

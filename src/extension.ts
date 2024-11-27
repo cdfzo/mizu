@@ -2,7 +2,7 @@ import * as vscode from 'vscode'
 import { update } from './utils/update'
 
 /** This function is called when the extension is activated. */
-export const activate = () => {
+export const activate = (): void => {
   const config = vscode.workspace.getConfiguration('mizu')
   const extension = vscode.extensions.getExtension('cdfzo.mizu')
 
@@ -15,6 +15,6 @@ export const activate = () => {
 }
 
 /** This function is called when the extension is deactivated. */
-export const deactivate = () => {
+export const deactivate = (): void => {
   // ...
 }

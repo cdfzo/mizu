@@ -1,4 +1,4 @@
-export const alternations = (...names: string[]) => {
+export const alternations = (...names: string[]): string[] => {
   const alts: string[] = []
 
   for (const name of names) {

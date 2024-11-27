@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'bun:test'
 import { alternations } from '../src/utils/alternations'
 
-const alts = (str: string) => alternations(str).sort()
+const alts = (str: string): string[] => alternations(str).sort()
 
 describe('alternations()', () => {
   it('splits values with OR', () => {

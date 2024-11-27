@@ -2,7 +2,7 @@ import { type Icons, iconTheme } from './icons'
 import { existsSync, readFileSync, writeFileSync } from 'fs'
 import type { WorkspaceConfiguration } from 'vscode'
 
-const hasChanged = (config: string) => {
+const hasChanged = (config: string): boolean => {
   const file = 'settings.json.bk'
 
   // Make backup file
@@ -14,7 +14,7 @@ const hasChanged = (config: string) => {
   return config !== readFileSync(file, 'utf8')
 }
 
-export const update = (config: WorkspaceConfiguration) => {
+export const update = (config: WorkspaceConfiguration): void => {
   if (!hasChanged(JSON.stringify(config))) {
     return
   }

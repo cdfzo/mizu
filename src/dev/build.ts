@@ -20,7 +20,7 @@ $('bun run build:ext')
 $('cd dist && bunx --bun vsce package')
 
 if (Bun.env.NODE_ENV !== 'production') {
-  const map = (prop: keyof typeof theme, join = '') =>
+  const map = (prop: keyof typeof theme, join = ''): string =>
     Object.keys(theme[prop])
       .filter((name) => !name.includes('/'))
       .join(`" ${join}"`)
@@ -48,13 +48,13 @@ if (Bun.env.NODE_ENV !== 'production') {
 
   folders.splice(folders.indexOf('folder'), 1)
 
-  const fmtName = (icon: string) =>
+  const fmtName = (icon: string): string =>
     icon.replace(/-./g, (m) => m.slice(1).toUpperCase())
 
-  const iconHtml = (icon: string, extension = '') =>
+  const iconHtml = (icon: string, extension = ''): string =>
     `<span><img src=../dist/i/${icon}${extension}.svg>${fmtName(icon)}</span>`
 
-  const generateHtml = (icns: string[], extension = '') =>
+  const generateHtml = (icns: string[], extension = ''): string =>
     icns
       .sort()
       .map((icon) => iconHtml(icon, extension))
@@ -64,7 +64,7 @@ if (Bun.env.NODE_ENV !== 'production') {
     'examples/overview.html',
     (await Bun.file('src/assets/overview.html').text())
       .replace('{{files}}', generateHtml(files))
-      .replace('{{folders}}', generateHtml(folders, '-folder'))
+      .replace('{{folders}}', generateHtml(folders, '-folder')),
   )
 
   $('open examples/overview.html')
