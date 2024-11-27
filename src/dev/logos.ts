@@ -636,6 +636,7 @@ export const logos: Icons = {
   ],
   windi: ['*.windi', 'windi.config.(js|cjs|mjs|ts)'],
   windows: ['/(system32|win|windows)'],
+  windowsSandbox: ['*.wsb'],
   wolfram: ['*.wlt?'],
   word: [
     '*.doc',
