@@ -3,19 +3,20 @@ name: ci
 on: push
 
 jobs:
-  lint-and-test:
-    runs-on: self-hosted
-    shell: sh
-
+  check:
+    runs-on: codeberg-tiny-lazy
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: https://code.forgejo.org/actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Set up Mizu
         run: bun i
 
       - name: Run linters
-        run: bun run lint
+        run: bun lint
 
       - name: Run tests
-        run: bun run test
+        run: bun test

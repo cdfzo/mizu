@@ -19,8 +19,9 @@
   ],
   "scripts": {
     "dev": "bun run build:ext --watch",
-    "build": "bun run src/dev/build.ts",
-    "build:ext": "bunx --bun esbuild src/extension.ts --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --bundle --minify"
+    "lint": "bun x cdfzo",
+    "build": "bun src/dev/build.ts",
+    "build:ext": "bun -b x esbuild src/extension.ts --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --bundle --minify"
   },
   "repository": {
     "type": "git",
